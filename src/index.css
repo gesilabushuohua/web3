@@ -1,0 +1,22 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Gill Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-color: #000;
+  --primary-color: #4556F1;
+  --text-color: #fff;
+}
+
