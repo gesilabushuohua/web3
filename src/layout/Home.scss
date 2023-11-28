@@ -116,13 +116,13 @@
     bottom: 0;
     margin: 0 auto;
     width: 563px;
-    height: 74px;
+    height: 80px;
     overflow: hidden;
 
     .circle {
       height: 563px;
       width: 563px;
-      clip-path: ellipse(55% 50% at 50% 50%);
+      clip-path: ellipse(58% 50% at 50% 50%);
       background: linear-gradient(77deg, #4556F0 1.6%, #D458DE 102.27%);
     }
 
@@ -134,16 +134,16 @@
 
       .cbs-logo {
         vertical-align: top;
-        margin: 18px 8px 10px;
-        width: 83px;
-        height: 51px;
+        margin: 24px 8px 10px;
+        width: 89px;
+        height: 48px;
       }
 
       .footer-logo {
         vertical-align: top;
-        margin: 18px 8px 10px;
-        width: 36px;
-        height: 45px;
+        margin: 14px 8px 10px;
+        width: 63px;
+        height: 52px;
       }
     }
   }
@@ -153,52 +153,52 @@
   .home {
     position: relative;
     min-width: 10rem;
-    min-height: 21rem;
+    min-height: 19rem;
     height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow: hidden auto;
-  
+
     .content {
       margin: 0;
       width: 100vw;
       text-align: center;
     }
-  
+
     .title {
       margin-block: 0;
       font-size: 0;
       margin: 2rem 0 0 0;
     }
-  
+
     .head-logo {
       width: 6.63889rem;
       height: 1.33333rem;
     }
-  
+
     .sub-color-title {
       margin: 0.44rem 0 0 0;
       font-size: 0.55556rem;
     }
-  
+
     .sub-title {
       margin: 1.78rem 0 0 0;
       font-size: 0.38889rem;
       font-weight: 400;
     }
-  
+
     .info-box {
       margin-top: 0.16rem;
       font-size: 0.44444rem;
       font-weight: 300;
-  
+
       .info {
         display: block;
         position: relative;
         margin: 0;
         padding: 0.42rem 0;
-  
-  
+
+
         ::after {
           position: absolute;
           left: 0;
@@ -210,83 +210,84 @@
           border-right: none;
           border-bottom: 2px solid var(--primary-color);
         }
-  
+
         &:last-child {
-  
+
           ::after {
             display: none;
           }
         }
       }
     }
-  
+
     .follow {
       margin-top: 0.77rem;
-  
+
       .follow-log {
         margin-bottom: 0.22rem;
-  
+
         >img {
           width: 0.88889rem;
           height: 0.88889rem;
         }
       }
-  
+
       .follow-text {
         font-size: 0.44444rem;
         font-weight: 300;
       }
     }
-  
+
     .more-info {
-      margin-top: 16vh;
+      margin-top: 10vh;
       font-size: 0.38889rem;
       font-weight: 300;
     }
-  
+
     .coming-soon {
       font-size: 0.55556rem;
       font-weight: 300;
     }
-  
+
     .footer {
       position: absolute;
       margin: 0;
       bottom: 0;
       width: 100vw;
-      height: 2.1rem;
+      height: 2.4rem;
       overflow: hidden;
-  
+
       .circle {
         width: 100vw;
         height: 100vw;
-        background: linear-gradient(77deg, #4556F0 1.6%, #D458DE 102.27%);;
-        clip-path: ellipse(70% 50% at 50% 50%);
+        background: linear-gradient(77deg, #4556F0 1.6%, #D458DE 102.27%);
+        clip-path: ellipse(64% 50% at 50% 50%);
       }
-  
+
       .logo {
         position: absolute;
         top: 0;
         text-align: center;
         width: 100vw;
-  
-  
+
+
         .cbs-logo {
           vertical-align: top;
-          margin: 0.3rem 0.275rem;
-          width: 2.97222rem;
-          height: 1.83333rem;
+          margin: 0.6rem 0.275rem;
+          width: 3.02778rem;
+          height: 1.63889rem;
+
         }
-  
+
         .footer-logo {
           vertical-align: top;
-          margin: 0.3rem 0.275rem;
-          width: 1.30128rem;
-          height: 1.62867rem;
+          margin: 0.45rem 0.275rem;
+          width: 2.13889rem;
+          height: 1.5778rem;
         }
       }
     }
-  
-  
+
+
   }
 }
