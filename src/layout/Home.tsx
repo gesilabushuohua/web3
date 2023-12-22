@@ -1,4 +1,4 @@
-import logoSvg from "../assets/logo.svg";
+import logoSvg from "../assets/logo2.svg";
 import followSvg from "../assets/follow-logo.svg";
 import cbsLogo from "../assets/cbs-logo.png";
 import footerLogo from "../assets/footer-logo.svg";
@@ -11,7 +11,7 @@ const Home = () => {
         <h1 className="title">
           <img className="head-logo" src={logoSvg} />
         </h1>
-        <h2 className="sub-color-title">Unlock, Unite, Unleash</h2>
+        <h2 className="sub-color-title">UNLOCK, UNITE, UNLEASH</h2>
         <h2 className="sub-title">WEB3 UNIVERSITY WORLD HACKATHON SERIES</h2>
         <div className="info-box">
           <span className="info">

@@ -1,7 +1,7 @@
 .home {
   position: relative;
   min-width: 800px;
-  min-height: 770px;
+  min-height: 800px;
   height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -16,7 +16,7 @@
   .title {
     margin-block: 0;
     font-size: 0;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .head-logo {
@@ -36,11 +36,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: uppercase;
-    background: linear-gradient(182deg, #4556F0 1.6%, #D458DE 102.27%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #01FF00;
   }
 
   .sub-title {
@@ -123,7 +119,7 @@
       height: 563px;
       width: 563px;
       clip-path: ellipse(58% 50% at 50% 50%);
-      background: linear-gradient(77deg, #4556F0 1.6%, #D458DE 102.27%);
+      background: #323232;
     }
 
     .logo {
@@ -260,7 +256,7 @@
       .circle {
         width: 100vw;
         height: 100vw;
-        background: linear-gradient(77deg, #4556F0 1.6%, #D458DE 102.27%);
+        background: #323232;
         clip-path: ellipse(64% 50% at 50% 50%);
       }
 
