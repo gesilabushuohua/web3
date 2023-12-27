@@ -18,7 +18,7 @@ const Home = () => {
             <span>100k Prize Pool</span>
           </span>
           <span className="info">
-            <span>Jan 27th - Febr 28th 2024</span>
+            <span>Feb 10th - Mar 14th 2024</span>
           </span>
           <span className="info">
             <span>Online</span>
