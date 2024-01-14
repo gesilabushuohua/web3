@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../layout/Error";
 
 const Page = lazy(() => import("../layout/Home"));
-const MPage = lazy(() => import("../layout/MHome"));
+const Index = lazy(() => import("../pages/main"));
 const NotFound = lazy(() => import("../layout/NotFound"));
 
 const routes = [
@@ -13,8 +13,8 @@ const routes = [
     errorElement: <ErrorPage />,
   },
   {
-    path: "/m",
-    element: <MPage />,
+    path: "/index",
+    element: <Index />,
     errorElement: <ErrorPage />,
   },
   /* {

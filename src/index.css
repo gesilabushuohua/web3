@@ -3,9 +3,17 @@
 @tailwind utilities; */
 
 html,
-body {
+body{
   margin: 0;
   padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
 }
 
 :root {

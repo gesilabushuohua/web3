@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="254" height="96" viewBox="0 0 254 96" fill="none">
+  <path d="M16.625 32.2327L14.5 35.8389L16.6267 63.8389L24.8108 79.9318L221.998 78.8389L237.998 63.8389V39.7282V32.2327L226.998 20.8389L220.998 15.1973L219.491 6.33887L33.5 9.33887L31.5 17.3389L16.625 32.2327Z" fill="white"/>
+  <rect x="32" y="0.338867" width="190" height="16" fill="black"/>
+  <rect x="15.8906" y="16.2383" width="15.8995" height="15.8995" fill="black"/>
+  <rect y="32.1377" width="15.8995" height="15.8995" fill="black"/>
+  <rect width="190" height="16" transform="matrix(1 0 0 -1 32 95.3389)" fill="black"/>
+  <rect width="15.8995" height="15.8995" transform="matrix(1 0 0 -1 15.8906 79.8369)" fill="black"/>
+  <rect width="15.8995" height="15.8995" transform="matrix(1 0 0 -1 0 63.9365)" fill="black"/>
+  <rect width="15.8995" height="15.8995" transform="matrix(-1 0 0 1 221.898 0.338867)" fill="black"/>
+  <rect width="15.8995" height="15.8995" transform="matrix(-1 0 0 1 237.805 16.2383)" fill="black"/>
+  <rect width="15.8995" height="15.8995" transform="matrix(-1 0 0 1 253.695 32.1377)" fill="black"/>
+  <rect x="221.898" y="95.7354" width="15.8995" height="15.8995" transform="rotate(180 221.898 95.7354)" fill="black"/>
+  <rect x="237.805" y="79.8369" width="15.8995" height="15.8995" transform="rotate(180 237.805 79.8369)" fill="black"/>
+  <rect x="253.695" y="63.9365" width="15.8995" height="15.8995" transform="rotate(180 253.695 63.9365)" fill="black"/>
+</svg>
