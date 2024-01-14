@@ -1,7 +1,7 @@
-import logoSvg from "../../assets/home/logo2.svg";
-import followSvg from "../../assets/home/follow-logo.svg";
-import cbsLogo from "../../assets/home/cbs-logo.png";
-import footerLogo from "../../assets/home/footer-logo.svg";
+import logoSvg from "../assets/home/logo2.svg";
+import followSvg from "../assets/home/follow-logo.svg";
+import cbsLogo from "../assets/home/cbs-logo.png";
+import footerLogo from "../assets/home/footer-logo.svg";
 
 import "./Home.scss";
 const Home = () => {

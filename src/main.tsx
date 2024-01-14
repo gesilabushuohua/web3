@@ -4,6 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import "amfe-flexible";
 import router from "./router";
 import './index.css'
+import './assets/font/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

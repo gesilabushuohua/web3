@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Frames Part One';
+  src: url(./FramesPartOne/FramesPartOne-Bold.otf),
+  url(./FramesPartOne/FramesPartOne-Light.otf),
+  url(./FramesPartOne/FramesPartOne-Medium.otf),
+  url(./FramesPartOne/FramesPartOne-Regular.otf),
+  url(./FramesPartOne/FramesPartOne-Thin.otf);
+}
