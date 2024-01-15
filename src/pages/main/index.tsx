@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Link, Telegram, Twitter, navlist } from "./constant";
 import logoSvg from "../../assets/home/logo2.svg";
 import xSvg from "../../assets/index/x.svg";

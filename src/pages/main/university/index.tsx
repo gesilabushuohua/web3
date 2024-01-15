@@ -17,7 +17,7 @@ import Penn from "./assets/Penn.svg";
 import LBS from "./assets/LBS.svg";
 import cbstrans from "./assets/cbs_trans.svg";
 import conflux from "./assets/conflux.svg";
-import { Email, LINK, Link } from "../constant";
+import { Email, Link } from "../constant";
 
 const top3List = [
   {
