@@ -6,3 +6,7 @@
   url(./FramesPartOne/FramesPartOne-Regular.otf),
   url(./FramesPartOne/FramesPartOne-Thin.otf);
 }
+@font-face {
+  font-family: 'Pixel Countdown';
+  src: url(./pixel_countdown/Pixel-Countdown.otf);
+}
