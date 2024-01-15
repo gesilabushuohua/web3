@@ -15,50 +15,69 @@ import Blocktech from "../university/assets/Blocktech.svg";
 const redLogoList = [
   {
     name: "dwf_labs_feher",
+    className: 'dwf_labs_feher',
     src: dwflabsfeher,
+    link: "https://www.dwf-labs.com/",
   },
   {
     name: "conflux",
+    className: 'conflux',
     src: conflux,
+    link: "https://confluxnetwork.org/",
   },
 ];
 
 const grayLogoList = [
   {
     name: "oasis_feher",
+    className: 'oasis_feher',
     src: oasisfeher,
+    link: "https://www.rakdao.com/",
   },
   {
     name: "arab",
+    className: 'arab',
     src: arab,
+    link: "https://www.rak.ae/wps/portal",
   },
   {
     name: "swappi",
+    className: 'swappi',
     src: swappi,
+    link: "https://swappi.io/",
   },
   {
     name: "logotxt",
+    className: 'logotxt',
     src: logotxt,
+    link: "https://www.nucleon.space/",
   },
 ];
 
 const bottomLogoList = [
   {
     name: "M-POST",
+    className: 'MPOST',
     src: MPOST,
+    link: "https://mpost.io/ ",
   },
   {
     className: "CAMBRIDGE",
     name: "CAMBRIDGE",
     src: CAMBRIDGE,
+    link: "https://cambridgeblockchain.org",
   },
   {
     name: "BlockBooster",
+    className: 'BlockBooster',
     src: BlockBooster,
+    link: "https://blockbooster.io/",
   },
   {
     name: "Blocktech",
+    className: 'Blocktech',
     src: Blocktech,
+    link: "https://twitter.com/BlockTechldn",
   },
 ];
 
@@ -72,21 +91,27 @@ const Sponsors = () => {
           <div className="inner-box ">
             <div className="logos">
               {redLogoList.map((item) => (
-                <img key={item.src} src={item.src} alt={item.name} />
+                <a href={item.link} target="_blank">
+                  <img className={item.className} key={item.src} src={item.src} alt={item.name} />
+                </a>
               ))}
             </div>
           </div>
         </div>
         <div className="section uniter">
-        <div className="title">uniter</div>
+          <div className="title">uniter</div>
           <div className="inner-box ">
             <div className="logos">
               {grayLogoList.map((item) => (
-                <img key={item.src} src={item.src} alt={item.name} />
+                <a href={item.link} target="_blank">
+                  <img className={item.className} key={item.src} src={item.src} alt={item.name} />
+                </a>
               ))}
               <div className="goledo">
-                <img src={goledo} alt="goledo" />
-                <span className="text">GOLEDO</span>
+                <a href="https://www.goledo.cash/" target="_blank">
+                  <img src={goledo} alt="goledo" />
+                  <span className="text">GOLEDO</span>
+                </a>
               </div>
             </div>
           </div>
@@ -98,7 +123,14 @@ const Sponsors = () => {
 
         <div className="bottom-logos">
           {bottomLogoList.map((item) => (
-            <img  key={item.src} className={item.className} src={item.src} alt={item.name} />
+            <a href={item.link} target="_blank">
+              <img
+                key={item.src}
+                className={item.className}
+                src={item.src}
+                alt={item.name}
+              />
+            </a>
           ))}
         </div>
       </div>

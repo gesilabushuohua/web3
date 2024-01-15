@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { navlist } from "./constant";
+import { Link, Telegram, Twitter, navlist } from "./constant";
 import logoSvg from "../../assets/home/logo2.svg";
 import xSvg from "../../assets/index/x.svg";
 import telegramSvg from "../../assets/index/telegram.svg";
@@ -41,16 +41,20 @@ const Index = () => {
         </div>
         <ul className="navs">
           {navlist.map((nav) => (
-            <li className="nav" key={nav.id} onClick={() => scrollToSection(nav)}>
+            <li
+              className="nav"
+              key={nav.id}
+              onClick={() => scrollToSection(nav)}
+            >
               {nav.text}
             </li>
           ))}
         </ul>
         <div className="head-links">
-          <a className="link" href="#">
+          <a className="link" href={Twitter} target="_blank">
             <img src={xSvg} />
           </a>
-          <a className="link" href="#">
+          <a className="link" href={Telegram} target="_blank">
             <img src={telegramSvg} />
           </a>
         </div>
@@ -68,10 +72,12 @@ const Index = () => {
           </div>
           <div className="left">
             <div className="title">THE WEB3 UNIVERSITY HACKATHON SERIES</div>
-            <div className="link">
-              <div className="text">APPLY NOW</div>
-              <div className="bg" />
-            </div>
+            <a href={Link} target="_blank">
+              <div className="link">
+                <div className="text">APPLY NOW</div>
+                <div className="bg" />
+              </div>
+            </a>
             <div className="date">
               <div className="time">Feb 10 - Mar 14 2024</div>
               <div className="price">100k Prize Pool</div>

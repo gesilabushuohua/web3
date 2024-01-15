@@ -25,7 +25,7 @@ const Home = () => {
           </span>
         </div>
 
-        <a className="follow" href="https://twitter.com/U_HackWeb3">
+        <a className="follow" href="https://twitter.com/U_HackWeb3" target="_blank">
           <div className="follow-log">
             <img src={followSvg} />
           </div>

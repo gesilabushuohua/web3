@@ -1,6 +1,7 @@
 import SectionHead from "../section-head";
 import "../index.scss";
 import telegramSvg from "../../../assets/index/telegram.svg";
+import { Link, Telegram } from "../constant";
 
 const Hackathon = () => {
   return (
@@ -29,10 +30,13 @@ const Hackathon = () => {
         <div className="item decorator">Regulatory & Compliance Solution</div>
         <div className="item">Surprise Us!</div>
       </div>
-      <div className="w-g-link">
-        <div className="text">learn more</div>
-        <div className="bg" />
-      </div>
+      <a href={Link} target="_blank">
+        <div className="w-g-link">
+          <div className="text">learn more</div>
+          <div className="bg" />
+        </div>
+      </a>
+
       <div className="title-rect-line">
         <span className="text">TIMELINE</span>
       </div>
@@ -140,16 +144,18 @@ const Hackathon = () => {
         </div>
       </div>
 
-      <div className="w-g-link">
-        <div className="text">apply now</div>
-        <div className="bg" />
-      </div>
+      <a href={Link} target="_blank">
+        <div className="w-g-link">
+          <div className="text">apply now</div>
+          <div className="bg" />
+        </div>
+      </a>
 
       <div className="join">
         <div className="text">Have any questions? Join our Telegram group:</div>
-        <a className="link" href="#">
-            <img src={telegramSvg} />
-          </a>
+        <a className="link" href={Telegram} target="_blank">
+          <img src={telegramSvg} />
+        </a>
       </div>
     </div>
   );

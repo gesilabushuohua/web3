@@ -8,6 +8,7 @@ import hSvg from "./assets/h.svg";
 import aSvg from "./assets/a.svg";
 import cSvg from "./assets/c.svg";
 import kSvg from "./assets/k.svg";
+import { Email, Telegram, Twitter } from "../constant";
 
 const text = `test`;
 
@@ -58,10 +59,10 @@ const FAQ = () => {
       </div>
       <div className="footer">
         <div className="links">
-          <a className="link" href="#">
+          <a className="link" href={Twitter} target="_blank">
             <img src={xSvg} />
           </a>
-          <a className="link" href="#">
+          <a className="link" href={Telegram} target="_blank">
             <img src={telegramSvg} />
           </a>
         </div>
@@ -74,9 +75,9 @@ const FAQ = () => {
         </div>
         <div className="concat">
           <div className="e-mail">
-            <a href="mailto:uhack@mail.com">uhack@mail.com</a>
+            <a href={Email}>busines@uhack.xyz</a>
           </div>
-          <a href="mailto:uhack@mail.com">
+          <a href={Email}>
             <div className="w-link">
               <div className="text">APPLY</div>
               <div className="bg"></div>
