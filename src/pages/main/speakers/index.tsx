@@ -7,16 +7,20 @@ import img5 from "./assest/person/5.jpeg";
 import img6 from "./assest/person/6.png";
 import img7 from "./assest/person/7.png";
 import img8 from "./assest/person/8.png";
+import img9 from "./assest/person/9.png";
+import img10 from "./assest/person/10.png";
 
 const speakers = [
   { name: "Chef Fran",  desc: "PancakeSwap", src: img1, link: "https://twitter.com/ChefFranPS", },
   { name: "BKT",  desc: "ACryptoS", src: img2, link: "https://twitter.com/CryptoBKT", },
-  { name: "Martin Carrica",  desc: "BKT", src: img3, link: "https://twitter.com/mcarrica", },
-  { name: "Jean",  desc: "Jean", src: img4, link: "https://twitter.com/muxprotocol", },
-  { name: "Anton Buenavista",  desc: "Anton Buenavista", src: img5, link: "https://twitter.com/ayobuenavista", },
-  { name: "Darren Langley",  desc: "Darren Langley", src: img6, link: "https://twitter.com/langerstwit", },
+  { name: "Martin Carrica",  desc: "Mountain Protocol", src: img3, link: "https://twitter.com/mcarrica", },
+  { name: "Jean",  desc: "MUX Protocol", src: img4, link: "https://twitter.com/muxprotocol", },
+  { name: "Anton Buenavista",  desc: "Pendle", src: img5, link: "https://twitter.com/ayobuenavista", },
+  { name: "Darren Langley",  desc: "Rocket Pool", src: img6, link: "https://twitter.com/langerstwit", },
   { name: "Aiham",  desc: "Silo Finance", src: img7, link: " https://twitter.com/aiham_eth", },
   { name: "Soloman Kong",  desc: "Single Finance", src: img8, link: "https://twitter.com/solomankong", },
+  { name: "Filius JFF ",  desc: "Otex", src: img9, link: "https://twitter.com/FiliusJff", },
+  { name: "DeFi Yaco",  desc: "Lido Finance", src: img10, link: "https://twitter.com/defiyaco", },
 ];
 
 const Speakers = () => {

@@ -16,14 +16,17 @@ import FAQ from "./faq";
 let logoLttile = null;
 const Index = () => {
   useEffect(() => {
-    !logoLttile &&
-      (logoLttile = Lottie.loadAnimation({
-        container: document.getElementById("b-logo"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: uLogoAnim,
-      }));
+    if (logoLttile) {
+      return;
+    }
+    logoLttile = Lottie.loadAnimation({
+      container: document.getElementById("b-logo"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: uLogoAnim,
+    });
+    logoLttile.setSpeed(0.8);
   }, []);
 
   const scrollToSection = (nav) => {
@@ -36,27 +39,29 @@ const Index = () => {
   return (
     <div className="main">
       <div className="head">
-        <div className="logo">
-          <img className="head-logo" src={logoSvg} />
-        </div>
-        <ul className="navs">
-          {navlist.map((nav) => (
-            <li
-              className="nav"
-              key={nav.id}
-              onClick={() => scrollToSection(nav)}
-            >
-              {nav.text}
-            </li>
-          ))}
-        </ul>
-        <div className="head-links">
-          <a className="link" href={Twitter} target="_blank">
-            <img src={xSvg} />
-          </a>
-          <a className="link" href={Telegram} target="_blank">
-            <img src={telegramSvg} />
-          </a>
+        <div className="content">
+          <div className="logo">
+            <img className="head-logo" src={logoSvg} />
+          </div>
+          <ul className="navs">
+            {navlist.map((nav) => (
+              <li
+                className="nav"
+                key={nav.id}
+                onClick={() => scrollToSection(nav)}
+              >
+                {nav.text}
+              </li>
+            ))}
+          </ul>
+          <div className="head-links">
+            <a className="link" href={Twitter} target="_blank">
+              <img src={xSvg} />
+            </a>
+            <a className="link" href={Telegram} target="_blank">
+              <img src={telegramSvg} />
+            </a>
+          </div>
         </div>
       </div>
       <div className="banner">

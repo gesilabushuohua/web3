@@ -37,7 +37,7 @@ const Hackathon = () => {
         </div>
       </a>
 
-      <div className="title-rect-line">
+      <div className="content-w title-rect-line">
         <span className="text">TIMELINE</span>
       </div>
 
@@ -111,11 +111,11 @@ const Hackathon = () => {
         </div>
       </div>
 
-      <div className="title-rect-line-red">
+      <div className="content-w title-rect-line-red">
         <span className="text">Teams</span>
       </div>
 
-      <ul className="teams">
+      <ul className="content-w teams">
         <li>Form teams of up to 5 members</li>
         <li>
           Teams must be composed of university students. Members can come from
@@ -130,11 +130,11 @@ const Hackathon = () => {
         </li>
       </ul>
 
-      <div className="title-rect-line">
+      <div className="content-w title-rect-line">
         <span className="text">Prizes</span>
       </div>
 
-      <div className="prizes">
+      <div className="content-w prizes">
         <div className="text">
           Compete for your share of the pool and sponsor bounties!
         </div>
@@ -151,11 +151,14 @@ const Hackathon = () => {
         </div>
       </a>
 
-      <div className="join">
+      <div className="content-w join">
+        <div className="inner-box">
         <div className="text">Have any questions? Join our Telegram group:</div>
         <a className="link" href={Telegram} target="_blank">
           <img src={telegramSvg} />
         </a>
+        </div>
+        
       </div>
     </div>
   );

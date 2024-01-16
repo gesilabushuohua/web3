@@ -87,7 +87,7 @@ const logoList = [
 const University = () => {
   return (
     <div className="university">
-      <SectionHead title="PARTICIPTING UNIVERSITIES" theme="white" />
+      <SectionHead title="Participating Universities" theme="white" />
       <div className="content">
         <div className="top-3">
           {top3List.map((item) => (
@@ -114,7 +114,7 @@ const University = () => {
         </div>
 
         <div className="hosts-logo">
-          <a href="https://confluxnetwork.org/" target="_blank">
+          <a href="https://cambridgeblockchain.org" target="_blank">
             <div className="item">
               <img className="cbstrans" src={cbstrans} />
               <div className="w-1 desc">
@@ -123,7 +123,7 @@ const University = () => {
               </div>
             </div>
           </a>
-          <a href="https://cambridgeblockchain.org" target="_blank">
+          <a href="https://confluxnetwork.org/" target="_blank">
             <div className="item">
               <img className="codnflux" src={conflux} />
               <div className="w-2 desc">

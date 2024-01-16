@@ -11,8 +11,9 @@
     opacity: 1;
   }
 }
-$mw: 1200px;
-$contetw: 1114px;
+
+$mw: 1300px;
+$contetw: 1300px;
 $green: #0f0;
 $ffontf: Frames Part One;
 $pfontf: Pixel Countdown;
@@ -59,7 +60,6 @@ $pfontf: Pixel Countdown;
 }
 
 .title-rect-line {
-  padding-left: 311px;
   height: 48px;
 
 
@@ -88,7 +88,7 @@ $pfontf: Pixel Countdown;
       position: absolute;
       top: 23px;
       left: 110%;
-      width: 100vw;
+      width: 2000px;
       height: 1px;
       background-color: #FFF;
     }
@@ -96,7 +96,6 @@ $pfontf: Pixel Countdown;
 }
 
 .title-rect-line-red {
-  padding-left: 311px;
   height: 48px;
 
 
@@ -125,7 +124,7 @@ $pfontf: Pixel Countdown;
       position: absolute;
       top: 23px;
       left: 110%;
-      width: 100vw;
+      width: 2000px;
       height: 1px;
       background-color: #FFF;
     }
@@ -133,7 +132,6 @@ $pfontf: Pixel Countdown;
 }
 
 .title-rect-line-white {
-  padding-left: 311px;
   height: 48px;
 
 
@@ -162,7 +160,7 @@ $pfontf: Pixel Countdown;
       position: absolute;
       top: 23px;
       left: 110%;
-      width: 100vw;
+      width: 2000px;
       height: 1px;
       background-color: #FFF;
     }
@@ -173,9 +171,9 @@ $pfontf: Pixel Countdown;
 
 .main {
   margin: 0;
-  min-width: $mw;
   overflow-x: auto;
   background-color: #0E0E0E;
+  min-width: 900px;
 
   a {
     text-decoration: none;
@@ -186,13 +184,18 @@ $pfontf: Pixel Countdown;
   position: fixed;
   left: 0;
   right: 0;
-  margin: 0 auto;
-  top: 17px;
+  padding: 17px 0;
+  width: 100%;
+  top: 0;
   z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  width: $contetw;
   background-color: var(--bg-color);
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: $contetw;
+  }
 
   .head-logo {
     height: 46px;
@@ -210,6 +213,10 @@ $pfontf: Pixel Countdown;
       display: inline-block;
       margin: 0 30px;
       cursor: pointer;
+
+      &:hover {
+        color: #FFF;
+      }
     }
   }
 
@@ -258,7 +265,7 @@ $pfontf: Pixel Countdown;
     .start {
       position: absolute;
       background-color: #fff;
-      animation: blink 1s infinite;
+      animation: blink 0.5s infinite;
     }
 
     .start:nth-child(1) {
@@ -756,7 +763,7 @@ $pfontf: Pixel Countdown;
     110px 2300px,
     100% 1850px,
     calc(100% - 150px) 1800px;
-    background-color: #0E0E0E;
+  background-color: #0E0E0E;
 
   .def {
     margin: 43px auto 0;
@@ -867,8 +874,16 @@ $pfontf: Pixel Countdown;
     margin: 74px auto 0;
   }
 
+  .content-w {
+    width: 931px;
+  }
+
   .title-rect-line {
-    margin-top: 60px;
+    margin: 60px auto 0;
+  }
+
+  .title-rect-line-red {
+    margin: 0 auto;
   }
 
   .time-line {
@@ -1097,7 +1112,7 @@ $pfontf: Pixel Countdown;
 
   .teams {
     margin: 67px auto 0;
-    width: 931px;
+    padding-left: 52px;
     color: #FFF;
     font-family: PingFang SC;
     font-size: 20px;
@@ -1157,39 +1172,42 @@ $pfontf: Pixel Countdown;
   }
 
   .join {
-    position: relative;
     margin: 62px auto 87px;
-    width: 800px;
-    height: 36px;
-    color: #FFF;
-    font-family: $ffontf;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.3px;
-    text-transform: uppercase;
-    cursor: pointer;
 
-    &:hover {
-      color: #01FF00;
-    }
+    .inner-box {
+      position: relative;
+      width: 800px;
+      height: 36px;
+      color: #FFF;
+      font-family: $ffontf;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.3px;
+      text-transform: uppercase;
+      cursor: pointer;
 
-    .link {
-      position: absolute;
-      top: 5px;
-      right: -32px;
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background-color: #0F0;
+      &:hover {
+        color: #01FF00;
+      }
 
-      >img {
-        margin: 6px 0 0 2px;
-        width: 18px;
-        height: auto;
-        vertical-align: top;
+      .link {
+        position: absolute;
+        top: 10px;
+        right: -8px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #0F0;
+
+        >img {
+          margin: 6px 0 0 2px;
+          width: 18px;
+          height: auto;
+          vertical-align: top;
+        }
       }
     }
   }
@@ -1211,10 +1229,9 @@ $pfontf: Pixel Countdown;
 
     .item {
       position: relative;
-      margin: 22px 32px;
-      padding: 8px 0 70px;
+      margin: 22px 20px;
       width: 190px;
-      height: 290px;
+      height: 285px;
       box-sizing: border-box;
       background-color: #01FF00;
       cursor: pointer;
@@ -1223,18 +1240,20 @@ $pfontf: Pixel Countdown;
         position: relative;
         text-align: center;
         width: 190px;
-        height: 220px;
+        height: 216px;
+
         >img {
-          margin: auto;
-          width: 178px;
-          object-fit: contain;
+          margin: 8px;
+          width: 174px;
+          max-height: 200px;
+          object-fit: cover;
         }
 
         &::before {
           content: "!";
           position: absolute;
-          right: 6px;
-          top: -4px;
+          right: 4px;
+          top: 4px;
           width: 22px;
           height: 22px;
           line-height: 22px;
@@ -1280,10 +1299,11 @@ $pfontf: Pixel Countdown;
         position: absolute;
         left: -2px;
         z-index: 3;
-        bottom: -10px;
-        width: 160px;
+        bottom: 0;
+        width: 154px;
         height: 70px;
         background: #101010;
+
 
         .name {
           margin: 4px 0 0 8px;
@@ -1292,6 +1312,9 @@ $pfontf: Pixel Countdown;
           font-size: 18px;
           font-weight: 500;
           line-height: 38px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .desc {
@@ -1301,6 +1324,9 @@ $pfontf: Pixel Countdown;
           font-size: 12px;
           font-weight: 400;
           line-height: 24px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
@@ -1453,12 +1479,15 @@ $pfontf: Pixel Countdown;
       margin: 16px auto;
       padding: 70px 0 60px;
       width: 840px;
+
       .arab {
         padding: 20px 0;
       }
+
       .logotxt {
         padding: 44px 0;
       }
+
       .goledo {
         .text {
           display: inline-block;
@@ -1479,20 +1508,25 @@ $pfontf: Pixel Countdown;
   }
 
   .title-rect-line-white {
-    margin-top: 92px;
+    margin: 92px auto 0;
+    width: 1100px;
   }
 
   .bottom-logos {
     display: flex;
     justify-content: space-between;
-    margin: 52px auto 140px;
+    margin: 140px auto;
     width: 1100px;
+
+    >a :hover {
+      transform: scale(1.15);
+    }
 
     .CAMBRIDGE {
       width: 186px;
     }
 
-    .M-POST {
+    .MPOST {
       padding: 24px 0;
     }
 
@@ -1620,6 +1654,10 @@ $pfontf: Pixel Countdown;
           width: 35px;
           height: 35px;
         }
+
+        &:hover {
+          background-color: #01FF00;
+        }
       }
     }
 
@@ -1666,8 +1704,6 @@ $pfontf: Pixel Countdown;
         width: 254px;
         height: 96px;
         cursor: pointer;
-        background: url(./faq/assets/ling-bg.svg);
-        background-size: 254px 96px;
 
         .text {
           position: absolute;
@@ -1683,11 +1719,92 @@ $pfontf: Pixel Countdown;
           line-height: normal;
           text-transform: uppercase;
         }
+
+
+        .bg {
+          position: absolute;
+          left: -16px;
+          top: -16px;
+          box-shadow: 48px 16px 0 0 rgba(0, 0, 0, 1), 64px 16px 0 0 rgba(0, 0, 0, 1), 80px 16px 0 0 rgba(0, 0, 0, 1), 96px 16px 0 0 rgba(0, 0, 0, 1), 112px 16px 0 0 rgba(0, 0, 0, 1), 128px 16px 0 0 rgba(0, 0, 0, 1), 144px 16px 0 0 rgba(0, 0, 0, 1), 160px 16px 0 0 rgba(0, 0, 0, 1), 176px 16px 0 0 rgba(0, 0, 0, 1), 192px 16px 0 0 rgba(0, 0, 0, 1), 208px 16px 0 0 rgba(0, 0, 0, 1), 224px 16px 0 0 rgba(0, 0, 0, 1), 32px 32px 0 0 rgba(0, 0, 0, 1), 48px 32px 0 0 rgba(255, 255, 255, 1), 64px 32px 0 0 rgba(255, 255, 255, 1), 80px 32px 0 0 rgba(255, 255, 255, 1), 96px 32px 0 0 rgba(255, 255, 255, 1), 112px 32px 0 0 rgba(255, 255, 255, 1), 128px 32px 0 0 rgba(255, 255, 255, 1), 144px 32px 0 0 rgba(255, 255, 255, 1), 160px 32px 0 0 rgba(255, 255, 255, 1), 176px 32px 0 0 rgba(255, 255, 255, 1), 192px 32px 0 0 rgba(255, 255, 255, 1), 208px 32px 0 0 rgba(255, 255, 255, 1), 224px 32px 0 0 rgba(255, 255, 255, 1), 240px 32px 0 0 rgba(0, 0, 0, 1), 16px 48px 0 0 rgba(0, 0, 0, 1), 32px 48px 0 0 rgba(255, 255, 255, 1), 48px 48px 0 0 rgba(255, 255, 255, 1), 64px 48px 0 0 rgba(255, 255, 255, 1), 80px 48px 0 0 rgba(255, 255, 255, 1), 96px 48px 0 0 rgba(255, 255, 255, 1), 112px 48px 0 0 rgba(255, 255, 255, 1), 128px 48px 0 0 rgba(255, 255, 255, 1), 144px 48px 0 0 rgba(255, 255, 255, 1), 160px 48px 0 0 rgba(255, 255, 255, 1), 176px 48px 0 0 rgba(255, 255, 255, 1), 192px 48px 0 0 rgba(255, 255, 255, 1), 208px 48px 0 0 rgba(255, 255, 255, 1), 224px 48px 0 0 rgba(255, 255, 255, 1), 240px 48px 0 0 rgba(255, 255, 255, 1), 256px 48px 0 0 rgba(0, 0, 0, 1), 16px 64px 0 0 rgba(0, 0, 0, 1), 32px 64px 0 0 rgba(255, 255, 255, 1), 48px 64px 0 0 rgba(255, 255, 255, 1), 64px 64px 0 0 rgba(255, 255, 255, 1), 80px 64px 0 0 rgba(255, 255, 255, 1), 96px 64px 0 0 rgba(255, 255, 255, 1), 112px 64px 0 0 rgba(255, 255, 255, 1), 128px 64px 0 0 rgba(255, 255, 255, 1), 144px 64px 0 0 rgba(255, 255, 255, 1), 160px 64px 0 0 rgba(255, 255, 255, 1), 176px 64px 0 0 rgba(255, 255, 255, 1), 192px 64px 0 0 rgba(255, 255, 255, 1), 208px 64px 0 0 rgba(255, 255, 255, 1), 224px 64px 0 0 rgba(255, 255, 255, 1), 240px 64px 0 0 rgba(255, 255, 255, 1), 256px 64px 0 0 rgba(0, 0, 0, 1), 32px 80px 0 0 rgba(0, 0, 0, 1), 48px 80px 0 0 rgba(255, 255, 255, 1), 64px 80px 0 0 rgba(255, 255, 255, 1), 80px 80px 0 0 rgba(255, 255, 255, 1), 96px 80px 0 0 rgba(255, 255, 255, 1), 112px 80px 0 0 rgba(255, 255, 255, 1), 128px 80px 0 0 rgba(255, 255, 255, 1), 144px 80px 0 0 rgba(255, 255, 255, 1), 160px 80px 0 0 rgba(255, 255, 255, 1), 176px 80px 0 0 rgba(255, 255, 255, 1), 192px 80px 0 0 rgba(255, 255, 255, 1), 208px 80px 0 0 rgba(255, 255, 255, 1), 224px 80px 0 0 rgba(255, 255, 255, 1), 240px 80px 0 0 rgba(0, 0, 0, 1), 48px 96px 0 0 rgba(0, 0, 0, 1), 64px 96px 0 0 rgba(0, 0, 0, 1), 80px 96px 0 0 rgba(0, 0, 0, 1), 96px 96px 0 0 rgba(0, 0, 0, 1), 112px 96px 0 0 rgba(0, 0, 0, 1), 128px 96px 0 0 rgba(0, 0, 0, 1), 144px 96px 0 0 rgba(0, 0, 0, 1), 160px 96px 0 0 rgba(0, 0, 0, 1), 176px 96px 0 0 rgba(0, 0, 0, 1), 192px 96px 0 0 rgba(0, 0, 0, 1), 208px 96px 0 0 rgba(0, 0, 0, 1), 224px 96px 0 0 rgba(0, 0, 0, 1);
+          height: 17px;
+          width: 17px;
+        }
+
+        &:hover {
+          .bg {
+            box-shadow: 48px 16px 0 0 rgba(1, 255, 0, 1), 64px 16px 0 0 rgba(1, 255, 0, 1), 80px 16px 0 0 rgba(1, 255, 0, 1), 96px 16px 0 0 rgba(1, 255, 0, 1), 112px 16px 0 0 rgba(1, 255, 0, 1), 128px 16px 0 0 rgba(1, 255, 0, 1), 144px 16px 0 0 rgba(1, 255, 0, 1), 160px 16px 0 0 rgba(1, 255, 0, 1), 176px 16px 0 0 rgba(1, 255, 0, 1), 192px 16px 0 0 rgba(1, 255, 0, 1), 208px 16px 0 0 rgba(1, 255, 0, 1), 224px 16px 0 0 rgba(1, 255, 0, 1), 32px 32px 0 0 rgba(1, 255, 0, 1), 48px 32px 0 0 rgba(1, 255, 0, 1), 64px 32px 0 0 rgba(1, 255, 0, 1), 80px 32px 0 0 rgba(1, 255, 0, 1), 96px 32px 0 0 rgba(1, 255, 0, 1), 112px 32px 0 0 rgba(1, 255, 0, 1), 128px 32px 0 0 rgba(1, 255, 0, 1), 144px 32px 0 0 rgba(1, 255, 0, 1), 160px 32px 0 0 rgba(1, 255, 0, 1), 176px 32px 0 0 rgba(1, 255, 0, 1), 192px 32px 0 0 rgba(1, 255, 0, 1), 208px 32px 0 0 rgba(1, 255, 0, 1), 224px 32px 0 0 rgba(1, 255, 0, 1), 240px 32px 0 0 rgba(1, 255, 0, 1), 16px 48px 0 0 rgba(1, 255, 0, 1), 32px 48px 0 0 rgba(1, 255, 0, 1), 48px 48px 0 0 rgba(1, 255, 0, 1), 64px 48px 0 0 rgba(1, 255, 0, 1), 80px 48px 0 0 rgba(1, 255, 0, 1), 96px 48px 0 0 rgba(1, 255, 0, 1), 112px 48px 0 0 rgba(1, 255, 0, 1), 128px 48px 0 0 rgba(1, 255, 0, 1), 144px 48px 0 0 rgba(1, 255, 0, 1), 160px 48px 0 0 rgba(1, 255, 0, 1), 176px 48px 0 0 rgba(1, 255, 0, 1), 192px 48px 0 0 rgba(1, 255, 0, 1), 208px 48px 0 0 rgba(1, 255, 0, 1), 224px 48px 0 0 rgba(1, 255, 0, 1), 240px 48px 0 0 rgba(1, 255, 0, 1), 256px 48px 0 0 rgba(1, 255, 0, 1), 16px 64px 0 0 rgba(1, 255, 0, 1), 32px 64px 0 0 rgba(1, 255, 0, 1), 48px 64px 0 0 rgba(1, 255, 0, 1), 64px 64px 0 0 rgba(1, 255, 0, 1), 80px 64px 0 0 rgba(1, 255, 0, 1), 96px 64px 0 0 rgba(1, 255, 0, 1), 112px 64px 0 0 rgba(1, 255, 0, 1), 128px 64px 0 0 rgba(1, 255, 0, 1), 144px 64px 0 0 rgba(1, 255, 0, 1), 160px 64px 0 0 rgba(1, 255, 0, 1), 176px 64px 0 0 rgba(1, 255, 0, 1), 192px 64px 0 0 rgba(1, 255, 0, 1), 208px 64px 0 0 rgba(1, 255, 0, 1), 224px 64px 0 0 rgba(1, 255, 0, 1), 240px 64px 0 0 rgba(1, 255, 0, 1), 256px 64px 0 0 rgba(1, 255, 0, 1), 32px 80px 0 0 rgba(1, 255, 0, 1), 48px 80px 0 0 rgba(1, 255, 0, 1), 64px 80px 0 0 rgba(1, 255, 0, 1), 80px 80px 0 0 rgba(1, 255, 0, 1), 96px 80px 0 0 rgba(1, 255, 0, 1), 112px 80px 0 0 rgba(1, 255, 0, 1), 128px 80px 0 0 rgba(1, 255, 0, 1), 144px 80px 0 0 rgba(1, 255, 0, 1), 160px 80px 0 0 rgba(1, 255, 0, 1), 176px 80px 0 0 rgba(1, 255, 0, 1), 192px 80px 0 0 rgba(1, 255, 0, 1), 208px 80px 0 0 rgba(1, 255, 0, 1), 224px 80px 0 0 rgba(1, 255, 0, 1), 240px 80px 0 0 rgba(1, 255, 0, 1), 48px 96px 0 0 rgba(1, 255, 0, 1), 64px 96px 0 0 rgba(1, 255, 0, 1), 80px 96px 0 0 rgba(1, 255, 0, 1), 96px 96px 0 0 rgba(1, 255, 0, 1), 112px 96px 0 0 rgba(1, 255, 0, 1), 128px 96px 0 0 rgba(1, 255, 0, 1), 144px 96px 0 0 rgba(1, 255, 0, 1), 160px 96px 0 0 rgba(1, 255, 0, 1), 176px 96px 0 0 rgba(1, 255, 0, 1), 192px 96px 0 0 rgba(1, 255, 0, 1), 208px 96px 0 0 rgba(1, 255, 0, 1), 224px 96px 0 0 rgba(1, 255, 0, 1);
+          }
+        }
+
+
       }
 
 
 
 
     }
+  }
+}
+
+@media screen and (min-width: 1601px) {
+
+  .head .content,
+  .banner .content {
+    width: 1300px;
+  }
+
+  .faq .footer {
+    width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+
+  .head .content,
+  .banner .content {
+    width: 1200px;
+  }
+
+  .faq .footer {
+    width: 1300px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main {
+    overflow: hidden;
+  }
+
+  .head .content,
+  .banner .content {
+    width: 1000px;
+  }
+
+  .faq .footer {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    zoom: 60%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .main {
+    zoom: 40%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .main {
+    zoom: 30%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .main {
+    zoom: 22%;
   }
 }
