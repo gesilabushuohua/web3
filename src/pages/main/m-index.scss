@@ -416,7 +416,7 @@
 		}
 
 		.right {
-			width: 3.2625rem;
+			width: 3.8625rem;
 
 			.sub-title {
 				// margin:0 auto;
@@ -1285,9 +1285,13 @@
 			padding-bottom: 0.125rem;
 
 			.inner-box {
-				background: url(./sponsors/assets/black-rect.svg) no-repeat, url(./sponsors/assets/black-rect.svg) no-repeat;
-				background-size: 0.175rem 0.175rem, 0.175rem 0.175rem;
-				background-position: 6.70625rem -0.00625rem, 6.525rem 0.175rem;
+				background: url(./sponsors/assets/black-rect.svg) no-repeat,
+				 url(./sponsors/assets/black-rect.svg) no-repeat;
+				background-size: 0.175rem 0.175rem, 
+				0.175rem 0.175rem;
+				background-position: 
+				7.70625rem -0.00625rem, 
+				7.525rem 0.175rem;
 				clip-path: polygon(0 0.2rem, 1.2875rem 0.2rem, 1.2875rem 0, 100% 0, 100% 100%, 0 100%);
 			}
 
