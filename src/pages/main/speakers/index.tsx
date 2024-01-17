@@ -19,7 +19,7 @@ const speakers = [
   { name: "Darren Langley",  desc: "Rocket Pool", src: img6, link: "https://twitter.com/langerstwit", },
   { name: "Aiham",  desc: "Silo Finance", src: img7, link: " https://twitter.com/aiham_eth", },
   { name: "Soloman Kong",  desc: "Single Finance", src: img8, link: "https://twitter.com/solomankong", },
-  { name: "Filius JFF ",  desc: "Otex", src: img9, link: "https://twitter.com/FiliusJff", },
+  { name: "Felix Farris ",  desc: "Otex", src: img9, link: "https://twitter.com/FiliusJff", },
   { name: "DeFi Yaco",  desc: "Lido Finance", src: img10, link: "https://twitter.com/defiyaco", },
 ];
 

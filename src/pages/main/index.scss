@@ -426,7 +426,7 @@ $pfontf: Pixel Countdown;
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
-        line-height: 47.808px;
+        line-height: 47px;
       }
 
       .price {
@@ -1148,8 +1148,11 @@ $pfontf: Pixel Countdown;
     position: relative;
     margin: 60px auto 0;
     width: 931px;
+    height: 72px;
 
     .text {
+      position: absolute;
+      z-index: 2;
       width: 550px;
       color: #FFF;
       font-family: $ffontf;
@@ -1163,9 +1166,14 @@ $pfontf: Pixel Countdown;
     .rear {
       position: absolute;
       top: 0;
-      left: 510px;
+      left: 500px;
       width: 312px;
       height: 70px;
+      background: url(./sponsors/assets/black-rect.svg) no-repeat, 
+      url(./sponsors/assets/black-rect.svg) no-repeat;
+      background-size: 35px 35px, 22px 22px;
+      background-position: 0 0 , 292px 27px;
+      background-color: #01FF00;
 
       .rear-text {
         position: absolute;
@@ -1183,14 +1191,6 @@ $pfontf: Pixel Countdown;
         text-transform: uppercase;
       }
 
-      .bg {
-        position: absolute;
-        left: -22px;
-        top: -22px;
-        box-shadow: 66px 22px 0 0 rgba(1, 255, 0, 1), 88px 22px 0 0 rgba(1, 255, 0, 1), 110px 22px 0 0 rgba(1, 255, 0, 1), 132px 22px 0 0 rgba(1, 255, 0, 1), 154px 22px 0 0 rgba(1, 255, 0, 1), 176px 22px 0 0 rgba(1, 255, 0, 1), 198px 22px 0 0 rgba(1, 255, 0, 1), 220px 22px 0 0 rgba(1, 255, 0, 1), 242px 22px 0 0 rgba(1, 255, 0, 1), 264px 22px 0 0 rgba(1, 255, 0, 1), 286px 22px 0 0 rgba(1, 255, 0, 1), 308px 22px 0 0 rgba(1, 255, 0, 1), 66px 44px 0 0 rgba(1, 255, 0, 1), 88px 44px 0 0 rgba(1, 255, 0, 1), 110px 44px 0 0 rgba(1, 255, 0, 1), 132px 44px 0 0 rgba(1, 255, 0, 1), 154px 44px 0 0 rgba(1, 255, 0, 1), 176px 44px 0 0 rgba(1, 255, 0, 1), 198px 44px 0 0 rgba(1, 255, 0, 1), 220px 44px 0 0 rgba(1, 255, 0, 1), 242px 44px 0 0 rgba(1, 255, 0, 1), 264px 44px 0 0 rgba(1, 255, 0, 1), 286px 44px 0 0 rgba(1, 255, 0, 1), 22px 66px 0 0 rgba(1, 255, 0, 1), 44px 66px 0 0 rgba(1, 255, 0, 1), 66px 66px 0 0 rgba(1, 255, 0, 1), 88px 66px 0 0 rgba(1, 255, 0, 1), 110px 66px 0 0 rgba(1, 255, 0, 1), 132px 66px 0 0 rgba(1, 255, 0, 1), 154px 66px 0 0 rgba(1, 255, 0, 1), 176px 66px 0 0 rgba(1, 255, 0, 1), 198px 66px 0 0 rgba(1, 255, 0, 1), 220px 66px 0 0 rgba(1, 255, 0, 1), 242px 66px 0 0 rgba(1, 255, 0, 1), 264px 66px 0 0 rgba(1, 255, 0, 1), 286px 66px 0 0 rgba(1, 255, 0, 1), 308px 66px 0 0 rgba(1, 255, 0, 1);
-        height: 23px;
-        width: 23px;
-      }
     }
   }
 
