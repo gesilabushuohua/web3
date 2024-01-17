@@ -4,7 +4,6 @@ import logoSvg from "../../assets/home/logo2.svg";
 import xSvg from "../../assets/index/x.svg";
 import telegramSvg from "../../assets/index/telegram.svg";
 import uLogoAnim from "../../assets/lottie/U_logo_anim.json";
-import "./index.scss";
 import Lottie from "lottie-web";
 import OurMission from "./our-mission";
 import University from "./university";
@@ -12,6 +11,8 @@ import Hackathon from "./hackathon";
 import Speakers from "./speakers";
 import Sponsors from "./sponsors";
 import FAQ from "./faq";
+import "./index.scss";
+import "./m-index.scss";
 
 let logoLttile = null;
 const Index = () => {

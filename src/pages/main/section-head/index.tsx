@@ -1,4 +1,5 @@
 import "./index.scss";
+import "./m-index.scss";
 
 interface Props {
   title: string;

@@ -394,6 +394,7 @@ $pfontf: Pixel Countdown;
       width: 390px;
       text-align: justify;
       text-align-last: justify;
+      white-space: nowrap;
 
       &::before,
       &::after {
@@ -525,7 +526,6 @@ $pfontf: Pixel Countdown;
 
   .content {
     margin: 77px auto 0;
-    // TODO rem
     width: 822px;
 
     .overview {
@@ -627,6 +627,13 @@ $pfontf: Pixel Countdown;
     margin: 0 auto;
     width: 500px;
 
+    img {
+      margin: 8px;
+      width: auto;
+      max-width: 306px;
+      max-height: 96px;
+    }
+
   }
 
   .logo-list {
@@ -635,6 +642,13 @@ $pfontf: Pixel Countdown;
     justify-content: space-between;
     margin: 0 auto;
     width: 1122px;
+
+    img {
+      margin: 8px;
+      width: auto;
+      max-width: 306px;
+      max-height: 96px;
+    }
   }
 
   .w-g-link {
@@ -687,6 +701,11 @@ $pfontf: Pixel Countdown;
 
     .item {
       text-align: center;
+
+      img {
+        max-width: 190px;
+        max-height: 96px;
+      }
 
       .cbstrans {
         margin: 12px auto 0;
@@ -803,8 +822,7 @@ $pfontf: Pixel Countdown;
     font-weight: 700;
     line-height: 48px;
     text-transform: uppercase;
-    text-align: justify;
-    text-align-last: justify;
+    white-space: nowrap;
 
     &::before,
     &::after {
@@ -1430,6 +1448,11 @@ $pfontf: Pixel Countdown;
       padding: 20px 0;
       width: 520px;
 
+      img {
+        max-width: 293px;
+        max-height: 105px;
+      }
+
       .conflux {
         padding: 28px 0;
       }
@@ -1480,6 +1503,11 @@ $pfontf: Pixel Countdown;
       padding: 70px 0 60px;
       width: 840px;
 
+      img {
+        max-width: 293px;
+        max-height: 112px;
+      }
+
       .arab {
         padding: 20px 0;
       }
@@ -1517,6 +1545,11 @@ $pfontf: Pixel Countdown;
     justify-content: space-between;
     margin: 140px auto;
     width: 1100px;
+
+    img {
+      max-width: 267px;
+      max-height: 124px;
+    }
 
     >a :hover {
       transform: scale(1.15);
@@ -1664,19 +1697,27 @@ $pfontf: Pixel Countdown;
     .u-hack {
       >img {
         vertical-align: top;
+        width: 142px;
+        height: 142px;
       }
 
       .h {
         margin: 26px 0 0 8px;
+        width: 60px;
+        height: 80px;
       }
 
       .a,
       .c {
         margin-top: 46px;
+        width: 60px;
+        height: 64px;
       }
 
       .k {
         margin-top: 26px;
+        width: 60px;
+        height: 80px;
       }
     }
 
@@ -1739,9 +1780,6 @@ $pfontf: Pixel Countdown;
 
       }
 
-
-
-
     }
   }
 }
@@ -1785,26 +1823,3 @@ $pfontf: Pixel Countdown;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .main {
-    zoom: 60%;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .main {
-    zoom: 40%;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .main {
-    zoom: 30%;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .main {
-    zoom: 22%;
-  }
-}

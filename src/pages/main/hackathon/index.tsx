@@ -17,7 +17,7 @@ const Hackathon = () => {
         </div>
       </div>
       <div className="categories-title">
-        Categories that you can submit your project in:
+        <span>Categories that you can submit your project in:</span>
       </div>
       <div className="categories-list">
         <div className="item decorator">Real-World Assets (RWA)</div>

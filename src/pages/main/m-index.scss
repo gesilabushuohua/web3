@@ -1,0 +1,1704 @@
+@media screen and (max-width: 900px) {
+  $mw: 12.75rem;
+  $contetw: 12.75rem;
+  $green: #0f0;
+  $ffontf: Frames Part One;
+  $pfontf: Pixel Countdown;
+
+  // common
+  .w-g-link {
+    position: relative;
+    width: 5.6rem;
+    height: 1.2rem;
+    cursor: pointer;
+
+    .text {
+      position: absolute;
+      top: 0.3125rem;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+      color: #000;
+      font-family: $ffontf;
+      font-size: 0.45rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .bg {
+      position: absolute;
+      left: -0.2rem;
+      top: -0.2rem;
+      box-shadow: 0.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 0.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 3rem 0.2rem 0 0 rgba(0, 0, 0, 1), 3.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 3.4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 3.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 3.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 4.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 4.4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 4.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 4.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 5rem 0.2rem 0 0 rgba(0, 0, 0, 1), 5.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 0.4rem 0.4rem 0 0 rgba(0, 0, 0, 1), 0.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 0.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 3rem 0.4rem 0 0 rgba(255, 255, 255, 1), 3.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 3.4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 3.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 3.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 4.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 4.4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 4.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 4.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 5rem 0.4rem 0 0 rgba(255, 255, 255, 1), 5.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 5.4rem 0.4rem 0 0 rgba(0, 0, 0, 1), 0.2rem 0.6rem 0 0 rgba(0, 0, 0, 1), 0.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 0.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 0.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 4.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 4.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 4.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 4.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 5rem 0.6rem 0 0 rgba(255, 255, 255, 1), 5.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 5.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 5.6rem 0.6rem 0 0 rgba(0, 0, 0, 1), 0.2rem 0.8rem 0 0 rgba(0, 0, 0, 1), 0.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 0.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 0.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 4.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 4.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 4.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 4.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 5rem 0.8rem 0 0 rgba(255, 255, 255, 1), 5.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 5.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 5.6rem 0.8rem 0 0 rgba(0, 0, 0, 1), 0.4rem 1rem 0 0 rgba(0, 0, 0, 1), 0.6rem 1rem 0 0 rgba(255, 255, 255, 1), 0.8rem 1rem 0 0 rgba(255, 255, 255, 1), 1rem 1rem 0 0 rgba(255, 255, 255, 1), 1.2rem 1rem 0 0 rgba(255, 255, 255, 1), 1.4rem 1rem 0 0 rgba(255, 255, 255, 1), 1.6rem 1rem 0 0 rgba(255, 255, 255, 1), 1.8rem 1rem 0 0 rgba(255, 255, 255, 1), 2rem 1rem 0 0 rgba(255, 255, 255, 1), 2.2rem 1rem 0 0 rgba(255, 255, 255, 1), 2.4rem 1rem 0 0 rgba(255, 255, 255, 1), 2.6rem 1rem 0 0 rgba(255, 255, 255, 1), 2.8rem 1rem 0 0 rgba(255, 255, 255, 1), 3rem 1rem 0 0 rgba(255, 255, 255, 1), 3.2rem 1rem 0 0 rgba(255, 255, 255, 1), 3.4rem 1rem 0 0 rgba(255, 255, 255, 1), 3.6rem 1rem 0 0 rgba(255, 255, 255, 1), 3.8rem 1rem 0 0 rgba(255, 255, 255, 1), 4rem 1rem 0 0 rgba(255, 255, 255, 1), 4.2rem 1rem 0 0 rgba(255, 255, 255, 1), 4.4rem 1rem 0 0 rgba(255, 255, 255, 1), 4.6rem 1rem 0 0 rgba(255, 255, 255, 1), 4.8rem 1rem 0 0 rgba(255, 255, 255, 1), 5rem 1rem 0 0 rgba(255, 255, 255, 1), 5.2rem 1rem 0 0 rgba(255, 255, 255, 1), 5.4rem 1rem 0 0 rgba(0, 0, 0, 1), 0.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 0.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 3rem 1.2rem 0 0 rgba(0, 0, 0, 1), 3.2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 3.4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 3.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 3.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 4.2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 4.4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 4.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 4.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 5rem 1.2rem 0 0 rgba(0, 0, 0, 1), 5.2rem 1.2rem 0 0 rgba(0, 0, 0, 1);
+      height: 0.2125rem;
+      width: 0.2125rem;
+    }
+
+    &:hover {
+      .bg {
+        box-shadow: 0.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 3rem 0.2rem 0 0 rgba(1, 255, 0, 1), 3.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 3.4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 3.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 3.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 4.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 4.4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 4.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 4.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 5rem 0.2rem 0 0 rgba(1, 255, 0, 1), 5.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 0.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 0.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 3rem 0.4rem 0 0 rgba(1, 255, 0, 1), 3.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 3.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 3.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 3.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 4.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 4.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 4.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 4.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 5rem 0.4rem 0 0 rgba(1, 255, 0, 1), 5.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 5.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 0.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 4.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 4.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 4.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 4.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 5rem 0.6rem 0 0 rgba(1, 255, 0, 1), 5.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 5.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 5.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 4.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 4.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 4.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 4.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 5rem 0.8rem 0 0 rgba(1, 255, 0, 1), 5.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 5.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 5.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.4rem 1rem 0 0 rgba(1, 255, 0, 1), 0.6rem 1rem 0 0 rgba(1, 255, 0, 1), 0.8rem 1rem 0 0 rgba(1, 255, 0, 1), 1rem 1rem 0 0 rgba(1, 255, 0, 1), 1.2rem 1rem 0 0 rgba(1, 255, 0, 1), 1.4rem 1rem 0 0 rgba(1, 255, 0, 1), 1.6rem 1rem 0 0 rgba(1, 255, 0, 1), 1.8rem 1rem 0 0 rgba(1, 255, 0, 1), 2rem 1rem 0 0 rgba(1, 255, 0, 1), 2.2rem 1rem 0 0 rgba(1, 255, 0, 1), 2.4rem 1rem 0 0 rgba(1, 255, 0, 1), 2.6rem 1rem 0 0 rgba(1, 255, 0, 1), 2.8rem 1rem 0 0 rgba(1, 255, 0, 1), 3rem 1rem 0 0 rgba(1, 255, 0, 1), 3.2rem 1rem 0 0 rgba(1, 255, 0, 1), 3.4rem 1rem 0 0 rgba(1, 255, 0, 1), 3.6rem 1rem 0 0 rgba(1, 255, 0, 1), 3.8rem 1rem 0 0 rgba(1, 255, 0, 1), 4rem 1rem 0 0 rgba(1, 255, 0, 1), 4.2rem 1rem 0 0 rgba(1, 255, 0, 1), 4.4rem 1rem 0 0 rgba(1, 255, 0, 1), 4.6rem 1rem 0 0 rgba(1, 255, 0, 1), 4.8rem 1rem 0 0 rgba(1, 255, 0, 1), 5rem 1rem 0 0 rgba(1, 255, 0, 1), 5.2rem 1rem 0 0 rgba(1, 255, 0, 1), 5.4rem 1rem 0 0 rgba(1, 255, 0, 1), 0.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 0.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 3rem 1.2rem 0 0 rgba(1, 255, 0, 1), 3.2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 3.4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 3.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 3.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 4.2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 4.4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 4.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 4.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 5rem 1.2rem 0 0 rgba(1, 255, 0, 1), 5.2rem 1.2rem 0 0 rgba(1, 255, 0, 1);
+      }
+    }
+  }
+
+  .title-rect-line {
+    height: 0.6rem;
+
+    .text {
+      position: relative;
+      line-height: 0.6rem;
+      color: #01FF00;
+      font-family: $ffontf;
+      font-size: 0.475rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0.175rem;
+        left: 109%;
+        width: 0.225rem;
+        height: 0.225rem;
+        background-color: #FF006E;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.2875rem;
+        left: 110%;
+        width: 25rem;
+        height: 0.0125rem;
+        background-color: #FFF;
+      }
+    }
+  }
+
+  .title-rect-line-red {
+    height: 0.6rem;
+
+    .text {
+      position: relative;
+      line-height: 0.6rem;
+      color: #FF006E;
+      font-family: $ffontf;
+      font-size: 0.475rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0.175rem;
+        left: 109%;
+        width: 0.225rem;
+        height: 0.225rem;
+        background-color: #01FF00;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.2875rem;
+        left: 110%;
+        width: 25rem;
+        height: 0.0125rem;
+        background-color: #FFF;
+      }
+    }
+  }
+
+  .title-rect-line-white {
+    height: 0.6rem;
+
+    .text {
+      position: relative;
+      line-height: 0.6rem;
+      color: #FFF;
+      font-family: $ffontf;
+      font-size: 0.475rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0.175rem;
+        left: 109%;
+        width: 0.225rem;
+        height: 0.225rem;
+        background: #FF006E;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.2875rem;
+        left: 110%;
+        width: 25rem;
+        height: 0.0125rem;
+        background-color: #FFF;
+      }
+    }
+  }
+
+  .main {
+    margin: 0;
+    overflow-x: auto;
+    background-color: #0E0E0E;
+    min-width: 11.25rem;
+
+    a {
+      vertical-align: top;
+    }
+
+    img {
+      vertical-align: top;
+    }
+  }
+
+  .head {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0.2125rem 0;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: var(--bg-color);
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: $contetw;
+    }
+
+    .head-logo {
+      height: 0.575rem;
+    }
+
+    .navs {
+      list-style: none;
+      color: #0F0;
+      font-family: $pfontf;
+      font-size: 0.2rem;
+      font-weight: 400;
+      line-height: 0.65rem;
+
+      .nav {
+        display: inline-block;
+        margin: 0 0.375rem;
+        cursor: pointer;
+
+        &:hover {
+          color: #FFF;
+        }
+      }
+    }
+
+    .head-links {
+      padding: 0.15rem 0.375rem;
+
+      .link {
+        display: inline-block;
+        margin: 0 0.075rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        text-align: center;
+        line-height: 0.275rem;
+        border-radius: 50%;
+        background-color: #0F0;
+
+        >img {
+          margin-top: 0.05rem;
+          width: 0.2rem;
+          height: 0.2rem;
+        }
+      }
+    }
+  }
+
+  // banner
+  .banner {
+    background-color: #000;
+
+    .content {
+      position: relative;
+      display: flex;
+      width: $contetw;
+      height: 7.6875rem;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding-top: 2rem;
+    }
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      .start {
+        position: absolute;
+        background-color: #fff;
+        animation: blink 0.5s infinite;
+      }
+
+      .start:nth-child(1) {
+        left: -1.2rem;
+        top: 0.5rem;
+        width: 0.0625rem;
+        height: 0.0625rem;
+      }
+
+      .start:nth-child(2) {
+        left: -1.85rem;
+        top: 6.5rem;
+        width: 0.0625rem;
+        height: 0.0625rem;
+      }
+
+      .start:nth-child(3) {
+        left: 3.0875rem;
+        top: 5.0875rem;
+        width: 0.0375rem;
+        height: 0.0375rem;
+      }
+
+      .start:nth-child(4) {
+        right: 5.8375rem;
+        top: 5.1rem;
+        width: 0.0625rem;
+        height: 0.0625rem;
+      }
+
+      .start:nth-child(5) {
+        right: 3.9625rem;
+        top: -0.05rem;
+        width: 0.0625rem;
+        height: 0.0625rem;
+      }
+
+      .start:nth-child(6) {
+        right: 1.1625rem;
+        top: 6.8875rem;
+        width: 0.0375rem;
+        height: 0.0375rem;
+      }
+
+      .start:nth-child(7) {
+        right: -1.525rem;
+        top: 1.7rem;
+        width: 0.0625rem;
+        height: 0.0625rem;
+      }
+    }
+
+    .left {
+      .title {
+        width: 6.875rem;
+        height: 3.3625rem;
+        color: #FFF;
+        font-family: $ffontf;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.675rem;
+        text-transform: uppercase;
+      }
+
+      .link {
+        position: relative;
+        margin-top: 0.25rem;
+        width: 5rem;
+        height: 1rem;
+        cursor: pointer;
+
+        &::after {
+          content: " ";
+          position: absolute;
+          right: 0;
+          width: 0.775rem;
+          height: 0.775rem;
+          background: url(../../assets/index/g-y-right.svg) no-repeat;
+          background-size: 0.775rem;
+        }
+
+        .text {
+          position: absolute;
+          top: 0.0625rem;
+          left: 0.8125rem;
+          z-index: 2;
+          color: #000;
+          font-family: $ffontf;
+          font-size: 0.525rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        .bg {
+          position: absolute;
+          left: -0.25rem;
+          top: -0.25rem;
+          box-shadow: 0.75rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.25rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.5rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.75rem 0.25rem 0 0 rgba(1, 255, 0, 1), 2rem 0.25rem 0 0 rgba(1, 255, 0, 1), 2.25rem 0.25rem 0 0 rgba(1, 255, 0, 1), 2.5rem 0.25rem 0 0 rgba(1, 255, 0, 1), 2.75rem 0.25rem 0 0 rgba(1, 255, 0, 1), 3rem 0.25rem 0 0 rgba(1, 255, 0, 1), 3.25rem 0.25rem 0 0 rgba(1, 255, 0, 1), 3.5rem 0.25rem 0 0 rgba(1, 255, 0, 1), 3.75rem 0.25rem 0 0 rgba(1, 255, 0, 1), 4rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.5rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.5rem 0 0 rgba(255, 0, 110, 1), 1rem 0.5rem 0 0 rgba(1, 255, 0, 1), 1.25rem 0.5rem 0 0 rgba(1, 255, 0, 1), 1.5rem 0.5rem 0 0 rgba(1, 255, 0, 1), 1.75rem 0.5rem 0 0 rgba(1, 255, 0, 1), 2rem 0.5rem 0 0 rgba(1, 255, 0, 1), 2.25rem 0.5rem 0 0 rgba(1, 255, 0, 1), 2.5rem 0.5rem 0 0 rgba(1, 255, 0, 1), 2.75rem 0.5rem 0 0 rgba(1, 255, 0, 1), 3rem 0.5rem 0 0 rgba(1, 255, 0, 1), 3.25rem 0.5rem 0 0 rgba(1, 255, 0, 1), 3.5rem 0.5rem 0 0 rgba(1, 255, 0, 1), 3.75rem 0.5rem 0 0 rgba(1, 255, 0, 1), 4rem 0.5rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.75rem 0 0 rgba(255, 0, 110, 1), 0.75rem 0.75rem 0 0 rgba(1, 255, 0, 1), 1rem 0.75rem 0 0 rgba(1, 255, 0, 1), 1.25rem 0.75rem 0 0 rgba(1, 255, 0, 1), 1.5rem 0.75rem 0 0 rgba(1, 255, 0, 1), 1.75rem 0.75rem 0 0 rgba(1, 255, 0, 1), 2rem 0.75rem 0 0 rgba(1, 255, 0, 1), 2.25rem 0.75rem 0 0 rgba(1, 255, 0, 1), 2.5rem 0.75rem 0 0 rgba(1, 255, 0, 1), 2.75rem 0.75rem 0 0 rgba(1, 255, 0, 1), 3rem 0.75rem 0 0 rgba(1, 255, 0, 1), 3.25rem 0.75rem 0 0 rgba(1, 255, 0, 1), 3.5rem 0.75rem 0 0 rgba(1, 255, 0, 1), 3.75rem 0.75rem 0 0 rgba(1, 255, 0, 1), 4rem 0.75rem 0 0 rgba(1, 255, 0, 1), 0.5rem 1rem 0 0 rgba(255, 0, 110, 1), 0.75rem 1rem 0 0 rgba(255, 0, 110, 1), 1rem 1rem 0 0 rgba(255, 0, 110, 1), 1.25rem 1rem 0 0 rgba(255, 0, 110, 1), 1.5rem 1rem 0 0 rgba(255, 0, 110, 1), 1.75rem 1rem 0 0 rgba(255, 0, 110, 1), 2rem 1rem 0 0 rgba(255, 0, 110, 1), 2.25rem 1rem 0 0 rgba(255, 0, 110, 1), 2.5rem 1rem 0 0 rgba(255, 0, 110, 1), 2.75rem 1rem 0 0 rgba(255, 0, 110, 1), 3rem 1rem 0 0 rgba(255, 0, 110, 1), 3.25rem 1rem 0 0 rgba(255, 0, 110, 1), 3.5rem 1rem 0 0 rgba(255, 0, 110, 1), 3.75rem 1rem 0 0 rgba(255, 0, 110, 1);
+          height: 0.2625rem;
+          width: 0.2625rem;
+        }
+
+        &:hover {
+          .text {
+            color: #fff;
+          }
+
+          .bg {
+            box-shadow: 0.75rem 0.25rem 0 0 rgba(255, 0, 110, 1), 1rem 0.25rem 0 0 rgba(255, 0, 110, 1), 1.25rem 0.25rem 0 0 rgba(255, 0, 110, 1), 1.5rem 0.25rem 0 0 rgba(255, 0, 110, 1), 1.75rem 0.25rem 0 0 rgba(255, 0, 110, 1), 2rem 0.25rem 0 0 rgba(255, 0, 110, 1), 2.25rem 0.25rem 0 0 rgba(255, 0, 110, 1), 2.5rem 0.25rem 0 0 rgba(255, 0, 110, 1), 2.75rem 0.25rem 0 0 rgba(255, 0, 110, 1), 3rem 0.25rem 0 0 rgba(255, 0, 110, 1), 3.25rem 0.25rem 0 0 rgba(255, 0, 110, 1), 3.5rem 0.25rem 0 0 rgba(255, 0, 110, 1), 3.75rem 0.25rem 0 0 rgba(255, 0, 110, 1), 4rem 0.25rem 0 0 rgba(255, 0, 110, 1), 0.5rem 0.5rem 0 0 rgba(255, 0, 110, 1), 0.75rem 0.5rem 0 0 rgba(1, 255, 0, 1), 1rem 0.5rem 0 0 rgba(255, 0, 110, 1), 1.25rem 0.5rem 0 0 rgba(255, 0, 110, 1), 1.5rem 0.5rem 0 0 rgba(255, 0, 110, 1), 1.75rem 0.5rem 0 0 rgba(255, 0, 110, 1), 2rem 0.5rem 0 0 rgba(255, 0, 110, 1), 2.25rem 0.5rem 0 0 rgba(255, 0, 110, 1), 2.5rem 0.5rem 0 0 rgba(255, 0, 110, 1), 2.75rem 0.5rem 0 0 rgba(255, 0, 110, 1), 3rem 0.5rem 0 0 rgba(255, 0, 110, 1), 3.25rem 0.5rem 0 0 rgba(255, 0, 110, 1), 3.5rem 0.5rem 0 0 rgba(255, 0, 110, 1), 3.75rem 0.5rem 0 0 rgba(255, 0, 110, 1), 4rem 0.5rem 0 0 rgba(255, 0, 110, 1), 0.25rem 0.75rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.75rem 0 0 rgba(255, 0, 110, 1), 1rem 0.75rem 0 0 rgba(255, 0, 110, 1), 1.25rem 0.75rem 0 0 rgba(255, 0, 110, 1), 1.5rem 0.75rem 0 0 rgba(255, 0, 110, 1), 1.75rem 0.75rem 0 0 rgba(255, 0, 110, 1), 2rem 0.75rem 0 0 rgba(255, 0, 110, 1), 2.25rem 0.75rem 0 0 rgba(255, 0, 110, 1), 2.5rem 0.75rem 0 0 rgba(255, 0, 110, 1), 2.75rem 0.75rem 0 0 rgba(255, 0, 110, 1), 3rem 0.75rem 0 0 rgba(255, 0, 110, 1), 3.25rem 0.75rem 0 0 rgba(255, 0, 110, 1), 3.5rem 0.75rem 0 0 rgba(255, 0, 110, 1), 3.75rem 0.75rem 0 0 rgba(255, 0, 110, 1), 4rem 0.75rem 0 0 rgba(255, 0, 110, 1), 0.5rem 1rem 0 0 rgba(1, 255, 0, 1), 0.75rem 1rem 0 0 rgba(1, 255, 0, 1), 1rem 1rem 0 0 rgba(1, 255, 0, 1), 1.25rem 1rem 0 0 rgba(1, 255, 0, 1), 1.5rem 1rem 0 0 rgba(1, 255, 0, 1), 1.75rem 1rem 0 0 rgba(1, 255, 0, 1), 2rem 1rem 0 0 rgba(1, 255, 0, 1), 2.25rem 1rem 0 0 rgba(1, 255, 0, 1), 2.5rem 1rem 0 0 rgba(1, 255, 0, 1), 2.75rem 1rem 0 0 rgba(1, 255, 0, 1), 3rem 1rem 0 0 rgba(1, 255, 0, 1), 3.25rem 1rem 0 0 rgba(1, 255, 0, 1), 3.5rem 1rem 0 0 rgba(1, 255, 0, 1), 3.75rem 1rem 0 0 rgba(1, 255, 0, 1);
+          }
+
+          &::after {
+            background: url(../../assets/index/r-y-right.svg) no-repeat;
+          }
+        }
+      }
+
+      .date {
+        margin-top: 0.625rem;
+        position: relative;
+        width: 4.875rem;
+        text-align: justify;
+        text-align-last: justify;
+        white-space: nowrap;
+
+        &::before,
+        &::after {
+          content: " ";
+          position: absolute;
+          top: 0.3rem;
+          width: 0.6375rem;
+          height: 0.6375rem;
+          background: url(../../assets/index/1-45.svg) no-repeat;
+          background-size: 0.6375rem;
+        }
+
+        &::before {
+          left: -0.8875rem;
+        }
+
+        &::after {
+          right: -0.8875rem;
+        }
+
+        .time {
+          color: #FFF;
+          font-family: $ffontf;
+          font-size: 0.4rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 47.10.1rem;
+        }
+
+        .price {
+          color: #01FF00;
+          font-family: $ffontf;
+          font-size: 0.5rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.025rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .right {
+      width: 5.725rem;
+
+      .sub-title {
+        // margin:0 auto;
+        // width:5.175rem;
+        color: $green;
+        font-family: $ffontf;
+        font-size: 0.375rem;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        // text-align:justify;
+        // text-align-last:justify;
+      }
+
+      .b-logo {
+        position: relative;
+        margin-top: 0.3rem;
+        width: 5.725rem;
+        height: 5.475rem;
+
+        .symbol {
+          position: absolute;
+          top: -0.05rem;
+          right: -0.875rem;
+          width: 1rem;
+          height: 1rem;
+          text-align: center;
+          color: #000;
+          font-family: $pfontf;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          background: url(../../assets/index/logo-w-rect.svg);
+          background-size: 1rem;
+        }
+
+        &::before {
+          content: "?";
+          position: absolute;
+          bottom: 0.25rem;
+          left: -0.1875rem;
+          color: $green;
+          font-family: $pfontf;
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+
+        &::after {
+          content: "$";
+          position: absolute;
+          bottom: -1rem;
+          right: 0.4rem;
+          color: #FFF;
+          font-family: $pfontf;
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  // our-mission
+  .our-mission {
+    position: relative;
+    height: 11.025rem;
+    overflow: hidden;
+    background: url(../../assets/index/red-rect.svg) no-repeat, url(../../assets/index/cricle.svg) no-repeat;
+    background-size: 0.275rem 0.275rem, 2.875rem 2.875rem;
+    background-position: calc(102% - 1rem) calc(102% - 2.75rem), 102% 102%;
+    background-color: #0E0E0E;
+
+    .line {
+      position: absolute;
+      left: 0;
+      top: -2.4875rem;
+      width: 4.2125rem;
+      height: 15.5375rem;
+      background: url(/src/assets/index/line-bg.svg) no-repeat;
+      background-size: 4.2125rem 15.5375rem;
+      transform: rotate(14deg);
+    }
+
+    .content {
+      margin: 0.9625rem auto 0;
+      // TODO rem
+      width: 10.275rem;
+
+      .overview {
+        color: #01FF00;
+        font-family: Frames Part One;
+        font-size: 0.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      .list {
+        margin-top: 0.975rem;
+
+        .item {
+          display: flex;
+          margin-bottom: 0.3rem;
+          justify-content: space-between;
+          padding-left: 1.4125rem;
+
+          .title {
+            position: relative;
+            color: #01FF00;
+            font-family: Frames Part One;
+            font-size: 0.6rem;
+            font-weight: 700;
+            line-height: 0.85rem;
+
+            &::before {
+              content: "";
+              position: absolute;
+            }
+          }
+
+          .unite::before {
+            top: 0;
+            left: -1.4125rem;
+            width: 0.875rem;
+            height: 0.875rem;
+            background: url(../../assets/index/g-y-down.svg) no-repeat;
+            background-size: 0.875rem;
+          }
+
+          .unlock::before {
+            top: 0;
+            left: -1.425rem;
+            width: 0.85rem;
+            height: 0.85rem;
+            background: url(../../assets/index/1-45.svg) no-repeat;
+            background-size: 0.85rem;
+          }
+
+          .unleash::before {
+            top: 0;
+            left: -1.4125rem;
+            width: 0.875rem;
+            height: 0.875rem;
+            background: url(../../assets/index/g-y-left.svg) no-repeat;
+            background-size: 0.875rem;
+          }
+
+          .desc {
+            width: 5.625rem;
+            color: #FFF;
+            font-family: PingFang SC;
+            font-size: 0.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  // university
+  .university {
+    overflow: hidden;
+    background: url(/src/assets/index/green-rect.svg) no-repeat, url(/src/assets/index/d-rect.svg) no-repeat;
+    background-size: 0.25rem 0.25rem, 2.75rem 2.75rem;
+    background-position: 1.125rem 9.875rem, -0.75rem 8.75rem;
+    background-color: #0E0E0E;
+
+    // TODO rem
+    .content {
+      margin: 1.05rem auto 0;
+      width: 14.025rem;
+    }
+
+    .top-3 {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 6.25rem;
+
+      img {
+        margin: 0.1rem;
+        width: auto;
+        max-width: 3.825rem;
+        max-height: 1.2rem;
+      }
+    }
+
+    .logo-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 14.025rem;
+
+      img {
+        margin: 0.1rem;
+        width: auto;
+        max-width: 3.825rem;
+        max-height: 1.2rem;
+      }
+    }
+
+    .w-g-link {
+      margin: 1.05rem auto 0;
+    }
+
+    .hosts {
+      margin-top: 0.6375rem;
+      padding-left: 3.875rem;
+      height: 0.6rem;
+
+      .hosts-text {
+        position: relative;
+        line-height: 0.6rem;
+        color: #FFF;
+        font-family: $ffontf;
+        font-size: 0.5625rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: 0.2125rem;
+          left: 130%;
+          width: 0.225rem;
+          height: 0.225rem;
+          background-color: #01FF00;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0.2125rem;
+          left: 120%;
+          width: 100vw;
+          height: 0.225rem;
+          background-color: #3F3F3F;
+        }
+      }
+    }
+
+    .hosts-logo {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.6rem 0 0.8rem;
+
+      .item {
+        text-align: center;
+
+        img {
+          max-width: 2.375rem;
+          max-height: 1.2rem;
+        }
+
+        .cbstrans {
+          margin: 0.15rem auto 0;
+        }
+
+        .codnflux {
+          margin: 0.35rem auto 0.2625rem;
+        }
+
+        .blocktech {
+          margin: 0 auto;
+        }
+
+        >img:hover {
+          transform: scale(1.15);
+        }
+      }
+
+      .w-1 {
+        width: 3.8125rem;
+      }
+
+      .w-2 {
+        width: 4.85rem;
+      }
+
+      .w-3 {
+        width: 4.4125rem;
+      }
+
+      .desc {
+        margin-top: 0.3625rem;
+        text-align: left;
+        color: #FFF;
+        font-family: PingFang SC;
+        font-size: 0.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.3rem;
+      }
+    }
+  }
+
+  .hackathon {
+    overflow: hidden;
+    background: url(../../assets/index/red-rect.svg) no-repeat, url(../../assets/index/circle-2.svg) no-repeat, url(../../assets/index/white-rect.svg) no-repeat, url(../../assets/index/cricle.svg) no-repeat, url(../../assets/index/arrow.svg) no-repeat, url(../../assets/index/line-bg-2.svg) no-repeat, url(../../assets/index/1--45.svg) no-repeat, url(../../assets/index/1--45.svg) no-repeat, url(../../assets/index/d-rect-2.svg) no-repeat, url(../../assets/index/g-y-up.svg) no-repeat;
+    background-size: 0.2625rem 0.2625rem, 3.5rem 3.5rem, 0.2625rem 0.2625rem, 3.5rem 3.5rem, 1.025rem 1.025rem, 6.6rem 15.8375rem, 0.6375rem 0.6375rem, 0.6375rem 0.6375rem, 2.75rem 2.75rem, 0.675rem 0.675rem;
+    background-position: 0.725rem 3.4375rem, -1.125rem 2.875rem, calc(100% - 2.625rem) 4.5rem, 100% 2.875rem, 2.1625rem 12.125rem, -1rem 18.125rem, 1.25rem 19rem, 1.375rem 28.75rem, 100% 23.125rem, calc(100% - 1.875rem) 22.5rem;
+    background-color: #0E0E0E;
+
+    .def {
+      margin: 0.5375rem auto 0;
+      width: 10.425rem;
+
+      .title {
+        color: #FF006E;
+        font-family: $ffontf;
+        font-size: 0.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.6rem;
+        text-transform: uppercase;
+      }
+
+      .desc {
+        margin-top: 0.3875rem;
+        color: #FFF;
+        font-family: PingFang SC;
+        font-size: 0.25rem;
+        font-weight: 400;
+      }
+    }
+
+    .categories-title {
+      position: relative;
+      box-sizing: border-box;
+      margin: 0.725rem auto 0;
+      padding: 0 0.75rem;
+      width: 10.425rem;
+      color: #01FF00;
+      font-family: $ffontf;
+      font-size: 0.3rem;
+      font-weight: 700;
+      line-height: 0.6rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.675rem;
+        height: 0.675rem;
+      }
+
+      &::before {
+        left: -0.1875rem;
+        background: url(../../assets/index/g-y-right.svg) no-repeat;
+        background-size: 0.675rem;
+      }
+
+      &::after {
+        right: -0.1875rem;
+        background: url(../../assets/index/g-y-left.svg) no-repeat;
+        background-size: 0.675rem;
+      }
+    }
+
+    .categories-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0.65rem auto 0;
+      width: 13.6625rem;
+
+      .item {
+        margin: 0.2625rem 0;
+        color: #FFF;
+        font-family: $ffontf;
+        font-size: 0.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      .decorator,
+      .decorator-2 {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: -0.425rem;
+          width: 0.3375rem;
+          height: 0.3375rem;
+          background: url(../../assets/index/1-45.svg) no-repeat;
+          background-size: 0.3375rem 0.3375rem;
+        }
+      }
+
+      .decorator-2 {
+        &::after {
+          right: -0.6rem;
+        }
+      }
+    }
+
+    .w-g-link {
+      margin: 0.925rem auto 0;
+    }
+
+    .content-w {
+      width: 11.6375rem;
+    }
+
+    .title-rect-line {
+      margin: 0.75rem auto 0;
+    }
+
+    .title-rect-line-red {
+      margin: 0 auto;
+    }
+
+    .time-line {
+      display: flex;
+      justify-content: center;
+      margin: 3.9375rem auto 4.25rem;
+
+      .item {
+        position: relative;
+        height: 0.8375rem;
+        text-align: center;
+
+        .b-f-text,
+        .w-f-text {
+          font-family: $ffontf;
+          font-size: 0.25rem;
+          font-weight: 700;
+          line-height: 0.8375rem;
+        }
+
+        .b-f-text {
+          color: #000;
+        }
+
+        .w-f-text {
+          color: #fff;
+        }
+
+        .w-p-text {
+          color: #FFF;
+          font-family: $pfontf;
+          font-size: 0.25rem;
+          font-weight: 700;
+          line-height: 0.8375rem;
+        }
+
+        .item-top-heart {
+          position: absolute;
+          top: -2rem;
+          right: 0.8375rem;
+          width: 1.0125rem;
+          height: 0.8875rem;
+          background: url(./hackathon/assets/heart.svg) no-repeat;
+          background-size: 1.0125rem 0.8875rem;
+        }
+
+        .item-bottom-win {
+          position: absolute;
+          bottom: -2.05rem;
+          right: -0.8rem;
+          width: 1.075rem;
+          height: 1.075rem;
+          background: url(./hackathon/assets/win.svg) no-repeat;
+          background-size: 1.075rem 1.075rem;
+        }
+
+        .item-top-box,
+        .item-bottom-box {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          padding: 0 0.1rem;
+          box-sizing: border-box;
+          width: 2.5rem;
+          height: 2.5rem;
+          border: 1px solid #fff;
+          text-align: left;
+
+          .title {
+            margin: 0.2rem 0;
+            color: #FFF;
+            font-family: $ffontf;
+            font-size: 0.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 0.25rem;
+            text-transform: uppercase;
+          }
+
+          .desc {
+            color: #ECE3E3;
+            font-family: PingFang SC;
+            font-size: 0.15rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 0.225rem;
+            list-style: none;
+
+            >li {
+              position: relative;
+              text-indent: 0.15rem;
+
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0.0875rem;
+                left: 0rem;
+                width: 0.0625rem;
+                height: 0.0625rem;
+                border-radius: 50%;
+                background-color: #01FF00;
+              }
+            }
+          }
+        }
+
+        .item-top-box {
+          top: -2.85rem;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -0.35rem;
+            left: 50%;
+            width: 0.0125rem;
+            height: 0.35rem;
+            background-color: #fff;
+          }
+        }
+
+        .item-bottom-box {
+          bottom: -2.85rem;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -0.35rem;
+            left: 50%;
+            width: 0.0125rem;
+            height: 0.35rem;
+            background-color: #fff;
+          }
+        }
+      }
+
+      .green-pix-rear {
+        z-index: 1;
+        width: 1.525rem;
+        height: 0.8375rem;
+        background: #01FF00;
+
+        .g-t-text {
+          position: absolute;
+          top: -1.125rem;
+          width: 1.45rem;
+          color: #01FF00;
+          font-family: $ffontf;
+          font-size: 0.3rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -0.5rem;
+          width: 0.8375rem;
+          height: 0.8375rem;
+          background: url(./hackathon/assets/r-1.svg) no-repeat;
+          background-size: 0.8375rem 0.8375rem;
+        }
+      }
+
+      .gray-rect-1 {
+        box-sizing: border-box;
+        width: 2.75rem;
+        background: #3F3F3F;
+
+        .w-p-text {
+          margin: 0.1125rem auto 0;
+          width: 1.6625rem;
+          height: 0.575rem;
+          line-height: 0.2875rem;
+        }
+      }
+
+      .gray-rect-2 {
+        width: 2.8rem;
+        background: #7C7C7C;
+      }
+
+      .gray-rect-3 {
+        width: 2.8rem;
+        background: #BFBFBF;
+      }
+
+      .red-rect {
+        width: 2.8rem;
+        background: #FF006E;
+
+        .r-t-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -1.125rem;
+          margin: 0 auto;
+          width: 1.45rem;
+          color: #FF006E;
+          font-family: $ffontf;
+          font-size: 0.3rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -0.425rem;
+          width: 0.7125rem;
+          height: 0.7625rem;
+          background: url(./hackathon/assets/r-2.svg) no-repeat;
+          background-size: 0.7125rem 0.7625rem;
+        }
+      }
+    }
+
+    .teams {
+      margin: 0.8375rem auto 0;
+      padding-left: 0.65rem;
+      color: #FFF;
+      font-family: PingFang SC;
+      font-size: 0.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0.5rem;
+    }
+
+    .prizes {
+      position: relative;
+      margin: 0.75rem auto 0;
+      width: 11.6375rem;
+
+      .text {
+        width: 6.875rem;
+        color: #FFF;
+        font-family: $ffontf;
+        font-size: 0.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      .rear {
+        position: absolute;
+        top: 0;
+        left: 6.375rem;
+        width: 3.9rem;
+        height: 0.875rem;
+
+        .rear-text {
+          position: absolute;
+          z-index: 2;
+          top: -0.075rem;
+          left: 0.875rem;
+          width: 2.4rem;
+          height: 0.8rem;
+          color: #000;
+          text-align: center;
+          font-family: $ffontf;
+          font-size: 0.375rem;
+          font-style: normal;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        .bg {
+          position: absolute;
+          left: -0.275rem;
+          top: -0.275rem;
+          box-shadow: 0.825rem 0.275rem 0 0 rgba(1, 255, 0, 1), 1.1rem 0.275rem 0 0 rgba(1, 255, 0, 1), 1.375rem 0.275rem 0 0 rgba(1, 255, 0, 1), 1.65rem 0.275rem 0 0 rgba(1, 255, 0, 1), 1.925rem 0.275rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.275rem 0 0 rgba(1, 255, 0, 1), 2.475rem 0.275rem 0 0 rgba(1, 255, 0, 1), 2.75rem 0.275rem 0 0 rgba(1, 255, 0, 1), 3.025rem 0.275rem 0 0 rgba(1, 255, 0, 1), 3.3rem 0.275rem 0 0 rgba(1, 255, 0, 1), 3.575rem 0.275rem 0 0 rgba(1, 255, 0, 1), 3.85rem 0.275rem 0 0 rgba(1, 255, 0, 1), 0.825rem 0.55rem 0 0 rgba(1, 255, 0, 1), 1.1rem 0.55rem 0 0 rgba(1, 255, 0, 1), 1.375rem 0.55rem 0 0 rgba(1, 255, 0, 1), 1.65rem 0.55rem 0 0 rgba(1, 255, 0, 1), 1.925rem 0.55rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.55rem 0 0 rgba(1, 255, 0, 1), 2.475rem 0.55rem 0 0 rgba(1, 255, 0, 1), 2.75rem 0.55rem 0 0 rgba(1, 255, 0, 1), 3.025rem 0.55rem 0 0 rgba(1, 255, 0, 1), 3.3rem 0.55rem 0 0 rgba(1, 255, 0, 1), 3.575rem 0.55rem 0 0 rgba(1, 255, 0, 1), 0.275rem 0.825rem 0 0 rgba(1, 255, 0, 1), 0.55rem 0.825rem 0 0 rgba(1, 255, 0, 1), 0.825rem 0.825rem 0 0 rgba(1, 255, 0, 1), 1.1rem 0.825rem 0 0 rgba(1, 255, 0, 1), 1.375rem 0.825rem 0 0 rgba(1, 255, 0, 1), 1.65rem 0.825rem 0 0 rgba(1, 255, 0, 1), 1.925rem 0.825rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.825rem 0 0 rgba(1, 255, 0, 1), 2.475rem 0.825rem 0 0 rgba(1, 255, 0, 1), 2.75rem 0.825rem 0 0 rgba(1, 255, 0, 1), 3.025rem 0.825rem 0 0 rgba(1, 255, 0, 1), 3.3rem 0.825rem 0 0 rgba(1, 255, 0, 1), 3.575rem 0.825rem 0 0 rgba(1, 255, 0, 1), 3.85rem 0.825rem 0 0 rgba(1, 255, 0, 1);
+          height: 0.2875rem;
+          width: 0.2875rem;
+        }
+      }
+    }
+
+    .join {
+      margin: 0.775rem auto 1.0875rem;
+
+      .inner-box {
+        position: relative;
+        width: 10rem;
+        height: 0.45rem;
+        color: #FFF;
+        font-family: $ffontf;
+        font-size: 0.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.0.0375rem;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: #01FF00;
+        }
+
+        .link {
+          position: absolute;
+          top: 0.125rem;
+          right: -0.1rem;
+          display: inline-block;
+          width: 0.3rem;
+          height: 0.3rem;
+          border-radius: 50%;
+          background-color: #0F0;
+
+          >img {
+            margin: 0.075rem 0 0 0.025rem;
+            width: 0.225rem;
+            height: auto;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+
+  .speakers {
+    background: url(/src/assets/index/cricle.svg) no-repeat;
+    background-size: 6.3125rem 6.3125rem;
+    background-position: 100% 1.375rem;
+    overflow: hidden;
+    background-color: #0E0E0E;
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0.775rem auto 0.6rem;
+      width: 15rem;
+
+      .item {
+        position: relative;
+        margin: 0.275rem 0.25rem;
+        width: 2.375rem;
+        height: 3.5625rem;
+        box-sizing: border-box;
+        background-color: #01FF00;
+        cursor: pointer;
+
+        .img {
+          position: relative;
+          text-align: center;
+          width: 2.375rem;
+          height: 2.7rem;
+
+          >img {
+            margin: 0.1rem;
+            width: 2.175rem;
+            max-height: 2.5rem;
+            object-fit: cover;
+          }
+
+          &::before {
+            content: "!";
+            position: absolute;
+            right: 0.05rem;
+            top: 0.05rem;
+            width: 0.275rem;
+            height: 0.275rem;
+            line-height: 0.275rem;
+            font-size: 0.225rem;
+            background: url(../../assets/index/logo-w-rect.svg) no-repeat;
+            background-size: 0.275rem 0.275rem;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            bottom: -0.375rem;
+            width: 0.875rem;
+            height: 0.875rem;
+            background: url(./speakers/assest/logo.svg) no-repeat;
+            background-size: 0.675rem 0.675rem;
+            background-position: 0.15rem 0.05rem;
+            background-color: #101010;
+          }
+
+          .mask {
+            display: none;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: url(./speakers/assest/x.svg) no-repeat;
+            background-size: 1.2rem 1.2875rem;
+            background-position: center center;
+            background-color: rgba(1, 255, 0, 0.70);
+          }
+        }
+
+        &:hover {
+          .mask {
+            display: block;
+          }
+        }
+
+        .bottom {
+          position: absolute;
+          left: -0.025rem;
+          z-index: 3;
+          bottom: 0;
+          width: 1.925rem;
+          height: 0.875rem;
+          background: #101010;
+
+          .name {
+            margin: 0.05rem 0 0 0.1rem;
+            color: #FFF;
+            font-family: $ffontf;
+            font-size: 0.225rem;
+            font-weight: 500;
+            line-height: 0.475rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .desc {
+            margin-left: 0.1rem;
+            color: #FFF;
+            font-family: $ffontf;
+            font-size: 0.15rem;
+            font-weight: 400;
+            line-height: 0.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .sponsors {
+    background: url(../../assets/index/circle-2.svg) no-repeat, url(../../assets/index/circle-2.svg) no-repeat, url(../../assets/index/line-bg.svg) no-repeat;
+    background-size: 6.3125rem 6.3125rem, 6.3125rem 6.3125rem, 4.2125rem 15.5375rem;
+    background-position: 0 3.975rem, 0 5.05rem, 100% 8.975rem;
+    background-color: #0E0E0E;
+    overflow: hidden;
+
+    .content {
+      margin-top: 0.75rem;
+    }
+
+    .section {
+      margin: 0 auto;
+      width: 13.75rem;
+      padding-bottom: 0.25rem;
+
+      .inner-box {
+        background: url(./sponsors/assets/black-rect.svg) no-repeat, url(./sponsors/assets/black-rect.svg) no-repeat;
+        background-size: 0.35rem 0.35rem, 0.35rem 0.35rem;
+        background-position: 13.4125rem -0.0125rem, 13.05rem 0.35rem;
+        clip-path: polygon(0 0.4rem, 2.575rem 0.4rem, 2.575rem 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .title {
+        position: absolute;
+        font-family: $ffontf;
+        font-size: 0.4rem;
+        font-weight: 700;
+        line-height: 0.4rem;
+        text-transform: uppercase;
+      }
+
+      .logos {
+        >a:hover {
+          transform: scale(1.15);
+        }
+      }
+    }
+
+    .unleasher {
+      position: relative;
+
+      .inner-box {
+        background-color: #FF006E;
+      }
+
+      .title {
+        position: absolute;
+        color: #FF006E;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -0.3375rem;
+          left: 2.225rem;
+          width: 0.35rem;
+          height: 0.35rem;
+          background: url(../../assets/index/red-rect.svg) no-repeat;
+          background-size: 0.35rem 0.35rem;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.35rem;
+        height: 0.35rem;
+        background: url(../../assets/index/red-rect.svg) no-repeat;
+        background-size: 0.35rem 0.35rem;
+      }
+
+      &::before {
+        top: -0.3375rem;
+        right: 0;
+      }
+
+      &::after {
+        bottom: -0.075rem;
+        right: 0;
+      }
+
+      .logos {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0.25rem 0;
+        width: 6.5rem;
+
+        img {
+          max-width: 3.6625rem;
+          max-height: 1.3125rem;
+        }
+
+        .conflux {
+          padding: 0.35rem 0;
+        }
+      }
+    }
+
+    .uniter {
+      margin-top: -0.1125rem;
+      position: relative;
+
+      .inner-box {
+        background-color: #BFBFBF;
+      }
+
+      .title {
+        color: #BFBFBF;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.35rem;
+        height: 0.35rem;
+      }
+
+      &::before {
+        top: -0.3375rem;
+        left: 2.225rem;
+        background: url(./sponsors/assets/gray-rect.svg) no-repeat;
+        background-size: 0.35rem 0.35rem;
+      }
+
+      &::after {
+        bottom: 0.1rem;
+        right: 0;
+        background: url(./sponsors/assets/gray-rect.svg) no-repeat;
+        background-size: 0.35rem 0.35rem;
+      }
+
+      .logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0.2rem auto;
+        padding: 0.875rem 0 0.75rem;
+        width: 10.5rem;
+
+        img {
+          max-width: 3.6625rem;
+          max-height: 1.4rem;
+        }
+
+        .arab {
+          padding: 0.25rem 0;
+        }
+
+        .logotxt {
+          padding: 0.55rem 0;
+        }
+
+        .goledo {
+          .text {
+            display: inline-block;
+            margin-top: 0.6rem;
+            vertical-align: top;
+            color: #000;
+            font-family: Montserrat;
+            font-size: 0.25rem;
+            font-style: normal;
+            font-weight: 600;
+          }
+
+          &:hover {
+            transform: scale(1.15);
+          }
+        }
+      }
+    }
+
+    .title-rect-line-white {
+      margin: 1.15rem auto 0;
+      width: 13.75rem;
+    }
+
+    .bottom-logos {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.75rem auto;
+      width: 13.75rem;
+
+      img {
+        max-width: 3.3375rem;
+        max-height: 1.55rem;
+      }
+
+      >a:hover {
+        transform: scale(1.15);
+      }
+
+      .CAMBRIDGE {
+        width: 2.325rem;
+      }
+
+      .MPOST {
+        padding: 0.3rem 0;
+      }
+
+      .BlockBooster {
+        padding: 0.35rem 0;
+      }
+    }
+  }
+
+  .faq {
+    overflow: hidden;
+    background-color: #0E0E0E;
+
+    .list {
+      margin: 0.875rem auto 1.375rem;
+      width: 10rem;
+
+      .ant-collapse-header {
+        color: #FFF;
+        line-height: 0.6125rem;
+
+        .ant-collapse-expand-icon {
+          position: absolute;
+          right: 0;
+          width: 0.6125rem;
+          height: 0.6125rem;
+          line-height: 0.6125rem;
+          border: 1px solid #FFF;
+
+          .ant-collapse-arrow {
+            margin: 0 0.175rem;
+            font-size: 0.25rem;
+          }
+        }
+
+        &:hover {
+
+          .ant-collapse-header,
+          .ant-collapse-arrow {
+            color: #01FF00;
+          }
+
+          .ant-collapse-expand-icon {
+            border: 1px solid #01FF00;
+          }
+        }
+      }
+
+      .ant-collapse-item-active {
+
+        .ant-collapse-header,
+        .ant-collapse-arrow {
+          color: #01FF00;
+        }
+
+        .ant-collapse-expand-icon {
+          border: 1px solid #01FF00;
+        }
+      }
+
+      .ant-collapse-header-text {
+        color: #FFF;
+        font-family: $ffontf;
+        font-size: 0.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.6125rem !important;
+      }
+
+      .ant-collapse-content>.ant-collapse-content-box {
+        color: #01FF00;
+        font-family: PingFang SC;
+        font-size: 0.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.425rem;
+      }
+    }
+
+    .green-box {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: 1.5125rem;
+      background: url(./sponsors/assets/black-rect.svg) no-repeat, url(./sponsors/assets/black-rect.svg) no-repeat;
+      background-size: 0.3rem 0.3rem, 0.3rem 0.3rem;
+      background-position: 30% center, 66% center;
+      background-color: #01FF00;
+
+      .item {
+        color: #000;
+        font-family: $ffontf;
+        font-size: 0.45rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5125rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.6625rem auto 1.5rem;
+      width: 12.5rem;
+
+      .links {
+        padding: 0.45rem 0;
+
+        .link {
+          display: inline-block;
+          margin: 0 0.1875rem;
+          width: 0.875rem;
+          height: 0.875rem;
+          text-align: center;
+          line-height: 0.875rem;
+          border-radius: 50%;
+          background-color: #FFF;
+
+          >img {
+            margin-top: 0.2125rem;
+            width: 0.4375rem;
+            height: 0.4375rem;
+          }
+
+          &:hover {
+            background-color: #01FF00;
+          }
+        }
+      }
+
+      .u-hack {
+        >img {
+          vertical-align: top;
+          width: 1.775rem;
+          height: 1.775rem;
+        }
+
+        .h {
+          margin: 0.325rem 0 0 0.1rem;
+          width: 0.75rem;
+          height: 1rem;
+        }
+
+        .a,
+        .c {
+          margin-top: 0.575rem;
+          width: 0.75rem;
+          height: 0.8rem;
+        }
+
+        .k {
+          margin-top: 0.325rem;
+          width: 0.75rem;
+          height: 1rem;
+        }
+      }
+
+      .concat {
+        .e-mail {
+          font-family: $ffontf;
+          font-size: 0.3rem;
+          font-weight: 500;
+          text-align: center;
+          line-height: 0.6rem;
+          text-transform: lowercase;
+
+          >a {
+            color: #FFF;
+            text-decoration: none;
+
+            &:hover {
+              color: #01FF00;
+            }
+          }
+        }
+
+        .w-link {
+          position: relative;
+          width: 3.175rem;
+          height: 1.2rem;
+          cursor: pointer;
+
+          .text {
+            position: absolute;
+            top: 0.3125rem;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-family: $ffontf;
+            font-size: 0.45rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+
+          .bg {
+            position: absolute;
+            left: -0.2rem;
+            top: -0.2rem;
+            box-shadow: 0.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 0.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 1.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.2rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.4rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.6rem 0.2rem 0 0 rgba(0, 0, 0, 1), 2.8rem 0.2rem 0 0 rgba(0, 0, 0, 1), 0.4rem 0.4rem 0 0 rgba(0, 0, 0, 1), 0.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 0.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 1.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.2rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.4rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.6rem 0.4rem 0 0 rgba(255, 255, 255, 1), 2.8rem 0.4rem 0 0 rgba(255, 255, 255, 1), 3rem 0.4rem 0 0 rgba(0, 0, 0, 1), 0.2rem 0.6rem 0 0 rgba(0, 0, 0, 1), 0.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 0.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 0.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 1.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.2rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.4rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.6rem 0.6rem 0 0 rgba(255, 255, 255, 1), 2.8rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3rem 0.6rem 0 0 rgba(255, 255, 255, 1), 3.2rem 0.6rem 0 0 rgba(0, 0, 0, 1), 0.2rem 0.8rem 0 0 rgba(0, 0, 0, 1), 0.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 0.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 0.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 1.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.2rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.4rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.6rem 0.8rem 0 0 rgba(255, 255, 255, 1), 2.8rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3rem 0.8rem 0 0 rgba(255, 255, 255, 1), 3.2rem 0.8rem 0 0 rgba(0, 0, 0, 1), 0.4rem 1rem 0 0 rgba(0, 0, 0, 1), 0.6rem 1rem 0 0 rgba(255, 255, 255, 1), 0.8rem 1rem 0 0 rgba(255, 255, 255, 1), 1rem 1rem 0 0 rgba(255, 255, 255, 1), 1.2rem 1rem 0 0 rgba(255, 255, 255, 1), 1.4rem 1rem 0 0 rgba(255, 255, 255, 1), 1.6rem 1rem 0 0 rgba(255, 255, 255, 1), 1.8rem 1rem 0 0 rgba(255, 255, 255, 1), 2rem 1rem 0 0 rgba(255, 255, 255, 1), 2.2rem 1rem 0 0 rgba(255, 255, 255, 1), 2.4rem 1rem 0 0 rgba(255, 255, 255, 1), 2.6rem 1rem 0 0 rgba(255, 255, 255, 1), 2.8rem 1rem 0 0 rgba(255, 255, 255, 1), 3rem 1rem 0 0 rgba(0, 0, 0, 1), 0.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 0.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 1.8rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.2rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.4rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.6rem 1.2rem 0 0 rgba(0, 0, 0, 1), 2.8rem 1.2rem 0 0 rgba(0, 0, 0, 1);
+            height: 0.2125rem;
+            width: 0.2125rem;
+          }
+
+          &:hover {
+            .bg {
+              box-shadow: 0.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.2rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.2rem 0 0 rgba(1, 255, 0, 1), 0.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 0.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.4rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.4rem 0 0 rgba(1, 255, 0, 1), 3rem 0.4rem 0 0 rgba(1, 255, 0, 1), 0.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.6rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3rem 0.6rem 0 0 rgba(1, 255, 0, 1), 3.2rem 0.6rem 0 0 rgba(1, 255, 0, 1), 0.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 1.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.4rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.6rem 0.8rem 0 0 rgba(1, 255, 0, 1), 2.8rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3rem 0.8rem 0 0 rgba(1, 255, 0, 1), 3.2rem 0.8rem 0 0 rgba(1, 255, 0, 1), 0.4rem 1rem 0 0 rgba(1, 255, 0, 1), 0.6rem 1rem 0 0 rgba(1, 255, 0, 1), 0.8rem 1rem 0 0 rgba(1, 255, 0, 1), 1rem 1rem 0 0 rgba(1, 255, 0, 1), 1.2rem 1rem 0 0 rgba(1, 255, 0, 1), 1.4rem 1rem 0 0 rgba(1, 255, 0, 1), 1.6rem 1rem 0 0 rgba(1, 255, 0, 1), 1.8rem 1rem 0 0 rgba(1, 255, 0, 1), 2rem 1rem 0 0 rgba(1, 255, 0, 1), 2.2rem 1rem 0 0 rgba(1, 255, 0, 1), 2.4rem 1rem 0 0 rgba(1, 255, 0, 1), 2.6rem 1rem 0 0 rgba(1, 255, 0, 1), 2.8rem 1rem 0 0 rgba(1, 255, 0, 1), 3rem 1rem 0 0 rgba(1, 255, 0, 1), 0.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 0.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 1.8rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.2rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.4rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.6rem 1.2rem 0 0 rgba(1, 255, 0, 1), 2.8rem 1.2rem 0 0 rgba(1, 255, 0, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

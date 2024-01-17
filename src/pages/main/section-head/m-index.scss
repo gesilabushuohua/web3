@@ -1,0 +1,103 @@
+@media screen and (max-width: 900px) {
+  $green: #01FF00;
+
+  .section-head {
+    position: relative;
+    height: 2.25rem;
+    overflow-x: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0.6875rem;
+    }
+
+    .title {
+      padding-left: 2.15rem;
+      height: 1.5625rem;
+      line-height: 1.5625rem;
+      color: #000;
+      font-family: Frames Part One;
+      font-size: 0.5625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .title-text {
+      position: relative;
+      padding-right: 0.4rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0.2125rem;
+        left: calc(100% + 0.4rem);
+        width: 0.225rem;
+        height: 0.225rem;
+        background-color: #fff;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.2125rem;
+        left: 100%;
+        width: 25rem;
+        height: 0.225rem;
+        background-color: #000;
+      }
+    }
+  }
+
+  .head-green {
+    &::after {
+      background: url(../../../assets/index/h-bg-green.svg);
+      background-size: 1.425rem 0.6875rem;
+    }
+
+    .title {
+      background-color: #01FF00;
+    }
+
+    .title-text::before {
+      background-color: #FF006E;
+    }
+  }
+
+  .head-white {
+    &::after {
+      background: url(../../../assets/index/h-bg-white.svg);
+      background-size: 1.425rem 0.6875rem;
+    }
+
+    .title {
+      background-color: #FFF;
+    }
+
+    .title-text::before {
+      background-color: #01FF00;
+    }
+  }
+
+  .head-red {
+    &::after {
+      background: url(../../../assets/index/h-bg-red.svg);
+      background-size: 1.425rem 0.6875rem;
+    }
+
+    .title {
+      background-color: #FF006E;
+    }
+
+    .title-text {
+      color: #FFF;
+    }
+
+    .title-text::before {
+      background-color: #01FF00;
+    }
+  }
+}
