@@ -3,6 +3,132 @@ import "../index.scss";
 import telegramSvg from "../../../assets/index/telegram.svg";
 import { Link, Telegram } from "../constant";
 
+const isMobile = () => {
+  const userAgent = navigator.userAgent.toLowerCase();
+  const mobileKeywords = [
+    "iphone",
+    "ipod",
+    "ipad",
+    "android",
+    "webos",
+    "blackberry",
+    "windows phone",
+  ];
+
+  return mobileKeywords.some((keyword) => userAgent.includes(keyword));
+};
+
+const TimeLine = () => {
+  return (
+    <div className="time-line">
+      <div className="item green-pix-rear">
+        <div className="g-t-text">Opening Ceremony</div>
+        <div className="b-f-text">Feb 10</div>
+      </div>
+      <div className="item gray-rect-1">
+        <div className="item-top-heart"></div>
+        <div className="w-p-text">Tuesdays - Thursdays</div>
+        <div className="item-bottom-box">
+          <div className="title">Workshops</div>
+          <ul className="desc">
+            <li>
+              Solidity & frontend deep dives that give best practises to
+              students{" "}
+            </li>
+            <li>
+              <span>
+                UI/UX, technical writing, audits and growth workshops to help
+                projects actually come to life after the hack
+              </span>{" "}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="item gray-rect-2">
+        <div className="item-top-box">
+          <div className="title">Technical Assistance</div>
+          <div className="desc">
+            1-on-1 technical mentors assigned to each team to provide
+            comprehensive development support
+          </div>
+        </div>
+        <div className="w-p-text">Fridays</div>
+        <div className="item-bottom-box">
+          <div className="title">Mentoring</div>
+          <ul className="desc">
+            Teams will receive regular project feedback from VCs & accelerators
+            to enhance project quality.
+          </ul>
+        </div>
+      </div>
+      <div className="item gray-rect-3">
+        <div className="item-top-box">
+          <div className="title">Speaking events</div>
+          <div className="desc">
+            Founders / team members from top DeFi protocols presenting growth
+            challenges they need to face
+          </div>
+        </div>
+        <div className="w-p-text">Saturdays</div>
+        <div className="item-bottom-box">
+          <div className="title">Fireside chats</div>
+          <ul className="desc">
+            Inviting one of the greatest minds of the space each weekend to talk
+            about future of crypto / blockchain
+          </ul>
+        </div>
+      </div>
+      <div className="item green-pix-rear">
+        <div className="g-t-text">SUBMISSION</div>
+        <div className="b-f-text">Mar 14</div>
+        <div className="item-bottom-win"></div>
+      </div>
+      <div className="item red-rect">
+        <div className="r-t-text">AWARDS</div>
+        <div className="w-f-text">Mar 16</div>
+      </div>
+    </div>
+  );
+};
+
+const MTimeLine = () => {
+  return (
+    <div className="m-time-line">
+      <div className="item">
+        <div className="b-f-text green-pix-rear">Feb 10</div>
+        <div className="g-t-text">Opening Ceremony</div>
+        <div className="item-top-heart"></div>
+      </div>
+      <div className="item">
+        <div className="w-p-text gray-rect-1">Tuesdays - Thursdays</div>
+        <div className="gray-rect-1-title">Workshops</div>
+      </div>
+
+      <div className="item">
+        <div className="w-p-text gray-rect-2">Fridays</div>
+        <div className="list">
+          <div className="title">Mentoring</div>
+          <div className="title">Technical Assistance</div>
+        </div>
+      </div>
+      <div className="item ">
+        <div className="w-p-text gray-rect-3">Saturdays</div>
+        <div className="gray-rect-3-title">Speaking events</div>
+      </div>
+      <div className="item ">
+        <div className="b-f-text green-pix-react">Mar 14</div>
+        <div className="g-t-text">SUBMISSION</div>
+      </div>
+      <div className="item ">
+        <div className="w-f-text red-rect">Mar 16</div>
+        <div className="r-t-text">AWARDS</div>
+        <div className="item-bottom-win"></div>
+      </div>
+    </div>
+  );
+};
+
 const Hackathon = () => {
   return (
     <div className="hackathon" id="hackathon">
@@ -41,75 +167,7 @@ const Hackathon = () => {
         <span className="text">TIMELINE</span>
       </div>
 
-      <div className="time-line">
-        <div className="item green-pix-rear">
-          <div className="g-t-text">Opening Ceremony</div>
-          <div className="b-f-text">Feb 10</div>
-        </div>
-        <div className="item gray-rect-1">
-          <div className="item-top-heart"></div>
-          <div className="w-p-text">Tuesdays - Thursdays</div>
-          <div className="item-bottom-box">
-            <div className="title">Workshops</div>
-            <ul className="desc">
-              <li>
-                Solidity & frontend deep dives that give best practises to
-                students{" "}
-              </li>
-              <li>
-                <span>
-                  UI/UX, technical writing, audits and growth workshops to help
-                  projects actually come to life after the hack
-                </span>{" "}
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="item gray-rect-2">
-          <div className="item-top-box">
-            <div className="title">Technical Assistance</div>
-            <div className="desc">
-              1-on-1 technical mentors assigned to each team to provide
-              comprehensive development support
-            </div>
-          </div>
-          <div className="w-p-text">Fridays</div>
-          <div className="item-bottom-box">
-            <div className="title">Mentoring</div>
-            <ul className="desc">
-              Teams will receive regular project feedback from VCs &
-              accelerators to enhance project quality.
-            </ul>
-          </div>
-        </div>
-        <div className="item gray-rect-3">
-          <div className="item-top-box">
-            <div className="title">Speaking events</div>
-            <div className="desc">
-              Founders / team members from top DeFi protocols presenting growth
-              challenges they need to face
-            </div>
-          </div>
-          <div className="w-p-text">Saturdays</div>
-          <div className="item-bottom-box">
-            <div className="title">Fireside chats</div>
-            <ul className="desc">
-              Inviting one of the greatest minds of the space each weekend to
-              talk about future of crypto / blockchain
-            </ul>
-          </div>
-        </div>
-        <div className="item green-pix-rear">
-          <div className="g-t-text">SUBMISSION</div>
-          <div className="b-f-text">Mar 14</div>
-          <div className="item-bottom-win"></div>
-        </div>
-        <div className="item red-rect">
-          <div className="r-t-text">AWARDS</div>
-          <div className="w-f-text">Mar 16</div>
-        </div>
-      </div>
+      {isMobile() ? <MTimeLine /> : <TimeLine />}
 
       <div className="content-w title-rect-line-red">
         <span className="text">Teams</span>
@@ -153,12 +211,13 @@ const Hackathon = () => {
 
       <div className="content-w join">
         <div className="inner-box">
-        <div className="text">Have any questions? Join our Telegram group:</div>
-        <a className="link" href={Telegram} target="_blank">
-          <img src={telegramSvg} />
-        </a>
+          <div className="text">
+            Have any questions? Join our Telegram group:
+          </div>
+          <a className="link" href={Telegram} target="_blank">
+            <img src={telegramSvg} />
+          </a>
         </div>
-        
       </div>
     </div>
   );

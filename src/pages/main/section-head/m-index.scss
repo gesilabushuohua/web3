@@ -3,7 +3,7 @@
 
   .section-head {
     position: relative;
-    height: 2.25rem;
+    height: 1.125rem;
     overflow-x: hidden;
 
     &::after {
@@ -11,42 +11,43 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 0.6875rem;
+      height: 0.34375rem;
+      background-size: 0.6875rem 0.34375rem;
     }
 
     .title {
-      padding-left: 2.15rem;
-      height: 1.5625rem;
-      line-height: 1.5625rem;
+      padding-left: 1.925rem;
+      height: 0.78125rem;
+      line-height: 0.78125rem;
       color: #000;
       font-family: Frames Part One;
-      font-size: 0.5625rem;
+      font-size: 0.28125rem;
       font-weight: 700;
       text-transform: uppercase;
     }
 
     .title-text {
       position: relative;
-      padding-right: 0.4rem;
+      padding-right: 0.2rem;
 
       &::before {
         content: "";
         position: absolute;
         z-index: 1;
-        top: 0.2125rem;
-        left: calc(100% + 0.4rem);
-        width: 0.225rem;
-        height: 0.225rem;
+        top: 0.10625rem;
+        left: calc(100% + 0.2rem);
+        width: 0.1125rem;
+        height: 0.1125rem;
         background-color: #fff;
       }
 
       &::after {
         content: "";
         position: absolute;
-        top: 0.2125rem;
+        top: 0.10625rem;
         left: 100%;
-        width: 25rem;
-        height: 0.225rem;
+        width: 12.5rem;
+        height: 0.1125rem;
         background-color: #000;
       }
     }
@@ -55,7 +56,7 @@
   .head-green {
     &::after {
       background: url(../../../assets/index/h-bg-green.svg);
-      background-size: 1.425rem 0.6875rem;
+      background-size: 0.6875rem 0.34375rem;
     }
 
     .title {
@@ -70,7 +71,7 @@
   .head-white {
     &::after {
       background: url(../../../assets/index/h-bg-white.svg);
-      background-size: 1.425rem 0.6875rem;
+      background-size: 0.6875rem 0.34375rem;
     }
 
     .title {
@@ -85,7 +86,7 @@
   .head-red {
     &::after {
       background: url(../../../assets/index/h-bg-red.svg);
-      background-size: 1.425rem 0.6875rem;
+      background-size: 0.6875rem 0.34375rem;
     }
 
     .title {
@@ -100,4 +101,5 @@
       background-color: #01FF00;
     }
   }
+
 }

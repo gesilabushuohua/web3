@@ -177,6 +177,11 @@ $pfontf: Pixel Countdown;
 
   a {
     text-decoration: none;
+    vertical-align: top;
+  }
+
+  img {
+    vertical-align: top;
   }
 }
 
@@ -505,11 +510,11 @@ $pfontf: Pixel Countdown;
 // our-mission
 .our-mission {
   position: relative;
-  height: 882px;
+  // height: 882px;
   overflow: hidden;
   background: url(../../assets/index/red-rect.svg) no-repeat, url(../../assets/index/cricle.svg) no-repeat;
   background-size: 22px 22px, 230px 230px;
-  background-position: calc(102% - 80px) calc(102% - 220px), 102% 102%;
+  background-position: calc(100% - 80px) 600px, 100% 615px;
   background-color: #0E0E0E;
 
 
