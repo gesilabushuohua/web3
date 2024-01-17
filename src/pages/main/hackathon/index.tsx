@@ -1,6 +1,6 @@
 import SectionHead from "../section-head";
 import "../index.scss";
-import telegramSvg from "../../../assets/index/telegram.svg";
+import telegramSvg from "../../../assets/index/telegram2.svg";
 import { Link, Telegram } from "../constant";
 
 const isMobile = () => {
