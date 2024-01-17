@@ -7,13 +7,13 @@ const Index = lazy(() => import("../pages/main"));
 const NotFound = lazy(() => import("../layout/NotFound"));
 
 const routes = [
-  {
+  /* {
     path: "/",
     element: <Page />,
     errorElement: <ErrorPage />,
-  },
+  }, */
   {
-    path: "/index",
+    path: "/",
     element: <Index />,
     errorElement: <ErrorPage />,
   },
