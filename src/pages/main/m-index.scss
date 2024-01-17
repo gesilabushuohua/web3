@@ -20,7 +20,7 @@
 			text-align: center;
 			color: #000;
 			font-family: $ffontf;
-			font-size: 0.2rem;
+			font-size: 0.12rem;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
@@ -334,10 +334,12 @@
 					position: absolute;
 					top: 0.03125rem;
 					left: 0.40625rem;
+					width: 1.4rem;
 					z-index: 2;
 					color: #000;
 					font-family: $ffontf;
-					font-size: 0.26rem;
+					font-size: 0.2rem;
+					text-align: center;
 					font-weight: 700;
 					text-transform: uppercase;
 				}
@@ -390,13 +392,13 @@
 				}
 
 				&::after {
-					right: -0.44375rem;
+					right: -0.54375rem;
 				}
 
 				.time {
 					color: #FFF;
 					font-family: $ffontf;
-					font-size: 0.2rem;
+					font-size: 0.18rem;
 					font-style: normal;
 					font-weight: 700;
 					line-height: 0.29375rem;
@@ -405,7 +407,7 @@
 				.price {
 					color: #01FF00;
 					font-family: $ffontf;
-					font-size: 0.25rem;
+					font-size: 0.2rem;
 					font-style: normal;
 					font-weight: 700;
 					line-height: normal;
