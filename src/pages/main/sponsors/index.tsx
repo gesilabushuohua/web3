@@ -11,7 +11,7 @@ import MPOST from "./assets2/M-POST.png";
 import CAMBRIDGE from "./assets2/cambridge.png";
 import BlockBooster from "./assets2/blockbuster.png";
 import Blocktech from "./assets2/blocktech.png";
-import newtribe from "./assets2/ntc.svg";
+import newtribe from "./assets2/WechatIMG580.png";
 import aspecta from "./assets2/aspecta.svg";
 import devfolio from "./assets2/devfolio.svg";
 import today from "./assets2/utoday.svg";
@@ -64,6 +64,12 @@ const grayLogoList = [
     src: goledo,
     link: "https://www.goledo.cash/",
   },
+  {
+    name: "newtribe",
+    className: 'newtribe',
+    src: newtribe,
+    link: "https://www.newtribe.capital",
+  },
 ];
 
 const bottomLogoList = [
@@ -91,12 +97,7 @@ const bottomLogoList = [
     src: Blocktech,
     link: "https://twitter.com/BlockTechldn",
   },
-  {
-    name: "newtribe",
-    className: 'newtribe',
-    src: newtribe,
-    link: "https://www.newtribe.capital",
-  },
+  
   {
     name: "aspecta",
     className: 'aspecta',
