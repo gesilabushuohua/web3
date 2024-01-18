@@ -1,22 +1,23 @@
 import "../index.scss";
 import SectionHead from "../section-head";
-import Blocktech from "./assets/Blocktech.svg";
-import Bristol from "./assets/Bristol.svg";
-import KingsCollege from "./assets/KingsCollege.svg";
-import GeorgiaTech from "./assets/GeorgiaTech.svg";
-import Imperial from "./assets/Imperial.svg";
-import CollegeDAO from "./assets/CollegeDAO.svg";
-import QM from "./assets/QM.svg";
-import Leeds from "./assets/Leeds.svg";
-import Oxford from "./assets/Oxford.svg";
-import southampton from "./assets/southampton.svg";
-import TAU from "./assets/TAU.svg";
-import UCL from "./assets/UCL.svg";
-import Bocconi from "./assets/Bocconi.svg";
-import Penn from "./assets/Penn.svg";
-import LBS from "./assets/LBS.svg";
-import cbstrans from "./assets/cbs_trans.svg";
-import conflux from "./assets/conflux.svg";
+import Blocktech from "./assets2/Blocktech_212.png";
+import Blocktech2 from "./assets2/blocktech.png";
+import Bristol from "./assets2/Bristol_212.png";
+import KingsCollege from "./assets2/Kings College_212.png";
+import GeorgiaTech from "./assets2/Georgia Tech_212.png";
+import Imperial from "./assets2/Imperial_212.png";
+import CollegeDAO from "./assets2/College DAO_212.png";
+import QM from "./assets2/QM_212.png";
+import Leeds from "./assets2/Leeds_212.png";
+import Oxford from "./assets2/Oxford_212.png";
+import southampton from "./assets2/southampton_212.png";
+import TAU from "./assets2/TAU_212.png";
+import UCL from "./assets2/UCL_212.png";
+import Bocconi from "./assets2/Bocconi_212.png";
+import Penn from "./assets2/Penn_212.png";
+import LBS from "./assets2/LBS_212.png";
+import cbstrans from "./assets2/cambridge.png";
+import conflux from "./assets2/conflux.png";
 import { Email, Link } from "../constant";
 
 const top3List = [
@@ -135,7 +136,7 @@ const University = () => {
 
           <a href="https://twitter.com/BlockTechldn" target="_blank">
             <div className="item">
-              <img className="blocktech" src={Blocktech} />
+              <img className="blocktech" src={Blocktech2} />
               <div className="w-3 desc">
                 BlockTech London is a university-run blockchain hub, fostering
                 adoption through education and devlopment

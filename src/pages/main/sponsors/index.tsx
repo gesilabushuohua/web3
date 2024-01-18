@@ -1,16 +1,16 @@
 import SectionHead from "../section-head";
 import "../index.scss";
-import conflux from "./assets/conflux.svg";
-import dwflabsfeher from "./assets/dwf_labs_feher.svg";
-import oasisfeher from "./assets/oasis_feher.svg";
-import arab from "./assets/arab.svg";
-import swappi from "./assets/swappi.svg";
-import logotxt from "./assets/logotxt.svg";
-import goledo from "./assets/goledo-white.svg";
-import MPOST from "./assets/M-POST.svg";
-import CAMBRIDGE from "../university/assets/cbs_trans.svg";
-import BlockBooster from "./assets/BlockBooster.svg";
-import Blocktech from "../university/assets/Blocktech.svg";
+import conflux from "./assets2/conflux.png";
+import dwflabsfeher from "./assets2/dwf.png";
+import oasisfeher from "./assets2/oasis.png";
+import arab from "./assets2/gov_rak.png";
+import swappi from "./assets2/swappi.png";
+import logotxt from "./assets2/nucleon.png";
+import goledo from "./assets2/goledo.png";
+import MPOST from "./assets2/M-POST.png";
+import CAMBRIDGE from "./assets2/cambridge.png";
+import BlockBooster from "./assets2/blockbuster.png";
+import Blocktech from "./assets2/blocktech.png";
 
 const redLogoList = [
   {
@@ -51,6 +51,12 @@ const grayLogoList = [
     className: 'logotxt',
     src: logotxt,
     link: "https://www.nucleon.space/",
+  },
+  {
+    name: "goledo",
+    className: 'goledo',
+    src: goledo,
+    link: "https://www.goledo.cash/",
   },
 ];
 
@@ -107,12 +113,6 @@ const Sponsors = () => {
                   <img className={item.className} key={item.src} src={item.src} alt={item.name} />
                 </a>
               ))}
-              <div className="goledo">
-                <a href="https://www.goledo.cash/" target="_blank">
-                  <img src={goledo} alt="goledo" />
-                  <span className="text">GOLEDO</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>

@@ -603,8 +603,8 @@
 			img {
 				margin: 0.05rem;
 				width: auto;
-				max-width: 1.9125rem;
-				max-height: 0.6rem;
+				max-width:1.325rem;
+				max-height:0.7rem;
 			}
 		}
 
@@ -618,8 +618,8 @@
 			img {
 				margin: 0.05rem;
 				width: auto;
-				max-width: 1.9125rem;
-				max-height: 0.6rem;
+				max-width:1.325rem;
+				max-height:0.7rem;
 			}
 		}
 
@@ -674,11 +674,12 @@
 				text-align: center;
 
 				img {
-					max-width: 1.1875rem;
-					max-height: 0.6rem;
+					margin-top: 0.5rem;
+					max-width:1.1875rem;
+					max-height:0.34375rem;
 				}
 
-				.cbstrans {
+				/* .cbstrans {
 					margin: 0.275rem auto 0;
 				}
 
@@ -688,7 +689,7 @@
 
 				.blocktech {
 					margin: 0.18rem auto;
-				}
+				} */
 
 				>img:hover {
 					transform: scale(1.15);
@@ -1283,7 +1284,7 @@
 
 		.section {
 			margin: 0 auto;
-			width: 7.875rem;
+			width: 6.875rem;
 			padding-bottom: 0.125rem;
 
 			.inner-box {
@@ -1292,8 +1293,8 @@
 				background-size: 0.175rem 0.175rem, 
 				0.175rem 0.175rem;
 				background-position: 
-				7.70625rem -0.00625rem, 
-				7.525rem 0.175rem;
+				6.70625rem -0.00625rem, 
+				6.525rem 0.175rem;
 				clip-path: polygon(0 0.2rem, 1.2875rem 0.2rem, 1.2875rem 0, 100% 0, 100% 100%, 0 100%);
 			}
 
@@ -1361,16 +1362,17 @@
 				justify-content: space-between;
 				margin: 0 auto;
 				padding: 0.125rem 0;
-				width: 3.25rem;
+				width: 3.625rem;
 
 				img {
-					max-width: 1.83125rem;
-					max-height: 0.65625rem;
+					margin: 0.3rem 0;
+					max-width:1.1875rem;
+					max-height:0.34375rem;
 				}
 
-				.conflux {
+				/* .conflux {
 					padding: 0.175rem 0;
-				}
+				} */
 			}
 		}
 
@@ -1413,15 +1415,21 @@
 				flex-wrap: wrap;
 				justify-content: space-around;
 				margin: 0.1rem auto;
-				padding: 0.4375rem 0 0.375rem;
-				width: 5.25rem;
+				padding: 0.3375rem 0 0.375rem;
+				width: 4.5rem;
 
-				img {
-					max-width: 1.83125rem;
-					max-height: 0.7rem;
+				a {
+					display: inline-block;
+					height: 0.74375rem;
 				}
 
-				.arab {
+				img {
+					margin: 0.2rem 0;
+					max-width: 1.1875rem;
+					max-height: 0.34375rem;
+				}
+
+				/* .arab {
 					padding: 0.125rem 0;
 				}
 
@@ -1444,7 +1452,7 @@
 					&:hover {
 						transform: scale(1.15);
 					}
-				}
+				} */
 			}
 		}
 
@@ -1461,15 +1469,15 @@
 			line-height: 0.775rem;
 
 			img {
-				max-width: 1.66875rem;
-				max-height: 0.775rem;
+				max-width:1.625rem;
+				max-height:0.375rem;
 			}
 
 			>a:hover {
 				transform: scale(1.15);
 			}
 
-			.CAMBRIDGE {
+			/* .CAMBRIDGE {
 				width: 1.1625rem;
 			}
 
@@ -1479,7 +1487,7 @@
 
 			.BlockBooster {
 				padding: 0.175rem 0;
-			}
+			} */
 		}
 	}
 
