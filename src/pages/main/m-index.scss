@@ -616,10 +616,10 @@
 			width: 7.0125rem;
 
 			img {
-				margin: 0.05rem;
+				margin: 0.1rem;
 				width: auto;
-				max-width:1.325rem;
-				max-height:0.7rem;
+				max-width: 1.325rem;
+				max-height: 0.7rem;
 			}
 		}
 
@@ -1464,13 +1464,14 @@
 		.bottom-logos {
 			display: flex;
 			justify-content: space-between;
-			margin: 0.875rem auto;
+			margin: 0.675rem auto;
 			width: 7.875rem;
 			line-height: 0.775rem;
 
 			img {
-				max-width:1.625rem;
-				max-height:0.375rem;
+				margin:0.1875rem 0;
+				width:1.625rem;
+				height:0.375rem;
 			}
 
 			>a:hover {

@@ -635,8 +635,8 @@ $pfontf: Pixel Countdown;
     img {
       margin: 8px;
       width: auto;
-      max-width: 212px;
-      max-height: 112px;
+      max-width: 141px;
+      max-height: 74px;
     }
 
   }
@@ -646,13 +646,13 @@ $pfontf: Pixel Countdown;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1122px;
+    width: 1040px;
 
     img {
-      margin: 8px;
+      margin: 16px;
       width: auto;
-      max-width: 212px;
-      max-height: 112px;
+      max-width: 141px;
+      max-height: 74px;
     }
   }
 
@@ -1548,13 +1548,15 @@ $pfontf: Pixel Countdown;
 
   .bottom-logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 140px auto;
+    margin: 80px auto;
     width: 1100px;
 
     img {
-      max-width: 260px;
-      max-height: 60px;
+      margin: 30px 0;
+      width: 260px;
+      height: 60px;
     }
 
     >a :hover {
