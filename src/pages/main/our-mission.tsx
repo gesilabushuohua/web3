@@ -24,17 +24,15 @@ const OurMission = () => {
           <div className="item">
             <div className="title unlock">Unlock</div>
             <div className="desc">
-              We challenge students from top universities worldwide to unlock
-              blockchain’s potential in solving economic, social and
-              environmental challenges of the next decade.
+              U-Hack is uniting the top thinkers and creators by starting a
+              series of global Web3 university hackathons
             </div>
           </div>
           <div className="item">
             <div className="title unleash">Unleash</div>
             <div className="desc">
-              We challenge students from top universities worldwide to unlock
-              blockchain’s potential in solving economic, social and
-              environmental challenges of the next decade.
+              We give them with the necessary tools to unleash these projects to
+              the world and make impact on a global scale.
             </div>
           </div>
         </div>

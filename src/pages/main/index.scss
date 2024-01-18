@@ -514,7 +514,7 @@ $pfontf: Pixel Countdown;
   overflow: hidden;
   background: url(../../assets/index/red-rect.svg) no-repeat, url(../../assets/index/cricle.svg) no-repeat;
   background-size: 22px 22px, 230px 230px;
-  background-position: calc(100% - 80px) 600px, 100% 615px;
+  background-position: calc(100% - 80px) 600px, 100% 605px;
   background-color: #0E0E0E;
 
 
@@ -530,7 +530,7 @@ $pfontf: Pixel Countdown;
   }
 
   .content {
-    margin: 77px auto 0;
+    margin: 77px auto;
     width: 822px;
 
     .overview {
