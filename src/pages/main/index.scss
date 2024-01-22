@@ -1567,6 +1567,14 @@ $pfontf: Pixel Countdown;
       transform: scale(1.15);
     }
 
+    >img {
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+
     /* .CAMBRIDGE {
       width: 186px;
     }
