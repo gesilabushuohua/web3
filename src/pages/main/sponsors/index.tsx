@@ -45,6 +45,7 @@ import logo27 from "./assets3/27-techub_logo_white.svg";
 import logo28 from "./assets3/28-metaera_white.svg";
 import logo29 from "./assets3/29-chain_catcher_white.svg";
 import logo30 from "./assets3/30-ChainDD_logo_white.svg";
+import logo31 from "./assets3/31-odaily.png";
 
 const redLogoList = [
   {
@@ -321,6 +322,12 @@ const bottomLogoList = [
     name: "logo30",
     className: "logo30",
     src: logo30,
+    link: "",
+  },
+  {
+    name: "logo31",
+    className: "logo31",
+    src: logo31,
     link: "",
   },
 ];
