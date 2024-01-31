@@ -80,7 +80,7 @@ const FAQ = () => {
         </div>
         <div className="concat">
           <div className="e-mail">
-            <a href={Email}>busines@uhack.xyz</a>
+            <a href={Email}>business@uhack.xyz</a>
           </div>
           <a href={Link}>
             <div className="w-link">
