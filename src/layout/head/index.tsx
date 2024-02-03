@@ -34,7 +34,6 @@ const Head = () => {
 
   const target = useRef("");
   const goPath = (id: string) => {
-    console.log({ pathname, id });
     if (pathname !== "/") {
       navigate("/");
       target.current = id;
