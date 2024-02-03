@@ -1,4 +1,4 @@
-import SectionHead from "../section-head";
+import SectionHead from "../../../components/section-head";
 import img1 from "./assest/person/1.png";
 import img2 from "./assest/person/2.png";
 import img3 from "./assest/person/3.png";
@@ -29,8 +29,8 @@ const Speakers = () => {
       <SectionHead title="SPEAKERS" theme="green" />
       <div className="content">
         {speakers.map((item, index) => (
-          <a href={item.link} target="_blank">
-            <div className="item" key={index}>
+          <a key={index} href={item.link} target="_blank">
+            <div className="item" >
               <div className="img">
                 <div className="mask"></div>
                 <img src={item.src} />

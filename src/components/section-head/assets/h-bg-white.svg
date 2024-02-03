@@ -1,0 +1,20 @@
+<svg width="110" height="56" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="15.75" height="9" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <rect x="0" y="0" stroke="null" width="18.4689" height="36.84386" fill="#FFFFFF" id="svg_1"/>
+  <rect y="18.4688" width="18.4689" height="18.4689" fill="#FFFFFF" id="svg_2"/>
+  <rect x="18.4766" y="37" width="18.4689" height="18.9689" fill="#FFFFFF" id="svg_3" stroke="null"/>
+  <rect x="36.9375" y="18.4688" width="18.4689" height="18.4689" fill="#FFFFFF" id="svg_4"/>
+  <rect y="0" stroke="null" x="36.9375" width="18.4689" height="36.84386" fill="#FFFFFF" id="svg_5"/>
+  <rect x="109.812" width="18.4689" height="18.4689" transform="rotate(90 109.81199645996094,7.105427357601003e-15) " fill="#FFFFFF" id="svg_6"/>
+  <rect x="82.0859" width="18.4689" height="37.2189" transform="rotate(90 91.32035064697266,9.234450340271005) " fill="#FFFFFF" id="svg_7" y="-9.375" stroke="null"/>
+  <rect stroke="null" x="45.56242" y="10.09368" width="18.84391" height="35.59415" transform="rotate(90 54.98437118530274,27.89075088500977) " fill="#FFFFFF" id="svg_8"/>
+  <rect x="81.96096" y="27.81306" width="19.0939" height="37.34377" transform="rotate(90 91.50791168212892,46.48495101928712) " fill="#FFFFFF" id="svg_9" stroke="null"/>
+  <rect x="109.812" y="36.938" width="18.4689" height="18.4689" transform="rotate(90 119.04644775390625,46.172451019287124) " fill="#FFFFFF" id="svg_10"/>
+ </g>
+</svg>

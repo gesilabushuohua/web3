@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, Telegram, Twitter, navlist } from "./constant";
+import { Link, Telegram, Twitter, navlist } from "../../constant";
 import logoSvg from "../../assets/home/logo2.svg";
 import xSvg from "../../assets/index/x.svg";
 import telegramSvg from "../../assets/index/telegram.svg";
@@ -30,41 +30,8 @@ const Index = () => {
     logoLttile.setSpeed(0.8);
   }, []);
 
-  const scrollToSection = (nav) => {
-    const { id } = nav;
-    const dom = document.getElementById(id);
-    const top = dom?.offsetTop;
-    window.scrollTo({ top: top - 80, behavior: "smooth" });
-  };
-
   return (
-    <div className="main">
-      <div className="head">
-        <div className="content">
-          <div className="logo">
-            <img className="head-logo" src={logoSvg} />
-          </div>
-          <ul className="navs">
-            {navlist.map((nav) => (
-              <li
-                className="nav"
-                key={nav.id}
-                onClick={() => scrollToSection(nav)}
-              >
-                {nav.text}
-              </li>
-            ))}
-          </ul>
-          <div className="head-links">
-            <a className="link" href={Twitter} target="_blank">
-              <img src={xSvg} />
-            </a>
-            <a className="link" href={Telegram} target="_blank">
-              <img src={telegramSvg} />
-            </a>
-          </div>
-        </div>
-      </div>
+    <>
       <div className="banner">
         <div className="content">
           <div className="bg">
@@ -104,7 +71,7 @@ const Index = () => {
       <Speakers />
       <Sponsors />
       <FAQ />
-    </div>
+    </>
   );
 };
 

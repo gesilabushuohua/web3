@@ -1,5 +1,5 @@
 import "../index.scss";
-import SectionHead from "../section-head";
+import SectionHead from "../../../components/section-head";
 import Blocktech from "./assets2/Blocktech_212.png";
 import Blocktech2 from "./assets2/blocktech.png";
 import Bristol from "./assets2/Bristol_212.png";
@@ -18,7 +18,7 @@ import Penn from "./assets2/Penn_212.png";
 import LBS from "./assets2/LBS_212.png";
 import cbstrans from "./assets2/cambridge.png";
 import conflux from "./assets2/conflux.png";
-import { Email, Link } from "../constant";
+import { Email, Link } from "../../../constant";
 
 const top3List = [
   {

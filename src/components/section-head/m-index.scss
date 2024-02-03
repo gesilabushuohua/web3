@@ -55,8 +55,9 @@
 
   .head-green {
     &::after {
-      background: url(../../../assets/index/h-bg-green.svg);
+      background: url(./assets/h-bg-green.svg);
       background-size: 0.6875rem 0.34375rem;
+      background-repeat: repeat-x;
     }
 
     .title {
@@ -70,8 +71,9 @@
 
   .head-white {
     &::after {
-      background: url(../../../assets/index/h-bg-white.svg);
+      background: url(./assets/h-bg-white.svg);
       background-size: 0.6875rem 0.34375rem;
+      background-repeat: repeat-x;
     }
 
     .title {
@@ -85,8 +87,9 @@
 
   .head-red {
     &::after {
-      background: url(../../../assets/index/h-bg-red.svg);
+      background: url(./assets/h-bg-red.svg);
       background-size: 0.6875rem 0.34375rem;
+      background-repeat: repeat-x;
     }
 
     .title {

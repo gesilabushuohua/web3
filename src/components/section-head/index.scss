@@ -56,8 +56,9 @@ $green: #01FF00;
 
 .head-green {
   &::after {
-    background: url(../../../assets/index/h-bg-green.svg);
+    background: url(./assets/h-bg-green.svg);
     background-size: 110px 55px;
+    background-repeat: repeat-x;
   }
 
   .title {
@@ -72,8 +73,9 @@ $green: #01FF00;
 
 .head-white {
   &::after {
-    background: url(../../../assets/index/h-bg-white.svg);
+    background: url(./assets/h-bg-white.svg);
     background-size: 110px 55px;
+    background-repeat: repeat-x;
   }
 
   .title {
@@ -87,8 +89,9 @@ $green: #01FF00;
 
 .head-red {
   &::after {
-    background: url(../../../assets/index/h-bg-red.svg);
+    background: url(./assets/h-bg-red.svg);
     background-size: 110px 55px;
+    background-repeat: repeat-x;
   }
 
   .title {

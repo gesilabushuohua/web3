@@ -1,22 +1,7 @@
-import SectionHead from "../section-head";
+import SectionHead from "../../../components/section-head";
 import "../index.scss";
 import telegramSvg from "../../../assets/index/telegram.svg";
-import { Link, Telegram } from "../constant";
-
-const isMobile = () => {
-  const userAgent = navigator.userAgent.toLowerCase();
-  const mobileKeywords = [
-    "iphone",
-    "ipod",
-    "ipad",
-    "android",
-    "webos",
-    "blackberry",
-    "windows phone",
-  ];
-
-  return mobileKeywords.some((keyword) => userAgent.includes(keyword));
-};
+import { isMobile, Link, Telegram } from "../../../constant";
 
 const TimeLine = () => {
   return (

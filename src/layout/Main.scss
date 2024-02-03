@@ -1,0 +1,29 @@
+.main {
+  margin: 0;
+  overflow-x: auto;
+  background-color: #0E0E0E;
+  min-width: 900px;
+
+  a {
+    text-decoration: none;
+    vertical-align: top;
+  }
+
+  img {
+    vertical-align: top;
+  }
+}
+
+@media screen and (max-width: 900px) {
+	.main {
+		margin: 0;
+		overflow-x: auto;
+		background-color: #0E0E0E;
+		min-width: 5.625rem;
+    min-height: 100vh;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}

@@ -1,4 +1,4 @@
-import SectionHead from "../section-head";
+import SectionHead from "../../../components/section-head";
 import "../index.scss";
 import conflux from "./assets2/conflux.png";
 import dwflabsfeher from "./assets2/dwf.png";
@@ -342,10 +342,9 @@ const Sponsors = () => {
           <div className="inner-box ">
             <div className="logos">
               {redLogoList.map((item) => (
-                <a href={item.link} target="_blank">
+                <a key={item.src} href={item.link} target="_blank">
                   <img
                     className={item.className}
-                    key={item.src}
                     src={item.src}
                     alt={item.name}
                   />
@@ -359,10 +358,9 @@ const Sponsors = () => {
           <div className="inner-box ">
             <div className="logos">
               {grayLogoList.map((item) => (
-                <a href={item.link} target="_blank">
+                <a key={item.src} href={item.link} target="_blank">
                   <img
                     className={item.className}
-                    key={item.src}
                     src={item.src}
                     alt={item.name}
                   />
@@ -379,9 +377,8 @@ const Sponsors = () => {
         <div className="bottom-logos">
           {bottomLogoList.map((item) =>
             item.link ? (
-              <a href={item.link} target="_blank">
+              <a key={item.src} href={item.link} target="_blank">
                 <img
-                  key={item.src}
                   className={item.className}
                   src={item.src}
                   alt={item.name}

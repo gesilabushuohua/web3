@@ -1,0 +1,281 @@
+$ffontf: Frames Part One;
+$pfontf: Pixel Countdown;
+
+.archive {
+  padding-top: 88px;
+  overflow-x: hidden;
+
+  .list {
+    margin: 20px auto 110px;
+    width: 1200px;
+
+    .warp-item {
+      line-height: 38px;
+    }
+
+    .ant-collapse-header {
+      display: block;
+      color: #FFF;
+      line-height: 49px;
+
+      .ant-collapse-expand-icon {
+        position: absolute;
+        left: 340px;
+        width: 49px;
+        height: 49px;
+        line-height: 49px;
+        border: 1px solid #FFF;
+
+        .ant-collapse-arrow {
+          margin: 0 14px;
+          font-size: 20px;
+        }
+      }
+
+      &:hover {
+
+        .ant-collapse-header,
+        .ant-collapse-arrow {
+          color: #01FF00;
+        }
+
+        .ant-collapse-expand-icon {
+          border: 1px solid #01FF00;
+        }
+      }
+    }
+
+    .ant-collapse-item-active {
+
+      .ant-collapse-header,
+      .ant-collapse-arrow {
+        color: #01FF00;
+      }
+
+      .ant-collapse-expand-icon {
+        border: 1px solid #01FF00;
+      }
+    }
+
+    .ant-collapse-header-text {
+      position: relative;
+      display: block;
+      margin-left: 140px;
+      width: 160px;
+      color: #01FF00;
+      font-family: $ffontf;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 49px !important;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 260px;
+        width: 2400px;
+        height: 1px;
+        background-color: #FFF;
+      }
+    }
+
+  }
+
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .video {
+      margin-bottom: 34px;
+      width: 569px;
+      color: #FFF;
+      font-size: 20px;
+      font-family: PingFang SC;
+
+      .title {
+        font-family: $ffontf;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 24px;
+      }
+
+      .link {
+        display: block;
+        margin-top: 27px;
+        width: 569px;
+        height: 320px;
+        border: 8px solid #FF006E;
+        box-sizing: border-box;
+        background: url(./assets/bg.svg);
+        background-size: 569px 320px;
+        background-position: center;
+
+        .play {
+          margin: 118px auto;
+          width: 84px;
+          height: 84px;
+          background-color: #FF006E;
+          clip-path: polygon(0 0, 84px 42px, 0 84px);
+        }
+      }
+
+      .info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .time {
+          color: #01FF00;
+        }
+      }
+
+      .desc {
+        margin-top: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .archive {
+    padding-top: 1.25rem;
+    overflow-x: hidden;
+
+    .list {
+      margin: 0.125rem auto 0.6875rem;
+      width: 6.875rem;
+
+      .warp-item {
+        line-height: 0.2375rem;
+      }
+
+      .ant-collapse-header {
+        display: block;
+        color: #FFF;
+        line-height: 0.30625rem;
+
+        .ant-collapse-expand-icon {
+          position: absolute;
+          left: 2.425rem;
+          width: 0.30625rem;
+          height: 0.30625rem;
+          line-height: 0.30625rem;
+          border: 1px solid #FFF;
+
+          .ant-collapse-arrow {
+            margin: 0 0.0875rem;
+            font-size: 0.125rem;
+          }
+        }
+
+        &:hover {
+
+          .ant-collapse-header,
+          .ant-collapse-arrow {
+            color: #01FF00;
+          }
+
+          .ant-collapse-expand-icon {
+            border: 1px solid #01FF00;
+          }
+        }
+      }
+
+      .ant-collapse-item-active {
+
+        .ant-collapse-header,
+        .ant-collapse-arrow {
+          color: #01FF00;
+        }
+
+        .ant-collapse-expand-icon {
+          border: 1px solid #01FF00;
+        }
+      }
+
+      .ant-collapse-header-text {
+        position: relative;
+        display: block;
+        margin-left: 0.875rem;
+        width: 1rem;
+        color: #01FF00;
+        font-family: $ffontf;
+        font-size: 0.2375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.30625rem !important;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0.15625rem;
+          left: 1.625rem;
+          width: 15rem;
+          height: 0.00625rem;
+          background-color: #FFF;
+        }
+      }
+    }
+
+    .videos {
+      display: block;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .video {
+        margin: 0 auto 0.2125rem;
+        width: 6.55625rem;
+        color: #FFF;
+        font-size: 0.125rem;
+        font-family: PingFang SC;
+
+        .title {
+          font-family: $ffontf;
+          font-weight: bold;
+          font-size: 0.1375rem;
+          line-height: 0.3rem;
+        }
+
+        .link {
+          display: block;
+          margin-top: 0.16875rem;
+          width: 6.55625rem;
+          height: 4rem;
+          border: 8px solid #FF006E;
+          box-sizing: border-box;
+          background: url(./assets/bg.svg);
+          background-size: 6.55625rem 4rem;
+          background-position: center;
+
+          .play {
+            margin: 1.2rem auto;
+            width: 1rem;
+            height: 1rem;
+            background-color: #FF006E;
+            clip-path: polygon(0 0, 1rem 0.5rem, 0 1rem);
+          }
+        }
+
+        .info {
+          margin-top: 0.0625rem;
+          display: flex;
+          justify-content: space-between;
+
+          .time {
+            color: #01FF00;
+          }
+        }
+
+        .desc {
+          margin-top: 0.1125rem;
+          line-height: 0.3rem;
+        }
+      }
+    }
+  }
+
+}

@@ -1,4 +1,4 @@
-import SectionHead from "./section-head";
+import SectionHead from "../../components/section-head";
 import "./index.scss";
 
 const OurMission = () => {

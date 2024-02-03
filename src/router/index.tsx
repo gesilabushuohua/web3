@@ -1,8 +1,10 @@
 import  { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../layout/Error";
+import Main from "../layout/main";
+import Agenda from "../pages/agenda";
+import Archive from "../pages/archive";
 
-const Page = lazy(() => import("../layout/Home"));
 const Index = lazy(() => import("../pages/main"));
 const NotFound = lazy(() => import("../layout/NotFound"));
 
@@ -14,8 +16,22 @@ const routes = [
   }, */
   {
     path: "/",
-    element: <Index />,
+    element: <Main />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Index />,
+      },
+      {
+        path: "agenda",
+        element: <Agenda />,
+      },
+      {
+        path: "archive",
+        element: <Archive />,
+      },
+    ]
   },
   /* {
     path: "/page",
