@@ -11,9 +11,9 @@ import img9 from "./assest/person/9.png";
 import img10 from "./assest/person/10.png";
 
 const speakers = [
-  { name: "Chef Fran",  desc: "PancakeSwap", src: img1, link: "https://twitter.com/ChefFranPS", },
-  { name: "BKT",  desc: "ACryptoS", src: img2, link: "https://twitter.com/CryptoBKT", },
-  { name: "Martin Carrica",  desc: "Mountain Protocol", src: img3, link: "https://twitter.com/mcarrica", },
+  { role: 'speaker', name: "Chef Fran",  desc: "PancakeSwap",  src: img1, link: "https://twitter.com/ChefFranPS", },
+  { role: 'judge', name: "BKT",  desc: "ACryptoS", src: img2, link: "https://twitter.com/CryptoBKT", },
+  { role: 'mentor', name: "Martin Carrica",  desc: "Mountain Protocol", src: img3, link: "https://twitter.com/mcarrica", },
   { name: "Jean",  desc: "MUX Protocol", src: img4, link: "https://twitter.com/muxprotocol", },
   { name: "Anton Buenavista",  desc: "Pendle", src: img5, link: "https://twitter.com/ayobuenavista", },
   { name: "Darren Langley",  desc: "Rocket Pool", src: img6, link: "https://twitter.com/langerstwit", },
@@ -29,7 +29,7 @@ const Speakers = () => {
       <SectionHead title="SPEAKERS" theme="green" />
       <div className="content">
         {speakers.map((item, index) => (
-          <a key={index} href={item.link} target="_blank">
+          <a key={index} href={item.link} target="_blank" className={item.role}>
             <div className="item" >
               <div className="img">
                 <div className="mask"></div>
