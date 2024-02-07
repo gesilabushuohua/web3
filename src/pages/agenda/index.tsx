@@ -1,77 +1,88 @@
 import { Collapse } from "antd";
-import type { CollapseProps } from "antd";
 import SectionHead from "../../components/section-head";
 import "./index.scss";
 import { isMobile } from "../../constant";
+import { useEffect, useState } from "react";
+import dayjs from "dayjs";
 
-const openWeeks = [
-  {
-    week: "Tue",
-    date: "02/11",
-    children: [
-      {
-        title:
-          "How Pendle is bringing a $6T TradFi Fixed-income industry into DeFi",
-        time: "01:00PM-05:00PM",
-        desc: "Pendle is a yield-trading protocol on the blockchain, enabling you to earn a fixed yield or long DeFi yields. Learn how this financial primitive fits in the greater decentralized finance landscape",
-        person: ["Anton Buenvista", "Pendle"],
-        link: "#",
-      },
-    ],
-  },
-  {
-    week: "Tue",
-    date: "02/12",
-    children: [
-      {
-        title:
-          "How Pendle is bringing a $6T TradFi Fixed-income industry into DeFi",
-        time: "01:00PM-05:00PM",
-        desc: "Pendle is a yield-trading protocol on the blockchain, enabling you to earn a fixed yield or long DeFi yields. Learn how this financial primitive fits in the greater decentralized finance landscape",
-        person: ["Anton Buenvista", "Pendle"],
-        link: "#",
-      },
-    ],
-  },
-  {
-    week: "Tue",
-    date: "02/13",
-    children: [
-      {
-        title:
-          "How Pendle is bringing a $6T TradFi Fixed-income industry into DeFi",
-        time: "01:00PM-05:00PM",
-        desc: "Pendle is a yield-trading protocol on the blockchain, enabling you to earn a fixed yield or long DeFi yields. Learn how this financial primitive fits in the greater decentralized finance landscape",
-        person: ["Anton Buenvista", "Pendle"],
-        link: "#",
-      },
-      {
-        title:
-          "How Pendle is bringing a $6T TradFi Fixed-income industry into DeFi",
-        time: "01:00PM-05:00PM",
-        desc: "Pendle is a yield-trading protocol on the blockchain, enabling you to earn a fixed yield or long DeFi yields. Learn how this financial primitive fits in the greater decentralized finance landscape",
-        person: ["Anton Buenvista", "Pendle"],
-        link: "#",
-      },
-    ],
-  },
-];
-const week2 = [
-  {
-    week: "Tue",
-    date: "02/11",
-    children: [
-      {
-        title:
-          "How Pendle is bringing a $6T TradFi Fixed-income industry into DeFi",
-        time: "01:00PM-05:00PM",
-        desc: "Pendle is a yield-trading protocol on the blockchain, enabling you to earn a fixed yield or long DeFi yields. Learn how this financial primitive fits in the greater decentralized finance landscape",
-        person: ["Anton Buenvista", "Pendle"],
-        link: "#",
-      },
-    ],
-  },
-];
+const LinkMap = {
+  "WATCH": 'watchLink',
+  "BOOK A SLOT": "bookLink",
+  "JOIN": "joinLink",
+}
+
+const WeekIndex = {
+  "OPENING WEEK": 0,
+  "WEEK 2": 1,
+  "WEEK 3": 2,
+  "WEEK 4": 3,
+  "CLOSING WEEK": 4,
+};
+const WeekNum = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+const formatData = (data: Array<any>) => {
+  const tempWeeks = [
+    {
+      key: "1",
+      label: "OPENING WEEK",
+      children: [],
+    },
+    {
+      key: "2",
+      label: "WEEK 2",
+      children: [],
+    },
+    {
+      key: "3",
+      label: "WEEK 3",
+      children: [],
+    },
+    {
+      key: "4",
+      label: "WEEK 4",
+      children: [],
+    },
+    {
+      key: "5",
+      label: "CLOSING WEEK",
+      children: [],
+    },
+  ];
+
+  const WeekDayMap = {
+    "OPENING WEEK": {},
+    "WEEK 2": {},
+    "WEEK 3": {},
+    "WEEK 4": {},
+    "CLOSING WEEK": {},
+  };
+
+  data.forEach((day) => {
+    const { week, dateUTC } = day;
+    if (WeekDayMap[week][dateUTC]) {
+      WeekDayMap[week][dateUTC].push(day);
+    } else {
+      WeekDayMap[week][dateUTC] = [day];
+    }
+  });
+
+  Object.keys(WeekDayMap).forEach((week) => {
+    const index = WeekIndex[week];
+    const weekVal = WeekDayMap[week] || {};
+    const children = Object.keys(weekVal).map((day) => {
+      const num = dayjs(day).day();
+      const date = dayjs(day).format("MM/DD");
+      const dayVal = weekVal[day];
+      return {
+        week: WeekNum[num],
+        date: date,
+        children: dayVal,
+      };
+    });
+    tempWeeks[index].children = children;
+  });
+  return tempWeeks;
+};
 
 const Weeks = ({ data }) => {
   const isM = isMobile();
@@ -83,28 +94,32 @@ const Weeks = ({ data }) => {
       </div>
       <div className="right">
         {day.children.map((item, index: number) => {
+          const { dateUTC, startTimeUTC, endTimeUTC, button } = item;
+          const start = dayjs(`${dateUTC} ${startTimeUTC}:00`).format("h:mm A");
+          const end = dayjs(`${dateUTC} ${endTimeUTC}:00`).format("h:mm A");
+          const time = `${start} - ${end}`;
+          const link = LinkMap[button];
           return (
             <div key={index} className="inner-box">
               <div className="title">
                 <div className="text">{item.title}</div>
-                {isM ? null : <div className="time">{item.time}</div>}
+                {isM ? null : <div className="time">{time}</div>}
               </div>
               <div className="content">
-                <div className="desc">{item.desc}</div>
+                <div className="desc">{item.description}</div>
                 <div className="links">
-                  {isM ? <div className="time">{item.time}</div> : null}
+                  {isM ? <div className="time">{time}</div> : null}
                   <div className="person">
-                    {item.person.map((name: string) => {
-                      return <div key={name} className="name">{name}</div>;
-                    })}
+                    <div className="name">{item.name}</div>
+                    <div className="name">{item.company}</div>
                   </div>
                   <div className="info">
-                    <div className="workshop">Technical workshop</div>
-                    <div className="recording">Recording</div>
+                    <div className="workshop">{item.type}</div>
+                    <div className="recording">{item.format}</div>
                   </div>
-                  <a href={item.link}>
+                  <a href={link}>
                     <div className="w-link">
-                      <div className="text">WATCH</div>
+                      <div className="text">{item.button}</div>
                       <div className="bg"></div>
                     </div>
                   </a>
@@ -118,40 +133,54 @@ const Weeks = ({ data }) => {
   ));
 };
 
-const items: CollapseProps["items"] = [
-  {
-    key: "1",
-    label: <div className="warp-item">OPENING WEEK</div>,
-    children: <Weeks data={openWeeks} />,
-  },
-  {
-    key: "2",
-    label: "WEEK 2",
-    children: <Weeks data={week2} />,
-  },
-  {
-    key: "3",
-    label: "WEEK 3",
-    children: <Weeks data={week2} />,
-  },
-  {
-    key: "4",
-    label: "WEEK 4",
-    children: <Weeks data={week2} />,
-  },
-  {
-    key: "5",
-    label: <div className="warp-item">CLOSING WEEK</div>,
-    children: <Weeks data={week2} />,
-  },
-];
-
 const Agenda = () => {
+  const [weeks, setWeeks] = useState([]);
+
+  useEffect(() => {
+    const myHeaders = new Headers();
+    myHeaders.append(
+      "X-Master-Key",
+      "$2a$10$Ey186RusT.vPCGO0g9Az0.kpfWLuJPEiu6NcUhnkUzJVUdFybX0ga"
+    );
+
+    const requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow",
+    };
+
+    fetch(
+      "https://api.jsonbin.io/v3/b/65c25032dc74654018a11e0b",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => {
+        if (!result) {
+          return;
+        }
+        try {
+          const data = JSON.parse(result);
+          const newData = formatData(data.record);
+          console.log({ newData });
+          const newWeeks = newData.map((week, index) => {
+            return {
+              key: index + 1,
+              label: <div className="warp-item">{week.label}</div>,
+              children: <Weeks data={week.children} />,
+            };
+          });
+          setWeeks(newWeeks);
+        } catch (err) {
+          console.error(err);
+        }
+      })
+      .catch((error) => console.log("error", error));
+  }, []);
   return (
     <div className="agenda">
       <SectionHead title="AGENDA" theme="green" />
       <div className="list">
-        <Collapse defaultActiveKey={["1"]} ghost items={items} />
+        <Collapse defaultActiveKey={[1]} ghost items={weeks} />
       </div>
     </div>
   );
