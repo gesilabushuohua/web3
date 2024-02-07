@@ -122,7 +122,7 @@ const Head = () => {
       id: "agenda",
       key: "agenda",
     },
-    {
+    /* {
       label: (
         <div className="menu-item-line" onClick={() => navigate("/archive")}>
           ARCHIVE
@@ -130,7 +130,7 @@ const Head = () => {
       ),
       id: "archive",
       key: "archive",
-    },
+    }, */
     {
       label: (
         <div className="menu-item" onClick={() => {}}>

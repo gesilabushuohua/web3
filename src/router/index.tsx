@@ -1,12 +1,11 @@
-import  { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../layout/Error";
+import Index from "../pages/main";
 import Main from "../layout/main";
 import Agenda from "../pages/agenda";
 import Archive from "../pages/archive";
+import NotFound from "../layout/NotFound";
 
-const Index = lazy(() => import("../pages/main"));
-const NotFound = lazy(() => import("../layout/NotFound"));
 
 const routes = [
   /* {
