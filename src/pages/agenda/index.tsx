@@ -161,7 +161,6 @@ const Agenda = () => {
         try {
           const data = JSON.parse(result);
           const newData = formatData(data.record);
-          console.log({ newData });
           const newWeeks = newData.map((week, index) => {
             return {
               key: index + 1,
