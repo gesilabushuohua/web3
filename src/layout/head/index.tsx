@@ -115,7 +115,15 @@ const Head = () => {
     },
     {
       label: (
-        <div className="menu-item-line" onClick={() => navigate("/agenda")}>
+        <div
+          className="menu-item-line"
+          onClick={() =>
+            window.open(
+              "https://organized-dahlia-ae3.notion.site/U-Hack-Agenda-b556b9bd66c1473898a9d009f9f33bae",
+              "_blank"
+            )
+          }
+        >
           AGENDA
         </div>
       ),
@@ -178,7 +186,16 @@ const Head = () => {
               <li
                 className="nav"
                 key={nav.path}
-                onClick={() => navigate(nav.path)}
+                onClick={() => {
+                  if (nav.text === "AGENDA") {
+                    window.open(
+                      "https://organized-dahlia-ae3.notion.site/U-Hack-Agenda-b556b9bd66c1473898a9d009f9f33bae",
+                      "_blank"
+                    );
+                    return;
+                  }
+                  navigate(nav.path);
+                }}
               >
                 {nav.text}
               </li>
