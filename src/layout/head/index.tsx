@@ -141,7 +141,9 @@ const Head = () => {
     }, */
     {
       label: (
-        <div className="menu-item" onClick={() => {}}>
+        <div className="menu-item" onClick={() => {
+          window.open("https://u-hack.devfolio.co/overview", "_blank")
+        }}>
           SUBMIT
         </div>
       ),
@@ -201,7 +203,7 @@ const Head = () => {
               </li>
             ))}
 
-            <a className="nav" href="#">
+            <a className="nav" href="https://u-hack.devfolio.co/overview" target="_blank">
               <div className="r-link">
                 <div className="text">SUBMIT</div>
                 <div className="bg"></div>

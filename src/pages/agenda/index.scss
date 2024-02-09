@@ -108,13 +108,13 @@ $pfontf: Pixel Countdown;
     .title {
       display: flex;
       justify-content: space-between;
-      padding: 0 24px;
-      height: 70px;
+      align-items: center;
+      padding: 16px 24px;
+      // height: 70px;
       border-bottom: 1px solid #FFF;
 
       .text {
         flex: 1;
-        margin-top: 8px;
         color: #FFF;
         font-family: $ffontf;
         font-weight: bold;
@@ -124,7 +124,6 @@ $pfontf: Pixel Countdown;
 
       .time {
         margin-left: 40px;
-        line-height: 70px;
         font-family: PingFang SC;
         font-size: 20px;
         color: #01FF00;
@@ -146,13 +145,14 @@ $pfontf: Pixel Countdown;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         color: #FFF;
         font-size: 20px;
-        background: url(./assets/rect.svg) no-repeat,
-          url(./assets/rect.svg) no-repeat;
-        background-size: 12px 12px, 12px 12px;
-        background-position: 30% center, 66% center;
 
+        .rect {
+          width: 12px;
+          height: 12px;
+        }
 
         .recording {
           color: #01FF00;
@@ -215,6 +215,25 @@ $pfontf: Pixel Countdown;
       }
     }
 
+
+    &-disabled {
+      cursor: not-allowed;
+
+      .text {
+        color: #898989;
+      }
+
+      .bg {
+        box-shadow: 30px 10px 0 0 #898989, 40px 10px 0 0 #898989, 50px 10px 0 0 #898989, 60px 10px 0 0 #898989, 70px 10px 0 0 #898989, 80px 10px 0 0 #898989, 90px 10px 0 0 #898989, 100px 10px 0 0 #898989, 110px 10px 0 0 #898989, 120px 10px 0 0 #898989, 130px 10px 0 0 #898989, 140px 10px 0 0 #898989, 150px 10px 0 0 #898989, 160px 10px 0 0 #898989, 170px 10px 0 0 #898989, 180px 10px 0 0 #898989, 20px 20px 0 0 #898989, 30px 20px 0 0 #DADADA, 40px 20px 0 0 #DADADA, 50px 20px 0 0 #DADADA, 60px 20px 0 0 #DADADA, 70px 20px 0 0 #DADADA, 80px 20px 0 0 #DADADA, 90px 20px 0 0 #DADADA, 100px 20px 0 0 #DADADA, 110px 20px 0 0 #DADADA, 120px 20px 0 0 #DADADA, 130px 20px 0 0 #DADADA, 140px 20px 0 0 #DADADA, 150px 20px 0 0 #DADADA, 160px 20px 0 0 #DADADA, 170px 20px 0 0 #DADADA, 180px 20px 0 0 #DADADA, 190px 20px 0 0 #898989, 10px 30px 0 0 #898989, 20px 30px 0 0 #DADADA, 30px 30px 0 0 #DADADA, 40px 30px 0 0 #DADADA, 50px 30px 0 0 #DADADA, 60px 30px 0 0 #DADADA, 70px 30px 0 0 #DADADA, 80px 30px 0 0 #DADADA, 90px 30px 0 0 #DADADA, 100px 30px 0 0 #DADADA, 110px 30px 0 0 #DADADA, 120px 30px 0 0 #DADADA, 130px 30px 0 0 #DADADA, 140px 30px 0 0 #DADADA, 150px 30px 0 0 #DADADA, 160px 30px 0 0 #DADADA, 170px 30px 0 0 #DADADA, 180px 30px 0 0 #DADADA, 190px 30px 0 0 #DADADA, 200px 30px 0 0 #898989, 10px 40px 0 0 #898989, 20px 40px 0 0 #DADADA, 30px 40px 0 0 #DADADA, 40px 40px 0 0 #DADADA, 50px 40px 0 0 #DADADA, 60px 40px 0 0 #DADADA, 70px 40px 0 0 #DADADA, 80px 40px 0 0 #DADADA, 90px 40px 0 0 #DADADA, 100px 40px 0 0 #DADADA, 110px 40px 0 0 #DADADA, 120px 40px 0 0 #DADADA, 130px 40px 0 0 #DADADA, 140px 40px 0 0 #DADADA, 150px 40px 0 0 #DADADA, 160px 40px 0 0 #DADADA, 170px 40px 0 0 #DADADA, 180px 40px 0 0 #DADADA, 190px 40px 0 0 #DADADA, 200px 40px 0 0 #898989, 20px 50px 0 0 #898989, 30px 50px 0 0 #DADADA, 40px 50px 0 0 #DADADA, 50px 50px 0 0 #DADADA, 60px 50px 0 0 #DADADA, 70px 50px 0 0 #DADADA, 80px 50px 0 0 #DADADA, 90px 50px 0 0 #DADADA, 100px 50px 0 0 #DADADA, 110px 50px 0 0 #DADADA, 120px 50px 0 0 #DADADA, 130px 50px 0 0 #DADADA, 140px 50px 0 0 #DADADA, 150px 50px 0 0 #DADADA, 160px 50px 0 0 #DADADA, 170px 50px 0 0 #DADADA, 180px 50px 0 0 #DADADA, 190px 50px 0 0 #898989, 30px 60px 0 0 #898989, 40px 60px 0 0 #898989, 50px 60px 0 0 #898989, 60px 60px 0 0 #898989, 70px 60px 0 0 #898989, 80px 60px 0 0 #898989, 90px 60px 0 0 #898989, 100px 60px 0 0 #898989, 110px 60px 0 0 #898989, 120px 60px 0 0 #898989, 130px 60px 0 0 #898989, 140px 60px 0 0 #898989, 150px 60px 0 0 #898989, 160px 60px 0 0 #898989, 170px 60px 0 0 #898989, 180px 60px 0 0 #898989;
+      }
+
+      &:hover {
+        .bg {
+          box-shadow: 30px 10px 0 0 #898989, 40px 10px 0 0 #898989, 50px 10px 0 0 #898989, 60px 10px 0 0 #898989, 70px 10px 0 0 #898989, 80px 10px 0 0 #898989, 90px 10px 0 0 #898989, 100px 10px 0 0 #898989, 110px 10px 0 0 #898989, 120px 10px 0 0 #898989, 130px 10px 0 0 #898989, 140px 10px 0 0 #898989, 150px 10px 0 0 #898989, 160px 10px 0 0 #898989, 170px 10px 0 0 #898989, 180px 10px 0 0 #898989, 20px 20px 0 0 #898989, 30px 20px 0 0 #DADADA, 40px 20px 0 0 #DADADA, 50px 20px 0 0 #DADADA, 60px 20px 0 0 #DADADA, 70px 20px 0 0 #DADADA, 80px 20px 0 0 #DADADA, 90px 20px 0 0 #DADADA, 100px 20px 0 0 #DADADA, 110px 20px 0 0 #DADADA, 120px 20px 0 0 #DADADA, 130px 20px 0 0 #DADADA, 140px 20px 0 0 #DADADA, 150px 20px 0 0 #DADADA, 160px 20px 0 0 #DADADA, 170px 20px 0 0 #DADADA, 180px 20px 0 0 #DADADA, 190px 20px 0 0 #898989, 10px 30px 0 0 #898989, 20px 30px 0 0 #DADADA, 30px 30px 0 0 #DADADA, 40px 30px 0 0 #DADADA, 50px 30px 0 0 #DADADA, 60px 30px 0 0 #DADADA, 70px 30px 0 0 #DADADA, 80px 30px 0 0 #DADADA, 90px 30px 0 0 #DADADA, 100px 30px 0 0 #DADADA, 110px 30px 0 0 #DADADA, 120px 30px 0 0 #DADADA, 130px 30px 0 0 #DADADA, 140px 30px 0 0 #DADADA, 150px 30px 0 0 #DADADA, 160px 30px 0 0 #DADADA, 170px 30px 0 0 #DADADA, 180px 30px 0 0 #DADADA, 190px 30px 0 0 #DADADA, 200px 30px 0 0 #898989, 10px 40px 0 0 #898989, 20px 40px 0 0 #DADADA, 30px 40px 0 0 #DADADA, 40px 40px 0 0 #DADADA, 50px 40px 0 0 #DADADA, 60px 40px 0 0 #DADADA, 70px 40px 0 0 #DADADA, 80px 40px 0 0 #DADADA, 90px 40px 0 0 #DADADA, 100px 40px 0 0 #DADADA, 110px 40px 0 0 #DADADA, 120px 40px 0 0 #DADADA, 130px 40px 0 0 #DADADA, 140px 40px 0 0 #DADADA, 150px 40px 0 0 #DADADA, 160px 40px 0 0 #DADADA, 170px 40px 0 0 #DADADA, 180px 40px 0 0 #DADADA, 190px 40px 0 0 #DADADA, 200px 40px 0 0 #898989, 20px 50px 0 0 #898989, 30px 50px 0 0 #DADADA, 40px 50px 0 0 #DADADA, 50px 50px 0 0 #DADADA, 60px 50px 0 0 #DADADA, 70px 50px 0 0 #DADADA, 80px 50px 0 0 #DADADA, 90px 50px 0 0 #DADADA, 100px 50px 0 0 #DADADA, 110px 50px 0 0 #DADADA, 120px 50px 0 0 #DADADA, 130px 50px 0 0 #DADADA, 140px 50px 0 0 #DADADA, 150px 50px 0 0 #DADADA, 160px 50px 0 0 #DADADA, 170px 50px 0 0 #DADADA, 180px 50px 0 0 #DADADA, 190px 50px 0 0 #898989, 30px 60px 0 0 #898989, 40px 60px 0 0 #898989, 50px 60px 0 0 #898989, 60px 60px 0 0 #898989, 70px 60px 0 0 #898989, 80px 60px 0 0 #898989, 90px 60px 0 0 #898989, 100px 60px 0 0 #898989, 110px 60px 0 0 #898989, 120px 60px 0 0 #898989, 130px 60px 0 0 #898989, 140px 60px 0 0 #898989, 150px 60px 0 0 #898989, 160px 60px 0 0 #898989, 170px 60px 0 0 #898989, 180px 60px 0 0 #898989;
+        }
+
+      }
+    }
 
   }
 
@@ -455,6 +474,25 @@ $pfontf: Pixel Countdown;
           box-shadow: 0.1875rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.3125rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.375rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.4375rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.5625rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.625rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.6875rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.8125rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.875rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.9375rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 1rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 1.0625rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 1.125rem 0.0625rem 0 0 rgba(1, 255, 0, 1), 0.125rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.1875rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.3125rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.375rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.4375rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.5625rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.625rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.6875rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.8125rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.875rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.9375rem 0.125rem 0 0 rgba(1, 255, 0, 1), 1rem 0.125rem 0 0 rgba(1, 255, 0, 1), 1.0625rem 0.125rem 0 0 rgba(1, 255, 0, 1), 1.125rem 0.125rem 0 0 rgba(1, 255, 0, 1), 1.1875rem 0.125rem 0 0 rgba(1, 255, 0, 1), 0.0625rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.125rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.1875rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.3125rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.375rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.4375rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.5625rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.625rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.6875rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.8125rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.875rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.9375rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 1rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 1.0625rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 1.125rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 1.1875rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 1.25rem 0.1875rem 0 0 rgba(1, 255, 0, 1), 0.0625rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.125rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.1875rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.3125rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.375rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.4375rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.5625rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.625rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.6875rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.8125rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.875rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.9375rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.0625rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.125rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.1875rem 0.25rem 0 0 rgba(1, 255, 0, 1), 1.25rem 0.25rem 0 0 rgba(1, 255, 0, 1), 0.125rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.1875rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.3125rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.375rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.4375rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.5625rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.625rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.6875rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.8125rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.875rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.9375rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 1rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 1.0625rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 1.125rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 1.1875rem 0.3125rem 0 0 rgba(1, 255, 0, 1), 0.1875rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.25rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.3125rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.375rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.4375rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.5rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.5625rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.625rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.6875rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.75rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.8125rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.875rem 0.375rem 0 0 rgba(1, 255, 0, 1), 0.9375rem 0.375rem 0 0 rgba(1, 255, 0, 1), 1rem 0.375rem 0 0 rgba(1, 255, 0, 1), 1.0625rem 0.375rem 0 0 rgba(1, 255, 0, 1), 1.125rem 0.375rem 0 0 rgba(1, 255, 0, 1);
         }
       }
+
+      &-disabled {
+        cursor: not-allowed;
+
+        .text {
+          color: #898989;
+        }
+
+        .bg {
+          box-shadow: 0.1875rem 0.0625rem 0 0 #898989, 0.25rem 0.0625rem 0 0 #898989, 0.3125rem 0.0625rem 0 0 #898989, 0.375rem 0.0625rem 0 0 #898989, 0.4375rem 0.0625rem 0 0 #898989, 0.5rem 0.0625rem 0 0 #898989, 0.5625rem 0.0625rem 0 0 #898989, 0.625rem 0.0625rem 0 0 #898989, 0.6875rem 0.0625rem 0 0 #898989, 0.75rem 0.0625rem 0 0 #898989, 0.8125rem 0.0625rem 0 0 #898989, 0.875rem 0.0625rem 0 0 #898989, 0.9375rem 0.0625rem 0 0 #898989, 1rem 0.0625rem 0 0 #898989, 1.0625rem 0.0625rem 0 0 #898989, 1.125rem 0.0625rem 0 0 #898989, 0.125rem 0.125rem 0 0 #898989, 0.1875rem 0.125rem 0 0 #DADADA, 0.25rem 0.125rem 0 0 #DADADA, 0.3125rem 0.125rem 0 0 #DADADA, 0.375rem 0.125rem 0 0 #DADADA, 0.4375rem 0.125rem 0 0 #DADADA, 0.5rem 0.125rem 0 0 #DADADA, 0.5625rem 0.125rem 0 0 #DADADA, 0.625rem 0.125rem 0 0 #DADADA, 0.6875rem 0.125rem 0 0 #DADADA, 0.75rem 0.125rem 0 0 #DADADA, 0.8125rem 0.125rem 0 0 #DADADA, 0.875rem 0.125rem 0 0 #DADADA, 0.9375rem 0.125rem 0 0 #DADADA, 1rem 0.125rem 0 0 #DADADA, 1.0625rem 0.125rem 0 0 #DADADA, 1.125rem 0.125rem 0 0 #DADADA, 1.1875rem 0.125rem 0 0 #898989, 0.0625rem 0.1875rem 0 0 #898989, 0.125rem 0.1875rem 0 0 #DADADA, 0.1875rem 0.1875rem 0 0 #DADADA, 0.25rem 0.1875rem 0 0 #DADADA, 0.3125rem 0.1875rem 0 0 #DADADA, 0.375rem 0.1875rem 0 0 #DADADA, 0.4375rem 0.1875rem 0 0 #DADADA, 0.5rem 0.1875rem 0 0 #DADADA, 0.5625rem 0.1875rem 0 0 #DADADA, 0.625rem 0.1875rem 0 0 #DADADA, 0.6875rem 0.1875rem 0 0 #DADADA, 0.75rem 0.1875rem 0 0 #DADADA, 0.8125rem 0.1875rem 0 0 #DADADA, 0.875rem 0.1875rem 0 0 #DADADA, 0.9375rem 0.1875rem 0 0 #DADADA, 1rem 0.1875rem 0 0 #DADADA, 1.0625rem 0.1875rem 0 0 #DADADA, 1.125rem 0.1875rem 0 0 #DADADA, 1.1875rem 0.1875rem 0 0 #DADADA, 1.25rem 0.1875rem 0 0 #898989, 0.0625rem 0.25rem 0 0 #898989, 0.125rem 0.25rem 0 0 #DADADA, 0.1875rem 0.25rem 0 0 #DADADA, 0.25rem 0.25rem 0 0 #DADADA, 0.3125rem 0.25rem 0 0 #DADADA, 0.375rem 0.25rem 0 0 #DADADA, 0.4375rem 0.25rem 0 0 #DADADA, 0.5rem 0.25rem 0 0 #DADADA, 0.5625rem 0.25rem 0 0 #DADADA, 0.625rem 0.25rem 0 0 #DADADA, 0.6875rem 0.25rem 0 0 #DADADA, 0.75rem 0.25rem 0 0 #DADADA, 0.8125rem 0.25rem 0 0 #DADADA, 0.875rem 0.25rem 0 0 #DADADA, 0.9375rem 0.25rem 0 0 #DADADA, 1rem 0.25rem 0 0 #DADADA, 1.0625rem 0.25rem 0 0 #DADADA, 1.125rem 0.25rem 0 0 #DADADA, 1.1875rem 0.25rem 0 0 #DADADA, 1.25rem 0.25rem 0 0 #898989, 0.125rem 0.3125rem 0 0 #898989, 0.1875rem 0.3125rem 0 0 #DADADA, 0.25rem 0.3125rem 0 0 #DADADA, 0.3125rem 0.3125rem 0 0 #DADADA, 0.375rem 0.3125rem 0 0 #DADADA, 0.4375rem 0.3125rem 0 0 #DADADA, 0.5rem 0.3125rem 0 0 #DADADA, 0.5625rem 0.3125rem 0 0 #DADADA, 0.625rem 0.3125rem 0 0 #DADADA, 0.6875rem 0.3125rem 0 0 #DADADA, 0.75rem 0.3125rem 0 0 #DADADA, 0.8125rem 0.3125rem 0 0 #DADADA, 0.875rem 0.3125rem 0 0 #DADADA, 0.9375rem 0.3125rem 0 0 #DADADA, 1rem 0.3125rem 0 0 #DADADA, 1.0625rem 0.3125rem 0 0 #DADADA, 1.125rem 0.3125rem 0 0 #DADADA, 1.1875rem 0.3125rem 0 0 #898989, 0.1875rem 0.375rem 0 0 #898989, 0.25rem 0.375rem 0 0 #898989, 0.3125rem 0.375rem 0 0 #898989, 0.375rem 0.375rem 0 0 #898989, 0.4375rem 0.375rem 0 0 #898989, 0.5rem 0.375rem 0 0 #898989, 0.5625rem 0.375rem 0 0 #898989, 0.625rem 0.375rem 0 0 #898989, 0.6875rem 0.375rem 0 0 #898989, 0.75rem 0.375rem 0 0 #898989, 0.8125rem 0.375rem 0 0 #898989, 0.875rem 0.375rem 0 0 #898989, 0.9375rem 0.375rem 0 0 #898989, 1rem 0.375rem 0 0 #898989, 1.0625rem 0.375rem 0 0 #898989, 1.125rem 0.375rem 0 0 #898989;
+        }
+
+        &:hover {
+          .bg {
+            box-shadow: 0.1875rem 0.0625rem 0 0 #898989, 0.25rem 0.0625rem 0 0 #898989, 0.3125rem 0.0625rem 0 0 #898989, 0.375rem 0.0625rem 0 0 #898989, 0.4375rem 0.0625rem 0 0 #898989, 0.5rem 0.0625rem 0 0 #898989, 0.5625rem 0.0625rem 0 0 #898989, 0.625rem 0.0625rem 0 0 #898989, 0.6875rem 0.0625rem 0 0 #898989, 0.75rem 0.0625rem 0 0 #898989, 0.8125rem 0.0625rem 0 0 #898989, 0.875rem 0.0625rem 0 0 #898989, 0.9375rem 0.0625rem 0 0 #898989, 1rem 0.0625rem 0 0 #898989, 1.0625rem 0.0625rem 0 0 #898989, 1.125rem 0.0625rem 0 0 #898989, 0.125rem 0.125rem 0 0 #898989, 0.1875rem 0.125rem 0 0 #DADADA, 0.25rem 0.125rem 0 0 #DADADA, 0.3125rem 0.125rem 0 0 #DADADA, 0.375rem 0.125rem 0 0 #DADADA, 0.4375rem 0.125rem 0 0 #DADADA, 0.5rem 0.125rem 0 0 #DADADA, 0.5625rem 0.125rem 0 0 #DADADA, 0.625rem 0.125rem 0 0 #DADADA, 0.6875rem 0.125rem 0 0 #DADADA, 0.75rem 0.125rem 0 0 #DADADA, 0.8125rem 0.125rem 0 0 #DADADA, 0.875rem 0.125rem 0 0 #DADADA, 0.9375rem 0.125rem 0 0 #DADADA, 1rem 0.125rem 0 0 #DADADA, 1.0625rem 0.125rem 0 0 #DADADA, 1.125rem 0.125rem 0 0 #DADADA, 1.1875rem 0.125rem 0 0 #898989, 0.0625rem 0.1875rem 0 0 #898989, 0.125rem 0.1875rem 0 0 #DADADA, 0.1875rem 0.1875rem 0 0 #DADADA, 0.25rem 0.1875rem 0 0 #DADADA, 0.3125rem 0.1875rem 0 0 #DADADA, 0.375rem 0.1875rem 0 0 #DADADA, 0.4375rem 0.1875rem 0 0 #DADADA, 0.5rem 0.1875rem 0 0 #DADADA, 0.5625rem 0.1875rem 0 0 #DADADA, 0.625rem 0.1875rem 0 0 #DADADA, 0.6875rem 0.1875rem 0 0 #DADADA, 0.75rem 0.1875rem 0 0 #DADADA, 0.8125rem 0.1875rem 0 0 #DADADA, 0.875rem 0.1875rem 0 0 #DADADA, 0.9375rem 0.1875rem 0 0 #DADADA, 1rem 0.1875rem 0 0 #DADADA, 1.0625rem 0.1875rem 0 0 #DADADA, 1.125rem 0.1875rem 0 0 #DADADA, 1.1875rem 0.1875rem 0 0 #DADADA, 1.25rem 0.1875rem 0 0 #898989, 0.0625rem 0.25rem 0 0 #898989, 0.125rem 0.25rem 0 0 #DADADA, 0.1875rem 0.25rem 0 0 #DADADA, 0.25rem 0.25rem 0 0 #DADADA, 0.3125rem 0.25rem 0 0 #DADADA, 0.375rem 0.25rem 0 0 #DADADA, 0.4375rem 0.25rem 0 0 #DADADA, 0.5rem 0.25rem 0 0 #DADADA, 0.5625rem 0.25rem 0 0 #DADADA, 0.625rem 0.25rem 0 0 #DADADA, 0.6875rem 0.25rem 0 0 #DADADA, 0.75rem 0.25rem 0 0 #DADADA, 0.8125rem 0.25rem 0 0 #DADADA, 0.875rem 0.25rem 0 0 #DADADA, 0.9375rem 0.25rem 0 0 #DADADA, 1rem 0.25rem 0 0 #DADADA, 1.0625rem 0.25rem 0 0 #DADADA, 1.125rem 0.25rem 0 0 #DADADA, 1.1875rem 0.25rem 0 0 #DADADA, 1.25rem 0.25rem 0 0 #898989, 0.125rem 0.3125rem 0 0 #898989, 0.1875rem 0.3125rem 0 0 #DADADA, 0.25rem 0.3125rem 0 0 #DADADA, 0.3125rem 0.3125rem 0 0 #DADADA, 0.375rem 0.3125rem 0 0 #DADADA, 0.4375rem 0.3125rem 0 0 #DADADA, 0.5rem 0.3125rem 0 0 #DADADA, 0.5625rem 0.3125rem 0 0 #DADADA, 0.625rem 0.3125rem 0 0 #DADADA, 0.6875rem 0.3125rem 0 0 #DADADA, 0.75rem 0.3125rem 0 0 #DADADA, 0.8125rem 0.3125rem 0 0 #DADADA, 0.875rem 0.3125rem 0 0 #DADADA, 0.9375rem 0.3125rem 0 0 #DADADA, 1rem 0.3125rem 0 0 #DADADA, 1.0625rem 0.3125rem 0 0 #DADADA, 1.125rem 0.3125rem 0 0 #DADADA, 1.1875rem 0.3125rem 0 0 #898989, 0.1875rem 0.375rem 0 0 #898989, 0.25rem 0.375rem 0 0 #898989, 0.3125rem 0.375rem 0 0 #898989, 0.375rem 0.375rem 0 0 #898989, 0.4375rem 0.375rem 0 0 #898989, 0.5rem 0.375rem 0 0 #898989, 0.5625rem 0.375rem 0 0 #898989, 0.625rem 0.375rem 0 0 #898989, 0.6875rem 0.375rem 0 0 #898989, 0.75rem 0.375rem 0 0 #898989, 0.8125rem 0.375rem 0 0 #898989, 0.875rem 0.375rem 0 0 #898989, 0.9375rem 0.375rem 0 0 #898989, 1rem 0.375rem 0 0 #898989, 1.0625rem 0.375rem 0 0 #898989, 1.125rem 0.375rem 0 0 #898989;
+          }
+        }
+      }
+
     }
   }
 

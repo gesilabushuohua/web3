@@ -32,20 +32,23 @@ $pfontf: Pixel Countdown;
   display: flex;
   justify-content: space-between;
   margin: 133px auto 120px;
-  width: 1000px;
+  width: 82%;
 
   .links {
     padding: 36px 0;
 
     .link {
       display: inline-block;
-      margin: 0 15px;
       width: 70px;
       height: 70px;
       text-align: center;
       line-height: 70px;
       border-radius: 50%;
       background-color: #FFF;
+
+      &:last-of-type {
+        margin-left: 32px;
+      }
 
       >img {
         margin-top: 17px;

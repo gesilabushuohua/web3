@@ -46,6 +46,15 @@ import logo28 from "./assets3/28-metaera_white.svg";
 import logo29 from "./assets3/29-chain_catcher_white.svg";
 import logo30 from "./assets3/30-ChainDD_logo_white.svg";
 import logo31 from "./assets3/31-odaily.png";
+import Cointelegraph from "./assets4/Cointelegraph.svg";
+import IMOVenturesUnleasher from "./assets4/IMOVenturesUnleasher.png";
+import TheGraphUniter from "./assets4/TheGraphUniter.png";
+import GoogleCloudUniter from "./assets4/GoogleCloudUniter.png";
+import CyberscopeUniter from "./assets4/CyberscopeUniter.png";
+import ABCPoolUsher from "./assets4/ABCPoolUsher.png";
+import HalbornUsher from "./assets4/HalbornUsher.png";
+import HashkeyUsher from "./assets4/HashkeyUsher.png";
+import ParticleNetworkUsher from "./assets4/ParticleNetworkUsher.png";
 
 const redLogoList = [
   {
@@ -59,6 +68,12 @@ const redLogoList = [
     className: "conflux",
     src: conflux,
     link: "https://confluxnetwork.org/",
+  },
+  {
+    name: "IMO",
+    className: "IMO",
+    src: IMOVenturesUnleasher,
+    link: "https://imo.vc/",
   },
 ];
 
@@ -98,6 +113,51 @@ const grayLogoList = [
     className: "newtribe",
     src: newtribe,
     link: "https://www.newtribe.capital",
+  },
+  {
+    name: "TheGraph",
+    className: "TheGraph",
+    src: TheGraphUniter,
+    link: "https://thegraph.com/",
+  },
+  {
+    name: "GoogleCloud",
+    className: "GoogleCloud",
+    src: GoogleCloudUniter,
+    link: "https://cloud.google.com/",
+  },
+  {
+    name: "Cyberscope",
+    className: "Cyberscope",
+    src: CyberscopeUniter,
+    link: "https://www.cyberscope.io/",
+  },
+];
+
+const greenLogoList = [
+  {
+    name: "ABCPoolUsher",
+    className: "ABCPoolUsher",
+    src: ABCPoolUsher,
+    link: "https://confluxpos.cn/",
+  },
+  {
+    name: "HalbornUsher",
+    className: "HalbornUsher",
+    src: HalbornUsher,
+    link: "https://www.halborn.com/",
+  },
+  {
+    name: "HashkeyUsher",
+    className: "HashkeyUsher",
+    src: HashkeyUsher,
+    link: "https://www.hashkey.com/en-US/",
+  },
+  {
+    name: "ParticleNetworkUsher",
+    className: "ParticleNetworkUsher",
+    src: ParticleNetworkUsher,
+    link: "https://particle.network/",
   },
 ];
 
@@ -330,6 +390,12 @@ const bottomLogoList = [
     src: logo31,
     link: "",
   },
+  {
+    name: "Cointelegraph",
+    className: "Cointelegraph",
+    src: Cointelegraph,
+    link: "",
+  },
 ];
 
 const Sponsors = () => {
@@ -358,6 +424,22 @@ const Sponsors = () => {
           <div className="inner-box ">
             <div className="logos">
               {grayLogoList.map((item) => (
+                <a key={item.src} href={item.link} target="_blank">
+                  <img
+                    className={item.className}
+                    src={item.src}
+                    alt={item.name}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="section usher">
+          <div className="title">Usher</div>
+          <div className="inner-box ">
+            <div className="logos">
+              {greenLogoList.map((item) => (
                 <a key={item.src} href={item.link} target="_blank">
                   <img
                     className={item.className}

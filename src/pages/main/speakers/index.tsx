@@ -9,6 +9,13 @@ import img7 from "./assest/person/7.png";
 import img8 from "./assest/person/8.png";
 import img9 from "./assest/person/9.png";
 import img10 from "./assest/person/10.png";
+import AniketRajDevFolio from "./assest/person2/AniketRajDevFolio.png";
+import EthanFrancisParticleNetwork from "./assest/person2/EthanFrancisParticleNetwork.png";
+import JasonTProtocol from "./assest/person2/JasonTProtocol.png";
+import MattSwappi from "./assest/person2/MattSwappi.png";
+import RobinsonBurkeyWormhole from "./assest/person2/RobinsonBurkeyWormhole.png";
+import YoziTimeless from "./assest/person2/YoziTimeless.png";
+import YuriiKyparusWallchain from "./assest/person2/YuriiKyparusWallchain.png";
 
 const speakers = [
   { /* role: 'speaker', */ name: "Chef Fran",  desc: "PancakeSwap",  src: img1, link: "https://twitter.com/ChefFranPS", },
@@ -21,6 +28,13 @@ const speakers = [
   { name: "Soloman Kong",  desc: "Single Finance", src: img8, link: "https://twitter.com/solomankong", },
   { name: "Felix Farris ",  desc: "Otex", src: img9, link: "https://twitter.com/FiliusJff", },
   { name: "DeFi Yaco",  desc: "Lido Finance", src: img10, link: "https://twitter.com/defiyaco", },
+  { name: "Aniket Raj",  desc: "DevFolio", src: AniketRajDevFolio, link: "https://twitter.com/AniketRaj314", },
+  { name: "Ethan Francis",  desc: "Particle Network", src: EthanFrancisParticleNetwork, link: "https://twitter.com/TABASCOweb3", },
+  { name: "Jason",  desc: "TProtocol", src: JasonTProtocol, link: "https://twitter.com/0xKofe", },
+  { name: "Matt",  desc: "Swappi", src: MattSwappi, link: "https://twitter.com/3point0_0", },
+  { name: "Robinson Burkey",  desc: "Wormhole", src: RobinsonBurkeyWormhole, link: "https://twitter.com/RobinsonBurkey", },
+  { name: "Yozi",  desc: "Timeless", src: YoziTimeless, link: "https://twitter.com/yoziXYZ", },
+  { name: "Yurii Kyparus",  desc: "Wallchain", src: YuriiKyparusWallchain, link: "https://twitter.com/kyparus", },
 ];
 
 const Speakers = () => {

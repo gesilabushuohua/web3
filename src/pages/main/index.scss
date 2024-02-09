@@ -538,8 +538,6 @@ $pfontf: Pixel Countdown;
   background-position: 90px 790px, -60px 700px;
   background-color: #0E0E0E;
 
-
-  // TODO rem
   .content {
     margin: 84px auto 0;
     width: 1122px;
@@ -564,7 +562,7 @@ $pfontf: Pixel Countdown;
   .logo-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin: 0 auto;
     width: 1040px;
 
@@ -1020,12 +1018,12 @@ $pfontf: Pixel Countdown;
     }
 
     .red-rect {
-      width: 224px;
+      width: 142px;
       background: #FF006E;
 
       .r-t-text {
         position: absolute;
-        left: 0;
+        left: 32px;
         right: 0;
         top: -90px;
         margin: 0 auto;
@@ -1037,6 +1035,10 @@ $pfontf: Pixel Countdown;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+      }
+
+      .w-f-text {
+        padding-left: 20px;
       }
 
       &::after {
@@ -1166,7 +1168,7 @@ $pfontf: Pixel Countdown;
   .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin: 62px auto 48px;
     width: 1200px;
 
@@ -1303,7 +1305,6 @@ $pfontf: Pixel Countdown;
     url(../../assets/index/circle-2.svg) no-repeat,
     url(../../assets/index/line-bg.svg) no-repeat;
   background-size: 505px 505px, 505px 505px, 337px 1243px;
-  ;
   background-position: 0 318px, 0 404px, 100% 718px;
   background-color: #0E0E0E;
   overflow: hidden;
@@ -1324,7 +1325,7 @@ $pfontf: Pixel Countdown;
         url(./sponsors/assets/black-rect.svg) no-repeat;
       background-size: 28px 28px, 28px 28px;
       background-position:
-        1073px -1px, 1044px 28px;
+        1073px 0, 1044px 28px;
       clip-path: polygon(0 32px, 206px 32px, 206px 0, 100% 0, 100% 100%, 0 100%);
     }
 
@@ -1391,17 +1392,13 @@ $pfontf: Pixel Countdown;
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
-      padding: 50px 0;
-      width: 520px;
+      padding: 60px 0;
+      width: 740px;
 
       img {
         max-width: 190px;
         max-height: 55px;
       }
-
-      /* .conflux {
-        padding: 28px 0;
-      } */
     }
   }
 
@@ -1446,7 +1443,7 @@ $pfontf: Pixel Countdown;
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 16px auto;
-      padding: 70px 0 60px;
+      padding: 60px 0;
       width: 740px;
 
       img {
@@ -1459,30 +1456,59 @@ $pfontf: Pixel Countdown;
         margin: 40px 0;
       }
 
-     /*  .arab {
-        padding: 20px 0;
+    }
+  }
+
+  .usher {
+    margin-top: -25px;
+    position: relative;
+
+    .inner-box {
+      background-color: #01FF00;
+    }
+
+    .title {
+      color: #01FF00;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 28px;
+      height: 28px;
+
+    }
+
+    &::before {
+      top: -27px;
+      left: 178px;
+      background: url(./sponsors/assets/green-rect.svg) no-repeat;
+      background-size: 28px 28px;
+    }
+
+    &::after {
+      bottom: 8px;
+      right: 0;
+      background: url(./sponsors/assets/green-rect.svg) no-repeat;
+      background-size: 28px 28px;
+    }
+
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 16px auto;
+      padding: 60px 0;
+      width: 740px;
+
+      img {
+        margin: 24px 0;
+        max-width: 190px;
+        max-height: 55px;
       }
-
-      .logotxt {
-        padding: 44px 0;
-      }
-
-      .goledo {
-        .text {
-          display: inline-block;
-          margin-top: 48px;
-          vertical-align: top;
-          color: #000;
-          font-family: Montserrat;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 600;
-        }
-
-        &:hover {
-          transform: scale(1.15);
-        }
-      } */
+    
     }
   }
 

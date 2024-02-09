@@ -30,20 +30,23 @@
 		display: flex;
 		justify-content: space-between;
 		margin: 0.83125rem auto 0.75rem;
-		width: $contetw;
+		width: 80%;
 
 		.links {
 			padding: 0.225rem 0;
 
 			.link {
 				display: inline-block;
-				margin: 0 0.09375rem;
 				width: 0.4375rem;
 				height: 0.4375rem;
 				text-align: center;
 				line-height: 0.4375rem;
 				border-radius: 50%;
 				background-color: #FFF;
+
+				&:last-of-type {
+					margin-left: 0.18rem;
+				}
 
 				>img {
 					margin-top: 0.10625rem;

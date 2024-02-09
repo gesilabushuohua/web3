@@ -18,6 +18,13 @@ import Penn from "./assets2/Penn_212.png";
 import LBS from "./assets2/LBS_212.png";
 import cbstrans from "./assets2/cambridge.png";
 import conflux from "./assets2/conflux.png";
+import ben from "./assets3/ben.png";
+import boston_uni from "./assets3/boston_uni.png";
+import Horizontal from "./assets3/Horizontal.png";
+import Javeriana from "./assets3/Javeriana.png";
+import minnesota from "./assets3/minnesota.png";
+import smub from "./assets3/smub.png";
+import thuba from "./assets3/thuba.png";
 import { Email, Link } from "../../../constant";
 
 const top3List = [
@@ -83,12 +90,40 @@ const logoList = [
     name: "LBS",
     src: LBS,
   },
+  {
+    name: "ben",
+    src: ben,
+  },
+  {
+    name: "boston_uni",
+    src: boston_uni,
+  },
+  {
+    name: "Horizontal",
+    src: Horizontal,
+  },
+  {
+    name: "Javeriana",
+    src: Javeriana,
+  },
+  {
+    name: "minnesota",
+    src: minnesota,
+  },
+  {
+    name: "smub",
+    src: smub,
+  },
+  {
+    name: "thuba",
+    src: thuba,
+  },
 ];
 
 const University = () => {
   return (
     <div className="university">
-      <SectionHead title="Participating Universities" theme="white" />
+      <SectionHead title="CONTRIBUTING UNIVERSITIES" theme="white" />
       <div className="content">
         <div className="top-3">
           {top3List.map((item) => (
