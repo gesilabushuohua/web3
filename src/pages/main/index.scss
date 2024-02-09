@@ -709,7 +709,7 @@ $pfontf: Pixel Countdown;
 
   .def {
     margin: 43px auto 0;
-    width: 834px;
+    width: 931px;
 
     .title {
       color: #FF006E;
@@ -738,7 +738,7 @@ $pfontf: Pixel Countdown;
     box-sizing: border-box;
     margin: 58px auto 0;
     padding: 0 60px;
-    width: 834px;
+    width: 900px;
     color: #01FF00;
     font-family: $ffontf;
     font-size: 24px;
@@ -764,8 +764,46 @@ $pfontf: Pixel Countdown;
     }
 
     &::after {
-      right: -15px;
+      right: 60px;
       background: url(../../assets/index/g-y-left.svg) no-repeat;
+      background-size: 54px;
+    }
+
+  }
+
+  .categories-title-red {
+    position: relative;
+    box-sizing: border-box;
+    margin: 58px auto 0;
+    padding: 0 60px;
+    width: 900px;
+    color: #FF006E;
+    font-family: $ffontf;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 54px;
+      height: 54px;
+
+    }
+
+    &::before {
+      left: -15px;
+      background: url(../../assets/index/r-y-right.svg) no-repeat;
+      background-size: 54px;
+    }
+
+    &::after {
+      right: 80px;
+      background: url(../../assets/index/r-y-left.svg) no-repeat;
       background-size: 54px;
     }
 

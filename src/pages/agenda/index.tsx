@@ -22,7 +22,8 @@ const WeekIndex = {
   "WEEK 1": 1,
   "WEEK 2": 2,
   "WEEK 3": 3,
-  "CLOSING WEEK": 4,
+  "WEEK 4": 4,
+  "CLOSING WEEK": 5,
 };
 const WeekNum = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -59,6 +60,11 @@ const formatData = (data: Array<any>) => {
     },
     {
       key: "5",
+      label: "WEEK 4",
+      children: [],
+    },
+    {
+      key: "6",
       label: "CLOSING WEEK",
       children: [],
     },
@@ -69,6 +75,7 @@ const formatData = (data: Array<any>) => {
     "WEEK 1": {},
     "WEEK 2": {},
     "WEEK 3": {},
+    "WEEK 4": {},
     "CLOSING WEEK": {},
   };
 
@@ -85,8 +92,8 @@ const formatData = (data: Array<any>) => {
     const index = WeekIndex[week];
     const weekVal = WeekDayMap[week] || {};
     const children = Object.keys(weekVal).map((day) => {
-      const num = dayjs(day).day();
-      const date = dayjs(day).format("MM/DD");
+      const num = toLocalTime(day).day();
+      const date = toLocalTime(day).format("MM/DD");
       const dayVal = weekVal[day];
       return {
         week: WeekNum[num],

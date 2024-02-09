@@ -5,10 +5,10 @@ export const navlist = [
     text: 'AGENDA',
     path: '/agenda',
   },
-  /* {
+  {
     text: 'ARCHIVE',
     path: '/archive',
-  }, */
+  },
 ]
 
 export const Twitter = 'https://twitter.com/U_HackWeb3';

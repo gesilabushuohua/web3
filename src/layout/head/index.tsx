@@ -130,15 +130,20 @@ const Head = () => {
       id: "agenda",
       key: "agenda",
     },
-    /* {
+    {
       label: (
-        <div className="menu-item-line" onClick={() => navigate("/archive")}>
+        <div className="menu-item-line" onClick={() => {
+          window.open(
+            "https://www.youtube.com/channel/UC7BuxtYR1OiDMXXm3Jp_IPA",
+            "_blank"
+          )
+        }}>
           ARCHIVE
         </div>
       ),
       id: "archive",
       key: "archive",
-    }, */
+    },
     {
       label: (
         <div className="menu-item" onClick={() => {
@@ -192,6 +197,13 @@ const Head = () => {
                   if (nav.text === "AGENDA") {
                     window.open(
                       "https://organized-dahlia-ae3.notion.site/U-Hack-Agenda-b556b9bd66c1473898a9d009f9f33bae",
+                      "_blank"
+                    );
+                    return;
+                  }
+                  if (nav.text === "ARCHIVE") {
+                    window.open(
+                      "https://www.youtube.com/channel/UC7BuxtYR1OiDMXXm3Jp_IPA",
                       "_blank"
                     );
                     return;

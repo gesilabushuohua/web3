@@ -152,6 +152,10 @@ const Hackathon = () => {
         <span className="text">TIMELINE</span>
       </div>
 
+      <div className="categories-title-red">
+        <span>registration is open until March 2nd:</span>
+      </div>
+
       {isMobile() ? <MTimeLine /> : <TimeLine />}
 
       <div className="content-w title-rect-line-red">
