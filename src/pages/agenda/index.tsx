@@ -28,11 +28,12 @@ const WeekIndex = {
 const WeekNum = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const toLocalTime = (time: string) => {
-  // 获取当前系统时区
+  /* // 获取当前系统时区
   const systemTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   // 将指定时间转换为系统时区时间
-  const res = dayjs(time).tz(systemTimezone);
+  const res = dayjs(time).tz(systemTimezone); */
+  const res = dayjs(time);
   return res;
 };
 
@@ -127,8 +128,8 @@ const Weeks = ({ data }) => {
           const time = !startTimeUTC
             ? ""
             : !endTimeUTC
-            ? start
-            : `${start} - ${end}`;
+            ?  `${start} GMT`
+            : `${start} - ${end} GMT`;
           const link = item[LinkMap[button]] || "";
           const isActive = activeStatus === "active";
           return (
@@ -202,7 +203,7 @@ const Agenda = () => {
         try {
           const data = JSON.parse(result);
           const newData = formatData(data.record);
-          console.log({ data, newData });
+          // console.log({ data, newData });
           const newWeeks = newData.map((week, index) => {
             return {
               key: index + 1,
