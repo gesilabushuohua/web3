@@ -148,15 +148,11 @@ $pfontf: Pixel Countdown;
         align-items: center;
         color: #FFF;
         font-size: 20px;
-        // background: url(./assets/rect.svg) no-repeat, url(./assets/rect.svg) no-repeat;
-        // background-size: 12px 12px, 12px 12px;
-        // background-position: 26% center, 62% center;
+        background: url(./assets/rect.svg) no-repeat, url(./assets/rect.svg) no-repeat;
+        background-size: 12px 12px, 12px 12px;
+        background-position: 33% center, 67% center;
         .person {
           width: 220px;
-        }
-
-        .info {
-          width: 170px;
         }
 
         .rect {

@@ -146,12 +146,12 @@ const Weeks = ({ data }) => {
                     <div className="name">{item.name}</div>
                     <div className="name">{item.company}</div>
                   </div>
-                  {isM ? null : <img className="rect" src={rect} />}
+                  {/* {isM ? null : <img className="rect" src={rect} />} */}
                   <div className="info">
                     <div className="workshop">{item.type}</div>
                     <div className="recording">{item.format}</div>
                   </div>
-                  {isM ? null : <img className="rect" src={rect} />}
+                  {/* {isM ? null : <img className="rect" src={rect} />} */}
                   {isActive ? (
                     <a href={link} target="_blank">
                       <div className="w-link">
