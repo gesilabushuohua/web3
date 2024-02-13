@@ -115,15 +115,7 @@ const Head = () => {
     },
     {
       label: (
-        <div
-          className="menu-item-line"
-          onClick={() =>
-            window.open(
-              "https://organized-dahlia-ae3.notion.site/U-Hack-Agenda-b556b9bd66c1473898a9d009f9f33bae",
-              "_blank"
-            )
-          }
-        >
+        <div className="menu-item-line" onClick={() => navigate("/agenda")}>
           AGENDA
         </div>
       ),
@@ -132,12 +124,15 @@ const Head = () => {
     },
     {
       label: (
-        <div className="menu-item-line" onClick={() => {
-          window.open(
-            "https://www.youtube.com/channel/UC7BuxtYR1OiDMXXm3Jp_IPA",
-            "_blank"
-          )
-        }}>
+        <div
+          className="menu-item-line"
+          onClick={() => {
+            window.open(
+              "https://www.youtube.com/channel/UC7BuxtYR1OiDMXXm3Jp_IPA",
+              "_blank"
+            );
+          }}
+        >
           ARCHIVE
         </div>
       ),
@@ -146,9 +141,12 @@ const Head = () => {
     },
     {
       label: (
-        <div className="menu-item" onClick={() => {
-          window.open("https://u-hack.devfolio.co/overview", "_blank")
-        }}>
+        <div
+          className="menu-item"
+          onClick={() => {
+            window.open("https://u-hack.devfolio.co/overview", "_blank");
+          }}
+        >
           SUBMIT
         </div>
       ),
@@ -194,13 +192,6 @@ const Head = () => {
                 className="nav"
                 key={nav.path}
                 onClick={() => {
-                  if (nav.text === "AGENDA") {
-                    window.open(
-                      "https://organized-dahlia-ae3.notion.site/U-Hack-Agenda-b556b9bd66c1473898a9d009f9f33bae",
-                      "_blank"
-                    );
-                    return;
-                  }
                   if (nav.text === "ARCHIVE") {
                     window.open(
                       "https://www.youtube.com/channel/UC7BuxtYR1OiDMXXm3Jp_IPA",
@@ -215,7 +206,11 @@ const Head = () => {
               </li>
             ))}
 
-            <a className="nav" href="https://u-hack.devfolio.co/overview" target="_blank">
+            <a
+              className="nav"
+              href="https://u-hack.devfolio.co/overview"
+              target="_blank"
+            >
               <div className="r-link">
                 <div className="text">SUBMIT</div>
                 <div className="bg"></div>
