@@ -3,8 +3,6 @@ import SectionHead from "../../components/section-head";
 import "./index.scss";
 import { isMobile } from "../../constant";
 import { useEffect, useState } from "react";
-import rect from "./assets/rect.svg";
-
 import dayjs from "dayjs";
 import timezone from "dayjs/plugin/timezone";
 import utc from "dayjs/plugin/utc";
@@ -177,6 +175,7 @@ const Weeks = ({ data }) => {
 
 const Agenda = () => {
   const [weeks, setWeeks] = useState([]);
+  const [keys, setKeys] = useState([]);
 
   useEffect(() => {
     const myHeaders = new Headers();
@@ -203,8 +202,11 @@ const Agenda = () => {
         try {
           const data = JSON.parse(result);
           const newData = formatData(data.record);
-          // console.log({ data, newData });
+          const newKeys = [];
           const newWeeks = newData.map((week, index) => {
+            if (week.children.length > 0) {
+              newKeys.push(week.key);
+            }
             return {
               key: index + 1,
               label: <div className="warp-item">{week.label}</div>,
@@ -212,6 +214,7 @@ const Agenda = () => {
             };
           });
           setWeeks(newWeeks);
+          setKeys(newKeys);
         } catch (err) {
           console.error(err);
         }
@@ -222,7 +225,7 @@ const Agenda = () => {
     <div className="agenda">
       <SectionHead title="AGENDA" theme="green" />
       <div className="list">
-        <Collapse defaultActiveKey={[1]} ghost items={weeks} />
+        <Collapse activeKey={keys} ghost items={weeks} />
       </div>
     </div>
   );

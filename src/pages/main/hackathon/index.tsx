@@ -2,6 +2,7 @@ import SectionHead from "../../../components/section-head";
 import "../index.scss";
 import telegramSvg from "../../../assets/index/telegram.svg";
 import { isMobile, Link, Telegram } from "../../../constant";
+import { useNavigate } from "react-router-dom";
 
 const TimeLine = () => {
   return (
@@ -115,6 +116,7 @@ const MTimeLine = () => {
 };
 
 const Hackathon = () => {
+  const navigate = useNavigate();
   return (
     <div className="hackathon" id="hackathon">
       <SectionHead title="HACKATHON" theme="red" />
@@ -157,6 +159,17 @@ const Hackathon = () => {
       </div>
 
       {isMobile() ? <MTimeLine /> : <TimeLine />}
+
+      <a
+        onClick={() => {
+          navigate("/agenda");
+        }}
+      >
+        <div className="w-g-link">
+          <div className="text">Agenda</div>
+          <div className="bg" />
+        </div>
+      </a>
 
       <div className="content-w title-rect-line-red">
         <span className="text">Teams</span>
