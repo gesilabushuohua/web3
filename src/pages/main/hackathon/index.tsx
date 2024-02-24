@@ -165,7 +165,7 @@ const Hackathon = () => {
           navigate("/agenda");
         }}
       >
-        <div className="w-g-link">
+        <div className="w-g-link" style={{marginBottom: '40px'}}>
           <div className="text">Agenda</div>
           <div className="bg" />
         </div>

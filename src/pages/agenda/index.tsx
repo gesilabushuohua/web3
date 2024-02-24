@@ -91,12 +91,14 @@ const formatData = (data: Array<any>) => {
     const index = WeekIndex[week];
     const weekVal = WeekDayMap[week] || {};
     const children = Object.keys(weekVal).map((day) => {
-      const num = toLocalTime(day).day();
-      const date = toLocalTime(day).format("MM/DD");
+      const localDay = toLocalTime(day);
+      const num = localDay.day();
+      const date = localDay.format("MM/DD");
       const dayVal = weekVal[day];
       return {
         week: WeekNum[num],
         date: date,
+        day,
         children: dayVal,
       };
     });
@@ -204,8 +206,14 @@ const Agenda = () => {
           const newData = formatData(data.record);
           const newKeys = [];
           const newWeeks = newData.map((week, index) => {
-            if (week.children.length > 0) {
-              newKeys.push(week.key);
+            const len = week.children.length;
+            if (len > 0) {
+              const start = week.children[0].day;
+              const end = week.children[len-1].day;
+              if (dayjs().diff(start, 'days') >= 0 && dayjs().diff(end, 'days') <= 0) {
+                newKeys.push(week.key);
+              }
+              
             }
             return {
               key: index + 1,
@@ -225,7 +233,7 @@ const Agenda = () => {
     <div className="agenda">
       <SectionHead title="AGENDA" theme="green" />
       <div className="list">
-        <Collapse activeKey={keys} ghost items={weeks} />
+        <Collapse activeKey={keys} ghost items={weeks} onChange={(vals) => { setKeys(vals) }}/>
       </div>
     </div>
   );

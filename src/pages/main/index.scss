@@ -1294,7 +1294,7 @@ $pfontf: Pixel Countdown;
           font-family: $ffontf;
           font-size: 18px;
           font-weight: 500;
-          line-height: 38px;
+          line-height: 28px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -1305,7 +1305,18 @@ $pfontf: Pixel Countdown;
           color: #FFF;
           font-family: $ffontf;
           font-size: 12px;
-          font-weight: 400;
+          line-height: 20px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .role {
+          margin-left: 8px;
+          color: #FFF;
+          font-family: $ffontf;
+          font-size: 12px;
+          font-weight: bold;
           line-height: 24px;
           white-space: nowrap;
           overflow: hidden;
@@ -1314,7 +1325,7 @@ $pfontf: Pixel Countdown;
       }
     }
 
-    .judge {
+    .JUDGE {
       .item {
         background-color: #FF006E;
 
@@ -1324,7 +1335,7 @@ $pfontf: Pixel Countdown;
       }
     }
 
-    .mentor {
+    .MENTOR {
       .item {
         background-color: #BFBFBF;
 

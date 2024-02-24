@@ -1205,7 +1205,7 @@
 						margin: 0.025rem 0 0 0.05rem;
 						color: #FFF;
 						font-family: $ffontf;
-						font-size: 0.1125rem;
+						font-size: 0.11rem;
 						font-weight: 500;
 						line-height: 0.2375rem;
 						white-space: nowrap;
@@ -1214,6 +1214,18 @@
 					}
 
 					.desc {
+						margin-left: 0.05rem;
+						color: #FFF;
+						font-family: $ffontf;
+						font-size: 0.075rem;
+						font-weight: 400;
+						line-height: 0.1rem;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+					.role {
 						margin-left: 0.05rem;
 						color: #FFF;
 						font-family: $ffontf;
