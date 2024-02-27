@@ -28,6 +28,7 @@ import j2 from "./assest/person3/2.png";
 import j3 from "./assest/person3/3.png";
 import j4 from "./assest/person3/4.png";
 import j5 from "./assest/person3/5.png";
+import j6 from "./assest/person3/6.png";
 
 const speakers = [
   { role: 'SPEAKER', name: "Chef Fran",  desc: "PancakeSwap",  src: img1, link: "https://twitter.com/ChefFranPS", },
@@ -57,7 +58,8 @@ const speakers = [
   { role: 'JUDGE', name: "Fiona Ma",  desc: "DWF Labs", src: j2, link: "https://twitter.com/fionaclairema", },
   { role: 'JUDGE', name: "JackRyan",  desc: "Conflux Network", src: j3, link: "https://twitter.com/jackryan_eth", },
   { role: 'JUDGE', name: "Gui Silva",  desc: "Capital Sagus", src: j4, link: "https://twitter.com/CapitalTagus", },
-  { role: 'JUDGE', name: "Donnie Liu",  desc: "IMO Ventures", src: j5, link: "https://imo.vc/team-detail/hai5.png", },
+  { role: 'JUDGE', name: "Donnie Liu",  desc: "IMO Ventures", src: j5, link: "https://imo.vc/team-detail/hai", },
+  { role: 'JUDGE', name: "Liz Harkavy",  desc: "a16z", src: j6, link: "https://twitter.com/liz_harkavy", },
 ];
 
 const Speakers = () => {
