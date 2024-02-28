@@ -29,6 +29,7 @@ import j3 from "./assest/person3/3.png";
 import j4 from "./assest/person3/4.png";
 import j5 from "./assest/person3/5.png";
 import j6 from "./assest/person3/6.png";
+import j7 from "./assest/person3/7.png";
 
 const speakers = [
   { role: 'SPEAKER', name: "Chef Fran",  desc: "PancakeSwap",  src: img1, link: "https://twitter.com/ChefFranPS", },
@@ -60,6 +61,7 @@ const speakers = [
   { role: 'JUDGE', name: "Gui Silva",  desc: "Capital Sagus", src: j4, link: "https://twitter.com/CapitalTagus", },
   { role: 'JUDGE', name: "Donnie Liu",  desc: "IMO Ventures", src: j5, link: "https://imo.vc/team-detail/hai", },
   { role: 'JUDGE', name: "Liz Harkavy",  desc: "a16z", src: j6, link: "https://twitter.com/liz_harkavy", },
+  { role: 'JUDGE', name: "Jay Drain Jr.",  desc: "a16z", src: j7, link: "https://twitter.com/jay_drainjr", },
 ];
 
 const Speakers = () => {
