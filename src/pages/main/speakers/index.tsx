@@ -15,6 +15,8 @@ import img13 from "./assest/person/13.png";
 import img14 from "./assest/person/14.png";
 import img15 from "./assest/person/15.png";
 import img16 from "./assest/person/16.png";
+import img17 from "./assest/person/17.png";
+import img18 from "./assest/person/18.png";
 
 import AniketRajDevFolio from "./assest/person2/AniketRajDevFolio.png";
 import EthanFrancisParticleNetwork from "./assest/person2/EthanFrancisParticleNetwork.png";
@@ -55,6 +57,8 @@ const speakers = [
   { role: 'SPEAKER', name: "Ande Zheng",  desc: "Pyth", src: img14, link: "https://twitter.com/ande_western", },
   { role: 'SPEAKER', name: "Irene Wu",  desc: "LayerZero", src: img15, link: "https://twitter.com/IreneWu27", },
   { role: 'SPEAKER', name: "Phoenix",  desc: "QuillAudits", src: img16, link: "https://twitter.com/phoenix244001", },
+  { role: 'SPEAKER', name: "Chenxing Li",  desc: "Conflux", src: img17, link: "https://twitter.com/ChenxingLi_en", },
+  { role: 'SPEAKER', name: "Simon Emanuel",  desc: "The Graph", src: img18, link: "https://x.com/schmid_si", },
   { role: 'JUDGE', name: "Jane Yang",  desc: "Aspecta", src: j1, link: "https://twitter.com/janeyang0515", },
   { role: 'JUDGE', name: "Fiona Ma",  desc: "DWF Labs", src: j2, link: "https://twitter.com/fionaclairema", },
   { role: 'JUDGE', name: "JackRyan",  desc: "Conflux Network", src: j3, link: "https://twitter.com/jackryan_eth", },
