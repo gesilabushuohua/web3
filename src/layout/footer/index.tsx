@@ -37,9 +37,9 @@ const Footer = () => {
           <div className="e-mail">
             <a href={Email}>business@uhack.xyz</a>
           </div>
-          <a href={Link}>
+          <a href="https://u-hack.devfolio.co/overview" target="_blank">
             <div className="w-link">
-              <div className="text">APPLY</div>
+              <div className="text">Submit Now</div>
               <div className="bg"></div>
             </div>
           </a>

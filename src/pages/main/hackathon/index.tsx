@@ -204,9 +204,9 @@ const Hackathon = () => {
         </div>
       </div>
 
-      <a href={Link} target="_blank">
+      <a href="https://u-hack.devfolio.co/overview" target="_blank">
         <div className="w-g-link">
-          <div className="text">apply now</div>
+          <div className="text">Submit Now</div>
           <div className="bg" />
         </div>
       </a>

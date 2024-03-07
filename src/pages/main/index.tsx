@@ -45,9 +45,9 @@ const Index = () => {
           </div>
           <div className="left">
             <div className="title">THE WEB3 UNIVERSITY HACKATHON SERIES</div>
-            <a href={Link} target="_blank">
+            <a href="https://guide.devfolio.co/hackers/participate/project-submission" target="_blank">
               <div className="link">
-                <div className="text">APPLY NOW</div>
+                <div className="text">Guide to Submit</div>
                 <div className="bg" />
               </div>
             </a>
